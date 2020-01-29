@@ -12,64 +12,108 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
   </head>
 
-  <body>
-    <div
-      id="wrapper"
-      class=".container-fluid"
-      style="background-image: url(images/prism.png);"
-    >
+  <body
+    style="background: url(images/prism.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;"
+  >
+    <div id="wrapper" class=".container-fluid">
+      <!-- Navbar Basic -->
       <div id="header" class="row bg-light">
         <div class="col-md-2 "></div>
-        <div class="col-md-auto">
-          <h1 class="bg-info text-center p-3">Iyan Laylor</h1>
+        <div class="col-lg-auto mx-auto align-self-center">
+          <h1 id="titleTab" class="m-0 text-center text-white p-3">
+            Iyan Laylor
+          </h1>
         </div>
         <div class="col-md-2 "></div>
         <div class="col-md-2 "></div>
-        <div class="col-md-auto mx-auto align-self-center">
+        <div class="col-lg-auto mx-auto align-self-center">
           <div class="row justify-content-center h-25">
-            <a class="align-middle p-1 w-auto" href="index.html">About</a>
+            <a id="links" class="align-middle p-1 w-auto" href="index.html"
+              >About</a
+            >
 
-            <a class="align-middle p-1 w-auto" href="portfolio.html"
+            <a id="links" class="align-middle p-1 w-auto" href="portfolio.html"
               >Portfolio</a
             >
 
-            <a class="align-middle p-1 w-auto" href="contact.html">Contact</a>
+            <a id="links" class="align-middle p-1 w-auto" href="contact.html"
+              >Contact</a
+            >
           </div>
         </div>
         <div class="col-xl"></div>
       </div>
 
-      <div id="content" class="row">
-        <div class="col"></div>
-        <div class="col-8 mt-3">
-          <div class="card mb-3" style="max-width: max-content;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="images/ProfilePic.jpg" class="card-img" alt="..." />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">About Me</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                </div>
-              </div>
+      <!-- Main-Content -->
+
+      <div id="content my-3" class="row m-4 ">
+        <div class="col-md"></div>
+        <div class="col-md-8  bg-white">
+          <div class="row">
+            <div class="col">
+              <h3 id="contentTitle" class="m-2">About Me</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 mx-2">
+              <img src="images/ProfilePic.jpg" alt="" class="img-thumbnail" />
+            </div>
+            <div class="col-xl-7 mx-2 mt-2">
+              <p
+                style="font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+              color: #777777; font-size: 24px;"
+              >
+                About Me? hmmm where should I start? I was born and raised in
+                New York City, Harlem to be exact. I grew in the 90's and
+                2000's, which was a wild time to be where I'm from. I Left in
+                2004 and joined the Military, where I traveled the world serving
+                the country and all that other fun stuff. Met my wife, left the
+                military, had my son and packed up and moved to California to go
+                to school. I got my Bachelors in Game Art and Design down in Los
+                Angeles, then moved to the Bay Area in 2014.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md mx-2">
+              <p
+                style="font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+              color: #777777; font-size: 24px;"
+              >
+                In the last few years I did alot of freelance work while doing
+                senior management at logistics companies (military background),
+                until I decided to start my own company, an immersive
+                entertainment studio focusing on media content designed for
+                emerging technologies like virtual reality. If im not churning
+                away at 3d art assets, designing interactive content or
+                attempting to learn C#, I'm playing Minecraft, Brawlhalla, or
+                Monster Hunter World with my 9 year old son.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col"></div>
+        <div class="col-md"></div>
       </div>
 
-      <div id="footer" class="row"></div>
+      <div id="footer" class="row bg-secondary fixed-bottom">
+        <div class="col-md m-auto ">
+          <p class=" text-center m-0 p-3">
+            Copyright &copy;
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
