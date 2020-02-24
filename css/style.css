@@ -3,6 +3,10 @@
   font-family: "Georgia", Times, Times New Roman, serif;
 }
 
+.card-img-top {
+  width: 100%;
+}
+
 #links {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   color: #777777;
