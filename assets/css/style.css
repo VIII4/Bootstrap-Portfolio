@@ -1,22 +1,41 @@
-#titleTab {
-  background-color: #4aaaa5;
-  font-family: "Georgia", Times, Times New Roman, serif;
+/* Full Screen Video Styling */
+
+html,
+body,
+header,
+.view {
+  height: 100%;
 }
 
-.card-img-top {
-  width: 100%;
+@media (max-width: 559px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
 }
 
-#links {
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  color: #777777;
+@media (min-width: 560px) and (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 700px;
+  }
 }
 
-#contentTitle {
-  font-family: "Georgia", Times, Times New Roman, serif;
-  color: #4aaaa5;
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
 }
 
-#footer {
-  border-top: 8px solid #4aaaa5;
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1c2331 !important;
+  }
 }
