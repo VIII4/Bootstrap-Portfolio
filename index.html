@@ -54,6 +54,10 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"
     ></script>
+    <!-- BabylonJS  -->
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
     <!-- Custom Javascript -->
     <script src="assets/javascript/app.js"></script>
   </head>
@@ -107,19 +111,7 @@
 
     <!-- Full Page Intro -->
     <div class="view">
-      <video
-        class="video-intro"
-        poster="https://mdbootstrap.com/img/Photos/Others/background.jpg"
-        playsinline
-        autoplay
-        muted
-        loop
-      >
-        <source
-          src="https://mdbootstrap.com/img/video/Lines-min.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <canvas id="renderCanvas" touch-action="none"></canvas>
 
       <!-- Mask & flexbox options-->
       <div
@@ -418,9 +410,10 @@
     </footer>
 
     <!-- iniatilize WOW -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       // Animations initialization
       new WOW().init();
-    </script>
+    </script> -->
+    <script src="assets/javascript/babylon.js"></script>
   </body>
 </html>
