@@ -47,7 +47,7 @@ var createScene = function () {
   //The first parameter can be used to specify which mesh to import. Here we import all meshes
   BABYLON.SceneLoader.ImportMesh(
     "",
-    "./scenes/",
+    "scenes/",
     "house.babylon",
     scene,
     function (newMeshes) {
