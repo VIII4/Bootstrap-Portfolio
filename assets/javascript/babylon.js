@@ -48,7 +48,7 @@ var createScene = function () {
   BABYLON.SceneLoader.ImportMesh(
     "",
     "scenes/",
-    "house.babylon",
+    "Environment_2.babylon",
     scene,
     function (newMeshes) {
       // Set the target of the camera to the first imported mesh
