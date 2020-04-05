@@ -2,7 +2,7 @@ var canvas = document.getElementById("renderCanvas"); // Get the canvas element
 var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
 /******* Add the create scene function ******/
-var createScene = function() {
+var createScene = function () {
   // Create the scene space
   var scene = new BABYLON.Scene(engine);
 
@@ -30,10 +30,30 @@ var createScene = function() {
   );
 
   // Add and manipulate meshes in the scene
-  var sphere = BABYLON.MeshBuilder.CreateSphere(
-    "sphere",
-    { diameter: 2 },
-    scene
+  // var sphere = BABYLON.MeshBuilder.CreateSphere(
+  //   "sphere",
+  //   { diameter: 2 },
+  //   scene
+  // );
+
+  //Meshes
+  // BABYLON.SceneLoader.Append(
+  //   "./assets/babylon/mesh/Dad_test_1",
+  //   "DadTest.gtlf",
+  //   scene,
+  //   function (scene) {}
+  // );
+
+  //The first parameter can be used to specify which mesh to import. Here we import all meshes
+  BABYLON.SceneLoader.ImportMesh(
+    "",
+    "./scenes/",
+    "house.babylon",
+    scene,
+    function (newMeshes) {
+      // Set the target of the camera to the first imported mesh
+      camera.target = newMeshes[0];
+    }
   );
 
   return scene;
@@ -43,11 +63,11 @@ var createScene = function() {
 var scene = createScene(); //Call the createScene function
 
 // Register a render loop to repeatedly render the scene
-engine.runRenderLoop(function() {
+engine.runRenderLoop(function () {
   scene.render();
 });
 
 // Watch for browser/canvas resize events
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
   engine.resize();
 });
