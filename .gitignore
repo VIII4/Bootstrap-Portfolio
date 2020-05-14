@@ -1,2 +1,6 @@
-# misc folder
-assets/modules/
+# Node Modules
+node_modules/
+
+#Misc
+misc/
+
