@@ -26,7 +26,7 @@ function slideBody(target) {
 //#endregion
 
 //#region Events
-//Slide body to target
+
 $().ready(function () {
   //Nav Link clicked slide to target
   $(".nav-link").click(handleNavLinkClick);
