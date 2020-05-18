@@ -214,7 +214,7 @@
           <div class="row">
             <div class="col-12 col-md-4">
               <img
-                class="profile-pic img-thumbnail"
+                class="profile-pic img-thumbnail img-fluid"
                 src="assets/images/ProfilePic.jpg"
                 alt=""
               />
@@ -245,11 +245,11 @@
       </div>
       <!-- ./ About -->
 
-      <hr class="w-50" />
+      <hr class="w-75" />
 
       <!-- Portfolio -->
       <div id="portfolio-content" class="row m-0 mx-sm-4 my-sm-4 center-text">
-        <div class="col"></div>
+        <!-- <div class="col"></div>
         <div class="col-10 col-md-8 mt-5 bg-white">
           <div class="row pb-3">
             <h3 id="contentTitle" class="m-2">Portfolio</h3>
@@ -257,7 +257,6 @@
           <div class="row">
             <div class="col">
               <div class="row">
-                <!-- Insert Portfolio Gallery Here -->
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-3">
                   <div class="col mb-4">
                     <div class="card">
@@ -452,11 +451,210 @@
           </div>
           <div class="row"></div>
         </div>
-        <div class="col"></div>
+        <div class="col"></div> -->
+
+        <!-- Filter Panel -->
+        <div class="container my-3">
+          <ul id="portfolio-tab" class="nav nav-pills nav-justified mb-3 p-2">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#all-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fas fa-ellipsis-h fa-3x"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="home-tab"
+                data-toggle="tab"
+                href="#js-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-js-square fa-3x"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="home-tab"
+                data-toggle="tab"
+                href="#js-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-node fa-3x"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="home-tab"
+                data-toggle="tab"
+                href="#js-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-react fa-3x"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="home-tab"
+                data-toggle="tab"
+                href="#js-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fas fa-server fa-3x"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="home-tab"
+                data-toggle="tab"
+                href="#js-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fas fa-database fa-3x"></i
+              ></a>
+            </li>
+          </ul>
+          <!-- Filtered Content -->
+          <hr class="w-50 my-5" />
+
+          <div class="row p-3 my-3">
+            <div class="col-4">
+              <div class="row">
+                <!-- Project Name, Desc, details button-->
+                <h2>logo w/ Project Name</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque ut velit augue. Fusce sollicitudin lorem et finibus
+                  posuere. Etiam et ultricies enim, sit amet eleifend lorem.
+                  Integer faucibus lorem eget est malesuada, eu placerat felis
+                  lobortis. Aliquam diam purus, tincidunt nec ultricies
+                  tincidunt, luctus in odio. Donec non pulvinar ligula. Praesent
+                  auctor a nisi sit amet tincidunt.
+                </p>
+                <button type="button" class="btn btn-dark">Dark</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="view">
+                  <!-- image of project, mobile and laptop -->
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/webappdesktop.jpg"
+                    alt=""
+                  />
+                  <div class="mask d-flex justify-content-end align-items-end">
+                    <img
+                      class="img-fluid h-75"
+                      src="./assets/images/wepappmobile.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="w-50 my-5" />
+
+          <div class="row p-3 my-3">
+            <div class="col-4">
+              <div class="row">
+                <!-- Project Name, Desc, details button-->
+                <h2>logo w/ Project Name</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque ut velit augue. Fusce sollicitudin lorem et finibus
+                  posuere. Etiam et ultricies enim, sit amet eleifend lorem.
+                  Integer faucibus lorem eget est malesuada, eu placerat felis
+                  lobortis. Aliquam diam purus, tincidunt nec ultricies
+                  tincidunt, luctus in odio. Donec non pulvinar ligula. Praesent
+                  auctor a nisi sit amet tincidunt.
+                </p>
+                <button type="button" class="btn btn-dark">Dark</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="view">
+                  <!-- image of project, mobile and laptop -->
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/webappdesktop.jpg"
+                    alt=""
+                  />
+                  <div class="mask d-flex justify-content-end align-items-end">
+                    <img
+                      class="img-fluid h-75"
+                      src="./assets/images/wepappmobile.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="w-50 my-5" />
+
+          <div class="row p-3 my-3">
+            <div class="col-4">
+              <div class="row">
+                <!-- Project Name, Desc, details button-->
+                <h2>logo w/ Project Name</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque ut velit augue. Fusce sollicitudin lorem et finibus
+                  posuere. Etiam et ultricies enim, sit amet eleifend lorem.
+                  Integer faucibus lorem eget est malesuada, eu placerat felis
+                  lobortis. Aliquam diam purus, tincidunt nec ultricies
+                  tincidunt, luctus in odio. Donec non pulvinar ligula. Praesent
+                  auctor a nisi sit amet tincidunt.
+                </p>
+                <button type="button" class="btn btn-dark">Dark</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="view">
+                  <!-- image of project, mobile and laptop -->
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/webappdesktop.jpg"
+                    alt=""
+                  />
+                  <div class="mask d-flex justify-content-end align-items-end">
+                    <img
+                      class="img-fluid h-75"
+                      src="./assets/images/wepappmobile.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Panel -->
       </div>
       <!-- ./ Portfolio -->
 
-      <hr class="w-50" />
+      <hr class="w-75" />
 
       <!-- Contact -->
       <div id="contact-content" class="row m-4">
