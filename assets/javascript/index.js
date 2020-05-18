@@ -1,5 +1,4 @@
 //#region HTML elements
-var projectPanels = $(".project-panel").toArray();
 
 //#endregion
 
@@ -8,6 +7,30 @@ var projectPanels = $(".project-panel").toArray();
 //#endregion
 
 //#region Objects
+function ProjectDetails(name, roles, images, techs, bullets) {
+  this.name = name;
+  this.roles = roles;
+  this.images = images;
+  this.techs = techs;
+  this.bullets = bullets;
+}
+
+var seniorPets = new ProjectDetails(
+  // Project Name
+  "SeniorPets",
+  // Role
+  "Frontend Developer",
+  // Image file location
+  [],
+  // Techs used
+  ["html", "bootstrap", "mysql", "handlebars"],
+  // Bullets
+  [
+    "CRUD blajaj an lj;k h;hkg ;k ;a ",
+    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
+    "lkugljh gljhf gluyfv",
+  ]
+);
 
 //#endregion
 
@@ -39,11 +62,18 @@ function handleFilterClick() {
       $(this).hide();
     }
   });
+}
 
-  // projectPanels.forEach(panel => {
-  //     if(filter === "all")
-  //     panel
-  // });
+function handleDetailsClick() {
+  console.log($(this).data("project"));
+  /*
+    get info from button, get check all project details for matching name,
+    create modal content. Clear modal content on close 
+  */
+}
+
+function handleCloseModalClick() {
+  //Clear modal content
 }
 
 //#endregion
@@ -54,5 +84,6 @@ $().ready(function () {
   //Nav Link clicked slide to target
   $(".nav-main").click(handleNavLinkClick);
   $(".nav-filter").click(handleFilterClick);
+  $(".btn-details").click(handleDetailsClick);
 });
 //#endregion
