@@ -47,3 +47,21 @@ header,
   color: #777777;
   font-size: 24px;
 }
+
+/* ./ Typography */
+
+/* Filter Nav tabs */
+
+.nav-link.nav-filter {
+  color: #1c2331;
+}
+
+.nav-link.nav-filter.active {
+  background-color: #1c2331;
+}
+
+.border-strong {
+  border-width: 2px !important;
+}
+
+/* ./ Filter Nav tabs */
