@@ -3,7 +3,7 @@
 //#endregion
 
 //#region Variables
-
+var allProjectDetails = [];
 //#endregion
 
 //#region Objects
@@ -31,6 +31,8 @@ var seniorPets = new ProjectDetails(
     "lkugljh gljhf gluyfv",
   ]
 );
+
+allProjectDetails.push(seniorPets);
 
 //#endregion
 
@@ -65,7 +67,48 @@ function handleFilterClick() {
 }
 
 function handleDetailsClick() {
-  console.log($(this).data("project"));
+  var name = $(this).data("project");
+  allProjectDetails.forEach(function (project) {
+    console.log(name, project.name);
+    if (name === project.name) {
+      //Update modal text content
+      $("#detail-name").text(project.name);
+      $("#detail-role").html("Role: " + project.roles);
+      // TO DO: generate bullets
+
+      //Create Tech Icons
+      for (var i = 0; i < project.techs.length; i++) {
+        console.log(project.techs[i]);
+        var icon =
+          project.techs[i] === "html"
+            ? "fab fa-html5"
+            : project.techs[i] === "bootstrap"
+            ? "fab fa-bootstrap"
+            : project.techs[i] === "javascript"
+            ? "fab fa-js-square"
+            : project.techs[i] === "mysql"
+            ? "icon-mysql"
+            : project.techs[i] === "handlebars"
+            ? "icon-handlebars-alt"
+            : project.techs[i] === "sequelize"
+            ? "icon-sequelize-alt"
+            : project.techs[i] === "heroku"
+            ? "icon-heroku"
+            : project.techs[i] === "express"
+            ? "icon-express"
+            : "";
+        icon = icon + " fa-2x text-dark mr-2";
+
+        var $i = $("<i>").addClass(icon);
+        $("#detail-tech").append($i);
+      }
+
+      //Load Images
+
+      return;
+    }
+  });
+
   /*
     get info from button, get check all project details for matching name,
     create modal content. Clear modal content on close 
@@ -74,6 +117,9 @@ function handleDetailsClick() {
 
 function handleCloseModalClick() {
   //Clear modal content
+  $("#detail-name").empty();
+  $("#detail-role").empty();
+  $("#detail-tech").empty();
 }
 
 //#endregion
@@ -85,5 +131,6 @@ $().ready(function () {
   $(".nav-main").click(handleNavLinkClick);
   $(".nav-filter").click(handleFilterClick);
   $(".btn-details").click(handleDetailsClick);
+  $(".btn-close").click(handleCloseModalClick);
 });
 //#endregion
