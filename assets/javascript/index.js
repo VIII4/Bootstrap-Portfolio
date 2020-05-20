@@ -21,7 +21,18 @@ var seniorPets = new ProjectDetails(
   // Role
   "Frontend Developer",
   // Image file location
-  [],
+  {
+    desktop: [
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+    ],
+    mobile: [
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+    ],
+  },
   // Techs used
   ["html", "bootstrap", "mysql", "handlebars"],
   // Bullets
@@ -67,9 +78,10 @@ function handleFilterClick() {
 }
 
 function handleDetailsClick() {
+  //check screen size adjust for mobile
   var name = $(this).data("project");
+
   allProjectDetails.forEach(function (project) {
-    console.log(name, project.name);
     if (name === project.name) {
       //Update modal text content
       $("#detail-name").text(project.name);
@@ -103,16 +115,27 @@ function handleDetailsClick() {
         $("#detail-tech").append($i);
       }
 
-      //Load Images
+      var imgs;
+      //Adjust images and modal for screen
+      if (window.screen.width <= 400) {
+        //adjust modal to md
+        $(".modal-dialog").removeClass("modal-xl").addClass("modal-md");
+        imgs = project.images.mobile;
+      } else {
+        imgs = project.images.desktop;
+      }
 
+      //Load Images
+      for (var i = 0; i < imgs.length; i++) {
+        $("#carousel-img-" + i).attr("src", imgs[i]);
+      }
+
+      $("#details-modal").modal("show");
       return;
     }
-  });
 
-  /*
-    get info from button, get check all project details for matching name,
-    create modal content. Clear modal content on close 
-  */
+    //TO DO: enable modal
+  });
 }
 
 function handleCloseModalClick() {
@@ -120,6 +143,13 @@ function handleCloseModalClick() {
   $("#detail-name").empty();
   $("#detail-role").empty();
   $("#detail-tech").empty();
+  $(".carousel-inner").each(function () {
+    $(this).find("img").attr("src", "");
+  });
+  $(".modal-dialog").removeClass("modal-md").addClass("modal-xl");
+
+  //Close modal
+  $("#details-modal").modal("hide");
 }
 
 //#endregion

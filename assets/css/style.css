@@ -3,7 +3,7 @@
 html,
 body,
 header,
-.view {
+.scr-view {
   height: 100%;
 }
 
@@ -11,7 +11,7 @@ header,
   html,
   body,
   header,
-  .view {
+  .scr-view {
     height: 1000px;
   }
 }
@@ -20,7 +20,7 @@ header,
   html,
   body,
   header,
-  .view {
+  .scr-view {
     height: 700px;
   }
 }
