@@ -17,7 +17,7 @@ function ProjectDetails(name, roles, images, techs, bullets) {
 
 var seniorPets = new ProjectDetails(
   // Project Name
-  "SeniorPets",
+  "Senior Pets",
   // Role
   "Frontend Developer",
   // Image file location
@@ -43,7 +43,35 @@ var seniorPets = new ProjectDetails(
   ]
 );
 
-allProjectDetails.push(seniorPets);
+var loveBug = new ProjectDetails(
+  // Project Name
+  "LoveBug",
+  // Role
+  "Full Stack Developer",
+  // Image file location
+  {
+    desktop: [
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+    ],
+    mobile: [
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+    ],
+  },
+  // Techs used
+  ["html", "bootstrap", "mysql", "express"],
+  // Bullets
+  [
+    "CRUD blajaj an lj;k h;hkg ;k ;a ",
+    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
+    "lkugljh gljhf gluyfv",
+  ]
+);
+
+allProjectDetails.push(seniorPets, loveBug);
 
 //#endregion
 
@@ -138,7 +166,7 @@ function handleDetailsClick() {
   });
 }
 
-function handleCloseModalClick() {
+function handleModalCloseEvent() {
   //Clear modal content
   $("#detail-name").empty();
   $("#detail-role").empty();
@@ -147,9 +175,6 @@ function handleCloseModalClick() {
     $(this).find("img").attr("src", "");
   });
   $(".modal-dialog").removeClass("modal-md").addClass("modal-xl");
-
-  //Close modal
-  $("#details-modal").modal("hide");
 }
 
 //#endregion
@@ -161,6 +186,12 @@ $().ready(function () {
   $(".nav-main").click(handleNavLinkClick);
   $(".nav-filter").click(handleFilterClick);
   $(".btn-details").click(handleDetailsClick);
-  $(".btn-close").click(handleCloseModalClick);
+  $(".btn-close").click(function () {
+    $("#details-modal").modal("hide");
+  });
+});
+
+$("#details-modal").on("hidden.bs.modal", function (e) {
+  handleModalCloseEvent();
 });
 //#endregion

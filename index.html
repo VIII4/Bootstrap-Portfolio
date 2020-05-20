@@ -403,6 +403,7 @@
         <!-- Content -->
         <div class="container my-3">
           <!-- Filter Buttons -->
+          <!-- React, node, Express, JS, C#, Unity3d, VR, Babylon.js ...   -->
           <ul
             id="portfolio-tab"
             class="nav nav-pills nav-justified mb-3 p-2 border border-dark border-strong rounded"
@@ -499,19 +500,21 @@
               ></a>
             </li>
           </ul>
-
           <!-- ./ Filter Buttons -->
           <hr class="w-50 my-5" />
           <h2 id="filtered-by" class="text-center">All Projects</h2>
-
           <!-- Filtered Content -->
 
-          <!-- Project (Set up: put proper data tags for project, link deployed on button, add project name on details button data)-->
-          <div class="row p-3 my-3 project-panel" data-tags="">
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="mysql express html js"
+          >
             <!-- Project Name, Desc, details button-->
             <div class="col-12 col-md-4 order-last order-md-first">
               <div class="row">
-                <h2>SeniorPets</h2>
+                <h2>Senior Pets</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Quisque ut velit augue. Fusce sollicitudin lorem et finibus
@@ -521,11 +524,11 @@
                   tincidunt, luctus in odio. Donec non pulvinar ligula. Praesent
                   auctor a nisi sit amet tincidunt.
                 </p>
-
+                <!-- Data-Project: MUST MATCH PROJECT NAME OF OBJECT IN JS -->
                 <a
                   target="_blank"
                   class="btn btn-dark btn-details rounded"
-                  data-project="SeniorPets"
+                  data-project="Senior Pets"
                 >
                   Details
                 </a>
@@ -543,6 +546,54 @@
                 <img
                   class="img-fluid"
                   src="./assets/images/app-screens/seniorPets-main.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="html js mysql express"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-md-4 order-last order-md-first">
+              <div class="row">
+                <h2>LoveBug</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque ut velit augue. Fusce sollicitudin lorem et finibus
+                  posuere. Etiam et ultricies enim, sit amet eleifend lorem.
+                  Integer faucibus lorem eget est malesuada, eu placerat felis
+                  lobortis. Aliquam diam purus, tincidunt nec ultricies
+                  tincidunt, luctus in odio. Donec non pulvinar ligula. Praesent
+                  auctor a nisi sit amet tincidunt.
+                </p>
+
+                <a
+                  target="_blank"
+                  class="btn btn-dark btn-details rounded"
+                  data-project="LoveBug"
+                >
+                  Details
+                </a>
+                <a
+                  href="https://lovebug-app.herokuapp.com/"
+                  class="btn btn-outline-dark rounded"
+                >
+                  See Deployed
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col">
+              <div class="row">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/app-screens/loveBug-main.png"
                   alt=""
                 />
               </div>
