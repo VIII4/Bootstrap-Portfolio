@@ -71,7 +71,35 @@ var loveBug = new ProjectDetails(
   ]
 );
 
-allProjectDetails.push(seniorPets, loveBug);
+var trek = new ProjectDetails(
+  // Project Name
+  "Trek",
+  // Role
+  "Frontend Developer",
+  // Image file location
+  {
+    desktop: [
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+    ],
+    mobile: [
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+    ],
+  },
+  // Techs used
+  ["html", "bootstrap", "javascript"],
+  // Bullets
+  [
+    "CRUD blajaj an lj;k h;hkg ;k ;a ",
+    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
+    "lkugljh gljhf gluyfv",
+  ]
+);
+
+allProjectDetails.push(seniorPets, loveBug, trek);
 
 //#endregion
 
@@ -103,6 +131,7 @@ function handleFilterClick() {
       $(this).hide();
     }
   });
+  $("#filtered-by").text(filter.toUpperCase() + " PROJECTS");
 }
 
 function handleDetailsClick() {
@@ -137,7 +166,7 @@ function handleDetailsClick() {
             : project.techs[i] === "express"
             ? "icon-express"
             : "";
-        icon = icon + " fa-2x text-dark mr-2";
+        icon = icon + " fa-3x text-dark mr-3";
 
         var $i = $("<i>").addClass(icon);
         $("#detail-tech").append($i);
@@ -179,6 +208,125 @@ function handleModalCloseEvent() {
 
 //#endregion
 
+//Charts
+new Chart(document.getElementById("bar-chart-horizontal-1"), {
+  type: "horizontalBar",
+  data: {
+    labels: [
+      "Africa",
+      "Asia",
+      "Europe",
+      "Latin America",
+      "North America",
+      "x",
+      "x",
+      "x",
+    ],
+    datasets: [
+      {
+        barThickness: "flex",
+        backgroundColor: [
+          "#3e95cd",
+          "#8e5ea2",
+          "#3cba9f",
+          "#e8c3b9",
+          "#c45850",
+        ],
+        data: [5267, 2478, 784, 770, 725, 780, 734, 433],
+      },
+    ],
+  },
+  options: {
+    tooltips: { enabled: false },
+
+    legend: { display: false },
+    title: {
+      display: false,
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: { display: false },
+          reverse: true,
+        },
+      ],
+      xAxes: [
+        {
+          ticks: { display: false },
+          reverse: true,
+        },
+      ],
+    },
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+  },
+});
+
+new Chart(document.getElementById("bar-chart-horizontal-2"), {
+  type: "horizontalBar",
+  data: {
+    labels: [
+      "Africa",
+      "Asia",
+      "Europe",
+      "Latin America",
+      "North America",
+      "x",
+      "x",
+      "x",
+    ],
+    datasets: [
+      {
+        barThickness: "flex",
+        backgroundColor: [
+          "#3e95cd",
+          "#8e5ea2",
+          "#3cba9f",
+          "#e8c3b9",
+          "#c45850",
+        ],
+        data: [-5267, -2478, -784, -770, -725, -780, -734, -433],
+      },
+    ],
+  },
+  options: {
+    tooltips: { enabled: false },
+
+    legend: { display: false },
+    title: {
+      display: false,
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: { display: false },
+          reverse: true,
+        },
+      ],
+      xAxes: [
+        {
+          ticks: { display: false },
+          reverse: true,
+        },
+      ],
+    },
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+  },
+});
+
 //#region Events
 
 $().ready(function () {
@@ -194,4 +342,5 @@ $().ready(function () {
 $("#details-modal").on("hidden.bs.modal", function (e) {
   handleModalCloseEvent();
 });
+
 //#endregion

@@ -57,11 +57,13 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"
     ></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   </head>
 
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
       <a class="navbar-brand d-md-none" href="#">Iyan Laylor</a>
       <!-- Collapse button -->
       <button
@@ -153,9 +155,9 @@
     <!-- ./ Full Page Intro -->
 
     <!-- Main Content -->
-    <div class="container-fluid">
+    <div class="container">
       <!-- About  -->
-      <div id="about-content" class="row m-4">
+      <!-- <div id="about-content" class="row m-4">
         <div class="col-md-8 offset-md-2 bg-white">
           <h3 id="contentTitle" class="m-2">About Me</h3>
           <div class="row">
@@ -189,8 +191,99 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- ./ About -->
+
+      <!-- About -->
+      <div id="about-content" class="container-fluid p-3 my-3">
+        <!-- Photo and BIO -->
+        <div class="row p-3">
+          <div class="view overlay w-75 zoom mx-auto">
+            <img
+              class="img-fluid w-100"
+              src="assets/images/PhotoPlaceHolder.png"
+              alt=""
+            />
+            <div
+              class="mask d-flex justify-content-center align-items-center rgba-white-light"
+            >
+              <h3 class="text-light border-right mr-3 w-25">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <p class="text-light w-50">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
+                enim id arcu consectetur porttitor. Sed elit ipsum, fringilla ut
+                velit ornare, rutrum sagittis ligula. In pretium venenatis
+                laoreet. Quisque non maximus est, sed accumsan mauris. Nulla
+                augue nibh, finibus cursus ultrices venenatis, finibus ac ipsum.
+                Aenean sed dignissim purus. Pellentesque quis volutpat tortor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ./ Photo and BIO -->
+
+        <hr class="w-75" />
+
+        <!-- Titles Row -->
+        <div class="row justify-content-center my-2">
+          <div class="col text-center">
+            <h4>subtitle</h4>
+            <h2>Cooltitle #1</h2>
+          </div>
+          <div class="col text-center">
+            <h4>Multidisciplinary</h4>
+            <h2>Designer / Developer</h2>
+          </div>
+          <div class="col text-center">
+            <h4>subtitle</h4>
+            <h2>Cooltitle #2</h2>
+          </div>
+        </div>
+        <!-- ./ Titles -->
+
+        <!--  -->
+        <div class="row my-2">
+          <!-- Design graph -->
+          <div class="col h-100 p-0 m-0">
+            <canvas id="bar-chart-horizontal-2" height="200"></canvas>
+          </div>
+          <!-- ./ Design graph -->
+
+          <div class="col text-center">
+            <div class="row">
+              <!-- Design Skills -->
+              <div class="col">
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+              </div>
+              <!-- Developer Skills -->
+              <div class="col">
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Developer graph -->
+          <div class="col h-100 p-0 m-0">
+            <canvas id="bar-chart-horizontal-1" height="200"></canvas>
+          </div>
+          <!-- ./ Developer graph -->
+        </div>
+      </div>
+      <!-- About -->
 
       <hr class="w-75" />
 
@@ -404,6 +497,7 @@
         <div class="container my-3">
           <!-- Filter Buttons -->
           <!-- React, node, Express, JS, C#, Unity3d, VR, Babylon.js ...   -->
+          <!-- current filters: html, javascript, node, react, backend, unity3d -->
           <ul
             id="portfolio-tab"
             class="nav nav-pills nav-justified mb-3 p-2 border border-dark border-strong rounded"
@@ -418,7 +512,8 @@
                 role="tab"
                 aria-controls="all"
                 aria-selected="true"
-                ><i class="fas fa-ellipsis-h fa-3x"></i
+                ><i class="fas fa-ellipsis-h fa-3x"></i>
+                <p class="filter-text p-1"></p
               ></a>
             </li>
             <li class="nav-item">
@@ -431,8 +526,9 @@
                 role="tab"
                 aria-controls="all"
                 aria-selected="true"
-                ><i class="fab fa-html5 fa-3x"></i
-              ></a>
+                ><i class="fab fa-html5 fa-2x"></i>
+                <p class="filter-text">HTML</p></a
+              >
             </li>
             <li class="nav-item">
               <a
@@ -444,8 +540,11 @@
                 role="tab"
                 aria-controls="all"
                 aria-selected="true"
-                ><i class="fab fa-js-square fa-3x"></i
-              ></a>
+                ><i class="fab fa-js-square fa-2x"></i>
+                <p class="filter-text">
+                  Javascript
+                </p></a
+              >
             </li>
             <li class="nav-item">
               <a
@@ -457,8 +556,11 @@
                 role="tab"
                 aria-controls="all"
                 aria-selected="true"
-                ><i class="fab fa-node fa-3x"></i
-              ></a>
+                ><i class="fab fa-node fa-2x"></i>
+                <p class="filter-text">
+                  Node
+                </p></a
+              >
             </li>
             <li class="nav-item">
               <a
@@ -470,8 +572,11 @@
                 role="tab"
                 aria-controls="all"
                 aria-selected="true"
-                ><i class="fab fa-react fa-3x"></i
-              ></a>
+                ><i class="fab fa-react fa-2x"></i>
+                <p class="filter-text">
+                  React
+                </p></a
+              >
             </li>
             <li class="nav-item">
               <a
@@ -483,8 +588,11 @@
                 role="tab"
                 aria-controls="all"
                 aria-selected="true"
-                ><i class="fas fa-server fa-3x"></i
-              ></a>
+                ><i class="fas fa-server fa-2x"></i>
+                <p class="filter-text">
+                  Backend
+                </p></a
+              >
             </li>
             <li class="nav-item">
               <a
@@ -496,20 +604,21 @@
                 role="tab"
                 aria-controls="all"
                 aria-selected="true"
-                ><i class="fab fa-unity fa-3x"></i
-              ></a>
+                ><i class="fab fa-unity fa-2x"></i>
+                <p class="filter-text">Unity3D</p></a
+              >
             </li>
           </ul>
           <!-- ./ Filter Buttons -->
           <hr class="w-50 my-5" />
-          <h2 id="filtered-by" class="text-center">All Projects</h2>
+          <h2 id="filtered-by" class="text-center">ALL PROJECTS</h2>
           <!-- Filtered Content -->
 
           <!-- Project (Set up: put proper data tags for project, 
             link deployed on button, add project name on details button data)-->
           <div
             class="row p-3 my-3 project-panel"
-            data-tags="mysql express html js"
+            data-tags="mysql express html javascript node"
           >
             <!-- Project Name, Desc, details button-->
             <div class="col-12 col-md-4 order-last order-md-first">
@@ -527,16 +636,23 @@
                 <!-- Data-Project: MUST MATCH PROJECT NAME OF OBJECT IN JS -->
                 <a
                   target="_blank"
-                  class="btn btn-dark btn-details rounded"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
                   data-project="Senior Pets"
                 >
                   Details
                 </a>
+
                 <a
                   href="https://seniorpets22.herokuapp.com/"
-                  class="btn btn-outline-dark rounded"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
                 >
                   See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/SeniorPets"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
                 </a>
               </div>
             </div>
@@ -557,7 +673,7 @@
             link deployed on button, add project name on details button data)-->
           <div
             class="row p-3 my-3 project-panel"
-            data-tags="html js mysql express"
+            data-tags="html javascript backend node"
           >
             <!-- Project Name, Desc, details button-->
             <div class="col-12 col-md-4 order-last order-md-first">
@@ -575,16 +691,22 @@
 
                 <a
                   target="_blank"
-                  class="btn btn-dark btn-details rounded"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
                   data-project="LoveBug"
                 >
                   Details
                 </a>
                 <a
                   href="https://lovebug-app.herokuapp.com/"
-                  class="btn btn-outline-dark rounded"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
                 >
                   See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/LoveBug"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
                 </a>
               </div>
             </div>
@@ -594,6 +716,60 @@
                 <img
                   class="img-fluid"
                   src="./assets/images/app-screens/loveBug-main.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="html javascript bootstrap"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-md-4 order-last order-md-first">
+              <div class="row">
+                <h2>Trek</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque ut velit augue. Fusce sollicitudin lorem et finibus
+                  posuere. Etiam et ultricies enim, sit amet eleifend lorem.
+                  Integer faucibus lorem eget est malesuada, eu placerat felis
+                  lobortis. Aliquam diam purus, tincidunt nec ultricies
+                  tincidunt, luctus in odio. Donec non pulvinar ligula. Praesent
+                  auctor a nisi sit amet tincidunt.
+                </p>
+
+                <a
+                  target="_blank"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
+                  data-project="Trek"
+                >
+                  Details
+                </a>
+                <a
+                  href="https://benjamintownsend02.github.io/TrekProject/"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
+                >
+                  See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/Trek"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col">
+              <div class="row">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/app-screens/trek-main.png"
                   alt=""
                 />
               </div>
