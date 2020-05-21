@@ -54,6 +54,7 @@ header,
 
 .nav-link.nav-filter {
   color: #1c2331;
+  padding: 0.25rem;
 }
 
 .nav-link.nav-filter.active {
@@ -64,4 +65,22 @@ header,
   border-width: 2px !important;
 }
 
+.filter-text {
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
 /* ./ Filter Nav tabs */
+
+.git-link {
+  padding-right: 1rem !important;
+
+  padding-left: 1rem !important;
+}
+
+.btn-project {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}

@@ -17,7 +17,7 @@ function ProjectDetails(name, roles, images, techs, bullets) {
 
 var seniorPets = new ProjectDetails(
   // Project Name
-  "SeniorPets",
+  "Senior Pets",
   // Role
   "Frontend Developer",
   // Image file location
@@ -43,7 +43,63 @@ var seniorPets = new ProjectDetails(
   ]
 );
 
-allProjectDetails.push(seniorPets);
+var loveBug = new ProjectDetails(
+  // Project Name
+  "LoveBug",
+  // Role
+  "Full Stack Developer",
+  // Image file location
+  {
+    desktop: [
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+    ],
+    mobile: [
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+    ],
+  },
+  // Techs used
+  ["html", "bootstrap", "mysql", "express"],
+  // Bullets
+  [
+    "CRUD blajaj an lj;k h;hkg ;k ;a ",
+    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
+    "lkugljh gljhf gluyfv",
+  ]
+);
+
+var trek = new ProjectDetails(
+  // Project Name
+  "Trek",
+  // Role
+  "Frontend Developer",
+  // Image file location
+  {
+    desktop: [
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+    ],
+    mobile: [
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+    ],
+  },
+  // Techs used
+  ["html", "bootstrap", "javascript"],
+  // Bullets
+  [
+    "CRUD blajaj an lj;k h;hkg ;k ;a ",
+    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
+    "lkugljh gljhf gluyfv",
+  ]
+);
+
+allProjectDetails.push(seniorPets, loveBug, trek);
 
 //#endregion
 
@@ -75,6 +131,7 @@ function handleFilterClick() {
       $(this).hide();
     }
   });
+  $("#filtered-by").text(filter.toUpperCase() + " PROJECTS");
 }
 
 function handleDetailsClick() {
@@ -109,7 +166,7 @@ function handleDetailsClick() {
             : project.techs[i] === "express"
             ? "icon-express"
             : "";
-        icon = icon + " fa-2x text-dark mr-2";
+        icon = icon + " fa-3x text-dark mr-3";
 
         var $i = $("<i>").addClass(icon);
         $("#detail-tech").append($i);
@@ -138,7 +195,7 @@ function handleDetailsClick() {
   });
 }
 
-function handleCloseModalClick() {
+function handleModalCloseEvent() {
   //Clear modal content
   $("#detail-name").empty();
   $("#detail-role").empty();
@@ -147,12 +204,128 @@ function handleCloseModalClick() {
     $(this).find("img").attr("src", "");
   });
   $(".modal-dialog").removeClass("modal-md").addClass("modal-xl");
-
-  //Close modal
-  $("#details-modal").modal("hide");
 }
 
 //#endregion
+
+//Charts
+new Chart(document.getElementById("bar-chart-horizontal-1"), {
+  type: "horizontalBar",
+  data: {
+    labels: [
+      "Africa",
+      "Asia",
+      "Europe",
+      "Latin America",
+      "North America",
+      "x",
+      "x",
+      "x",
+    ],
+    datasets: [
+      {
+        barThickness: "flex",
+        backgroundColor: [
+          "#3e95cd",
+          "#8e5ea2",
+          "#3cba9f",
+          "#e8c3b9",
+          "#c45850",
+        ],
+        data: [5267, 2478, 784, 770, 725, 780, 734, 433],
+      },
+    ],
+  },
+  options: {
+    tooltips: { enabled: false },
+
+    legend: { display: false },
+    title: {
+      display: false,
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: { display: false },
+          reverse: true,
+        },
+      ],
+      xAxes: [
+        {
+          ticks: { display: false },
+          reverse: true,
+        },
+      ],
+    },
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+  },
+});
+
+new Chart(document.getElementById("bar-chart-horizontal-2"), {
+  type: "horizontalBar",
+  data: {
+    labels: [
+      "Africa",
+      "Asia",
+      "Europe",
+      "Latin America",
+      "North America",
+      "x",
+      "x",
+      "x",
+    ],
+    datasets: [
+      {
+        barThickness: "flex",
+        backgroundColor: [
+          "#3e95cd",
+          "#8e5ea2",
+          "#3cba9f",
+          "#e8c3b9",
+          "#c45850",
+        ],
+        data: [-5267, -2478, -784, -770, -725, -780, -734, -433],
+      },
+    ],
+  },
+  options: {
+    tooltips: { enabled: false },
+
+    legend: { display: false },
+    title: {
+      display: false,
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: { display: false },
+          reverse: true,
+        },
+      ],
+      xAxes: [
+        {
+          ticks: { display: false },
+          reverse: true,
+        },
+      ],
+    },
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+  },
+});
 
 //#region Events
 
@@ -161,6 +334,13 @@ $().ready(function () {
   $(".nav-main").click(handleNavLinkClick);
   $(".nav-filter").click(handleFilterClick);
   $(".btn-details").click(handleDetailsClick);
-  $(".btn-close").click(handleCloseModalClick);
+  $(".btn-close").click(function () {
+    $("#details-modal").modal("hide");
+  });
 });
+
+$("#details-modal").on("hidden.bs.modal", function (e) {
+  handleModalCloseEvent();
+});
+
 //#endregion
