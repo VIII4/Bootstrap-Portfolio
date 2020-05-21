@@ -12,10 +12,13 @@
     </title>
 
     <!--               CSS             -->
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
     />
     <!-- Google Fonts -->
 
@@ -30,6 +33,7 @@
       rel="stylesheet"
     />
     <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!--            Javascript       -->
@@ -53,11 +57,13 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"
     ></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   </head>
 
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
       <a class="navbar-brand d-md-none" href="#">Iyan Laylor</a>
       <!-- Collapse button -->
       <button
@@ -80,12 +86,18 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link mr-md-5" data-target="#about-content" href="#"
+            <a
+              class="nav-link nav-main mr-md-5"
+              data-target="#about-content"
+              href="#"
               >About</a
             >
           </li>
           <li class="nav-item mr-md-5">
-            <a class="nav-link" data-target="#portfolio-content" href="#"
+            <a
+              class="nav-link nav-main"
+              data-target="#portfolio-content"
+              href="#"
               >Portfolio</a
             >
           </li>
@@ -94,10 +106,10 @@
             <span class="navbar-brand text-center mx-md-5">Iyan Laylor</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link ml-md-5" href="#">Blog</a>
+            <a class="nav-link nav-main ml-md-5" href="#">Blog</a>
           </li>
           <li class="nav-item ml-md-5">
-            <a class="nav-link" data-target="#contact-content" href="#"
+            <a class="nav-link nav-main" data-target="#contact-content" href="#"
               >Contact</a
             >
           </li>
@@ -108,7 +120,7 @@
     </nav>
 
     <!-- Full Page Intro -->
-    <div class="view">
+    <div class="view scr-view">
       <video
         class="video-intro"
         poster="https://mdbootstrap.com/img/Photos/Others/background.jpg"
@@ -143,78 +155,15 @@
     <!-- ./ Full Page Intro -->
 
     <!-- Main Content -->
-    <div class="container-fluid">
+    <div class="container">
       <!-- About  -->
       <!-- <div id="about-content" class="row m-4">
-        <div class="col-md"></div>
-        <div class="col-md-8 mt-5 bg-white">
-          <div class="row">
-            <div class="col">
-              <div class="row pb-3">
-                <h3 id="contentTitle" class="m-2">About Me</h3>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xl-4 mx-2">
-              <img
-                src="assets/images/ProfilePic.jpg"
-                alt=""
-                class="img-thumbnail"
-              />
-            </div>
-            <div class="col-xl-7 mx-2 mt-2">
-              <p
-                style="
-                  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-                  color: #777777;
-                  font-size: 24px;
-                "
-              >
-                About Me? hmmm where should I start? I was born and raised in
-                New York City, Harlem to be exact. I grew in the 90's and
-                2000's, which was a wild time to be where I'm from. I Left in
-                2004 and joined the Military, where I traveled the world serving
-                the country and all that other fun stuff. Met my wife, left the
-                military, had my son and packed up and moved to California to go
-                to school. I got my Bachelors in Game Art and Design down in Los
-                Angeles, then moved to the Bay Area in 2014.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md mx-2">
-              <p
-                style="
-                  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-                  color: #777777;
-                  font-size: 24px;
-                "
-              >
-                In the last few years I did alot of freelance work while doing
-                senior management at logistics companies (military background),
-                until I decided to start my own company, an immersive
-                entertainment studio focusing on media content designed for
-                emerging technologies like virtual reality. If im not churning
-                away at 3d art assets, designing interactive content or
-                attempting to learn C#, I'm playing Minecraft, Brawlhalla, or
-                Monster Hunter World with my 9 year old son.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md"></div>
-      </div> -->
-      <!-- ./ About -->
-
-      <!-- About  -->
-      <div id="about-content" class="row m-4">
         <div class="col-md-8 offset-md-2 bg-white">
           <h3 id="contentTitle" class="m-2">About Me</h3>
           <div class="row">
             <div class="col-12 col-md-4">
               <img
-                class="profile-pic img-thumbnail"
+                class="profile-pic img-thumbnail img-fluid"
                 src="assets/images/ProfilePic.jpg"
                 alt=""
               />
@@ -242,14 +191,105 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- ./ About -->
 
-      <hr class="w-50" />
+      <!-- About -->
+      <div id="about-content" class="container-fluid p-3 my-3">
+        <!-- Photo and BIO -->
+        <div class="row p-3">
+          <div class="view overlay w-75 zoom mx-auto">
+            <img
+              class="img-fluid w-100"
+              src="assets/images/PhotoPlaceHolder.png"
+              alt=""
+            />
+            <div
+              class="mask d-flex justify-content-center align-items-center rgba-white-light"
+            >
+              <h3 class="text-light border-right mr-3 w-25">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <p class="text-light w-50">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
+                enim id arcu consectetur porttitor. Sed elit ipsum, fringilla ut
+                velit ornare, rutrum sagittis ligula. In pretium venenatis
+                laoreet. Quisque non maximus est, sed accumsan mauris. Nulla
+                augue nibh, finibus cursus ultrices venenatis, finibus ac ipsum.
+                Aenean sed dignissim purus. Pellentesque quis volutpat tortor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ./ Photo and BIO -->
+
+        <hr class="w-75" />
+
+        <!-- Titles Row -->
+        <div class="row justify-content-center my-2">
+          <div class="col text-center">
+            <h4>subtitle</h4>
+            <h2>Cooltitle #1</h2>
+          </div>
+          <div class="col text-center">
+            <h4>Multidisciplinary</h4>
+            <h2>Designer / Developer</h2>
+          </div>
+          <div class="col text-center">
+            <h4>subtitle</h4>
+            <h2>Cooltitle #2</h2>
+          </div>
+        </div>
+        <!-- ./ Titles -->
+
+        <!--  -->
+        <div class="row my-2">
+          <!-- Design graph -->
+          <div class="col h-100 p-0 m-0">
+            <canvas id="bar-chart-horizontal-2" height="200"></canvas>
+          </div>
+          <!-- ./ Design graph -->
+
+          <div class="col text-center">
+            <div class="row">
+              <!-- Design Skills -->
+              <div class="col">
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+              </div>
+              <!-- Developer Skills -->
+              <div class="col">
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+                <h5>Skill</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Developer graph -->
+          <div class="col h-100 p-0 m-0">
+            <canvas id="bar-chart-horizontal-1" height="200"></canvas>
+          </div>
+          <!-- ./ Developer graph -->
+        </div>
+      </div>
+      <!-- About -->
+
+      <hr class="w-75" />
 
       <!-- Portfolio -->
       <div id="portfolio-content" class="row m-0 mx-sm-4 my-sm-4 center-text">
-        <div class="col"></div>
+        <!-- <div class="col"></div>
         <div class="col-10 col-md-8 mt-5 bg-white">
           <div class="row pb-3">
             <h3 id="contentTitle" class="m-2">Portfolio</h3>
@@ -257,7 +297,6 @@
           <div class="row">
             <div class="col">
               <div class="row">
-                <!-- Insert Portfolio Gallery Here -->
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-3">
                   <div class="col mb-4">
                     <div class="card">
@@ -452,11 +491,299 @@
           </div>
           <div class="row"></div>
         </div>
-        <div class="col"></div>
+        <div class="col"></div> -->
+
+        <!-- Content -->
+        <div class="container my-3">
+          <!-- Filter Buttons -->
+          <!-- React, node, Express, JS, C#, Unity3d, VR, Babylon.js ...   -->
+          <!-- current filters: html, javascript, node, react, backend, unity3d -->
+          <ul
+            id="portfolio-tab"
+            class="nav nav-pills nav-justified mb-3 p-2 border border-dark border-strong rounded"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter active"
+                id="all-tab"
+                data-toggle="tab"
+                data-filter="all"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fas fa-ellipsis-h fa-3x"></i>
+                <p class="filter-text p-1"></p
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="html-tab"
+                data-toggle="tab"
+                data-filter="html"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-html5 fa-2x"></i>
+                <p class="filter-text">HTML</p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="js-tab"
+                data-toggle="tab"
+                data-filter="javascript"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-js-square fa-2x"></i>
+                <p class="filter-text">
+                  Javascript
+                </p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="node-tab"
+                data-toggle="tab"
+                data-filter="node"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-node fa-2x"></i>
+                <p class="filter-text">
+                  Node
+                </p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="react-tab"
+                data-toggle="tab"
+                data-filter="react"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-react fa-2x"></i>
+                <p class="filter-text">
+                  React
+                </p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="backend-tab"
+                data-toggle="tab"
+                data-filter="backend"
+                href="#js-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fas fa-server fa-2x"></i>
+                <p class="filter-text">
+                  Backend
+                </p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="unity3d-tab"
+                data-toggle="tab"
+                data-filter="unity3d"
+                href="#js-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-unity fa-2x"></i>
+                <p class="filter-text">Unity3D</p></a
+              >
+            </li>
+          </ul>
+          <!-- ./ Filter Buttons -->
+          <hr class="w-50 my-5" />
+          <h2 id="filtered-by" class="text-center">ALL PROJECTS</h2>
+          <!-- Filtered Content -->
+
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="mysql express html javascript node"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-md-4 order-last order-md-first">
+              <div class="row">
+                <h2>Senior Pets</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque ut velit augue. Fusce sollicitudin lorem et finibus
+                  posuere. Etiam et ultricies enim, sit amet eleifend lorem.
+                  Integer faucibus lorem eget est malesuada, eu placerat felis
+                  lobortis. Aliquam diam purus, tincidunt nec ultricies
+                  tincidunt, luctus in odio. Donec non pulvinar ligula. Praesent
+                  auctor a nisi sit amet tincidunt.
+                </p>
+                <!-- Data-Project: MUST MATCH PROJECT NAME OF OBJECT IN JS -->
+                <a
+                  target="_blank"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
+                  data-project="Senior Pets"
+                >
+                  Details
+                </a>
+
+                <a
+                  href="https://seniorpets22.herokuapp.com/"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
+                >
+                  See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/SeniorPets"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col">
+              <div class="row">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/app-screens/seniorPets-main.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="html javascript backend node"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-md-4 order-last order-md-first">
+              <div class="row">
+                <h2>LoveBug</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque ut velit augue. Fusce sollicitudin lorem et finibus
+                  posuere. Etiam et ultricies enim, sit amet eleifend lorem.
+                  Integer faucibus lorem eget est malesuada, eu placerat felis
+                  lobortis. Aliquam diam purus, tincidunt nec ultricies
+                  tincidunt, luctus in odio. Donec non pulvinar ligula. Praesent
+                  auctor a nisi sit amet tincidunt.
+                </p>
+
+                <a
+                  target="_blank"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
+                  data-project="LoveBug"
+                >
+                  Details
+                </a>
+                <a
+                  href="https://lovebug-app.herokuapp.com/"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
+                >
+                  See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/LoveBug"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col">
+              <div class="row">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/app-screens/loveBug-main.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="html javascript bootstrap"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-md-4 order-last order-md-first">
+              <div class="row">
+                <h2>Trek</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque ut velit augue. Fusce sollicitudin lorem et finibus
+                  posuere. Etiam et ultricies enim, sit amet eleifend lorem.
+                  Integer faucibus lorem eget est malesuada, eu placerat felis
+                  lobortis. Aliquam diam purus, tincidunt nec ultricies
+                  tincidunt, luctus in odio. Donec non pulvinar ligula. Praesent
+                  auctor a nisi sit amet tincidunt.
+                </p>
+
+                <a
+                  target="_blank"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
+                  data-project="Trek"
+                >
+                  Details
+                </a>
+                <a
+                  href="https://benjamintownsend02.github.io/TrekProject/"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
+                >
+                  See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/Trek"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col">
+              <div class="row">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/app-screens/trek-main.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- ./ Filtered Content -->
+        </div>
+        <!-- ./ Content  -->
       </div>
       <!-- ./ Portfolio -->
 
-      <hr class="w-50" />
+      <hr class="w-75" />
 
       <!-- Contact -->
       <div id="contact-content" class="row m-4">
@@ -543,6 +870,98 @@
       <!--/.Copyright-->
     </footer>
     <!-- ./ Footer -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="details-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span
+              ><h3 id="detail-name" class="h3-responsive">
+                <strong></strong>
+              </h3>
+              <h5 id="detail-role" class="h5-responsive"></h5
+            ></span>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <!--Carousel Wrapper-->
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="carousel-img-0"
+                      class="d-block w-100"
+                      alt="First slide"
+                    />
+                    <div class="view"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="carousel-img-1"
+                      class="d-block w-100"
+                      alt="Second slide"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="carousel-img-2"
+                      class="d-block w-100"
+                      alt="Third slide"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleControls"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleControls"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!--/.Carousel Wrapper-->
+            </div>
+            <div class="row p-2 m-2">
+              <span id="detail-tech" class="mr-3 mt-2 mx-auto"> </span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-close btn-outline-dark">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./ Modal -->
 
     <!-- iniatilize WOW -->
     <!-- <script type="text/javascript">

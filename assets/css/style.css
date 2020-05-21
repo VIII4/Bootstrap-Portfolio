@@ -3,7 +3,7 @@
 html,
 body,
 header,
-.view {
+.scr-view {
   height: 100%;
 }
 
@@ -11,7 +11,7 @@ header,
   html,
   body,
   header,
-  .view {
+  .scr-view {
     height: 1000px;
   }
 }
@@ -20,7 +20,7 @@ header,
   html,
   body,
   header,
-  .view {
+  .scr-view {
     height: 700px;
   }
 }
@@ -46,4 +46,41 @@ header,
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   color: #777777;
   font-size: 24px;
+}
+
+/* ./ Typography */
+
+/* Filter Nav tabs */
+
+.nav-link.nav-filter {
+  color: #1c2331;
+  padding: 0.25rem;
+}
+
+.nav-link.nav-filter.active {
+  background-color: #1c2331;
+}
+
+.border-strong {
+  border-width: 2px !important;
+}
+
+.filter-text {
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+/* ./ Filter Nav tabs */
+
+.git-link {
+  padding-right: 1rem !important;
+
+  padding-left: 1rem !important;
+}
+
+.btn-project {
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
