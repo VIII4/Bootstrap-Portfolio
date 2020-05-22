@@ -208,125 +208,6 @@ function handleModalCloseEvent() {
 
 //#endregion
 
-//Charts
-new Chart(document.getElementById("bar-chart-horizontal-1"), {
-  type: "horizontalBar",
-  data: {
-    labels: [
-      "Africa",
-      "Asia",
-      "Europe",
-      "Latin America",
-      "North America",
-      "x",
-      "x",
-      "x",
-    ],
-    datasets: [
-      {
-        barThickness: "flex",
-        backgroundColor: [
-          "#3e95cd",
-          "#8e5ea2",
-          "#3cba9f",
-          "#e8c3b9",
-          "#c45850",
-        ],
-        data: [5267, 2478, 784, 770, 725, 780, 734, 433],
-      },
-    ],
-  },
-  options: {
-    tooltips: { enabled: false },
-
-    legend: { display: false },
-    title: {
-      display: false,
-    },
-    scales: {
-      yAxes: [
-        {
-          ticks: { display: false },
-          reverse: true,
-        },
-      ],
-      xAxes: [
-        {
-          ticks: { display: false },
-          reverse: true,
-        },
-      ],
-    },
-    layout: {
-      padding: {
-        left: 0,
-        right: 0,
-        top: 0,
-        bottom: 0,
-      },
-    },
-  },
-});
-
-new Chart(document.getElementById("bar-chart-horizontal-2"), {
-  type: "horizontalBar",
-  data: {
-    labels: [
-      "Africa",
-      "Asia",
-      "Europe",
-      "Latin America",
-      "North America",
-      "x",
-      "x",
-      "x",
-    ],
-    datasets: [
-      {
-        barThickness: "flex",
-        backgroundColor: [
-          "#3e95cd",
-          "#8e5ea2",
-          "#3cba9f",
-          "#e8c3b9",
-          "#c45850",
-        ],
-        data: [-5267, -2478, -784, -770, -725, -780, -734, -433],
-      },
-    ],
-  },
-  options: {
-    tooltips: { enabled: false },
-
-    legend: { display: false },
-    title: {
-      display: false,
-    },
-    scales: {
-      yAxes: [
-        {
-          ticks: { display: false },
-          reverse: true,
-        },
-      ],
-      xAxes: [
-        {
-          ticks: { display: false },
-          reverse: true,
-        },
-      ],
-    },
-    layout: {
-      padding: {
-        left: 0,
-        right: 0,
-        top: 0,
-        bottom: 0,
-      },
-    },
-  },
-});
-
 //#region Events
 
 $().ready(function () {
@@ -337,6 +218,8 @@ $().ready(function () {
   $(".btn-close").click(function () {
     $("#details-modal").modal("hide");
   });
+  setChartNames();
+  triggerFinder();
 });
 
 $("#details-modal").on("hidden.bs.modal", function (e) {
