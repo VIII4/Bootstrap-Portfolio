@@ -99,7 +99,63 @@ var trek = new ProjectDetails(
   ]
 );
 
-allProjectDetails.push(seniorPets, loveBug, trek);
+var clickyGame = new ProjectDetails(
+  // Project Name
+  "Smashy Clicky Game",
+  // Role
+  "React Developer",
+  // Image file location
+  {
+    desktop: [
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+    ],
+    mobile: [
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+    ],
+  },
+  // Techs used
+  ["html", "bootstrap", "javascript"],
+  // Bullets
+  [
+    "CRUD blajaj an lj;k h;hkg ;k ;a ",
+    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
+    "lkugljh gljhf gluyfv",
+  ]
+);
+
+var googleBooks = new ProjectDetails(
+  // Project Name
+  "Google Books",
+  // Role
+  "MERN Full Stack Developer",
+  // Image file location
+  {
+    desktop: [
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+    ],
+    mobile: [
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+    ],
+  },
+  // Techs used
+  ["html", "bootstrap", "javascript"],
+  // Bullets
+  [
+    "CRUD blajaj an lj;k h;hkg ;k ;a ",
+    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
+    "lkugljh gljhf gluyfv",
+  ]
+);
+
+allProjectDetails.push(seniorPets, loveBug, trek, clickyGame, googleBooks);
 
 //#endregion
 
