@@ -10,17 +10,13 @@ var chartData = {
     { skill: "VR/AR Design", value: "70" },
     { skill: "3D Modeling", value: "55" },
     { skill: "Graphic Design", value: "50" },
-    { skill: "Motion Graphics", value: "35" },
-    { skill: "3D Animation", value: "30" },
   ],
   developer: [
     { skill: "Unity3D", value: "95" },
     { skill: "Javascript", value: "80" },
-    { skill: "WebGL/WebXR (Babylon.js)", value: "75" },
-    { skill: "React", value: "5" },
-    { skill: "Node.js", value: "55" },
-    { skill: "MySQL", value: "35" },
-    { skill: "Electron", value: "5" },
+    { skill: "React", value: "80" },
+    { skill: "WebGL/WebXR", value: "75" },
+    { skill: "MERN", value: "70" },
   ],
 };
 

@@ -63,7 +63,7 @@
 
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
       <a class="navbar-brand d-md-none" href="#">Iyan Laylor</a>
       <!-- Collapse button -->
       <button
@@ -121,6 +121,7 @@
 
     <!-- Full Page Intro -->
     <div class="view scr-view">
+      <!-- Possibly do a canvas here... -->
       <video
         class="video-intro"
         poster="https://mdbootstrap.com/img/Photos/Others/background.jpg"
@@ -139,14 +140,77 @@
       <div
         class="mask rgba-black-light d-flex justify-content-center align-items-center"
       >
-        <!-- Place Cover Content HERE -->
-        <div class="text-center white-text mx-5 wow fadeIn">
-          <h1 class="display-4 mb-4">
-            <strong>Full Stack Developer &&</strong>
-          </h1>
-          <h1 class="display-4 mb-4">
-            <strong>Interactive Content Designer</strong>
-          </h1>
+        <!-- Place Content over BG here, if we want the page to scroll over BG add  -->
+        <div class="container h-100 mw-100 p-3">
+          <div class="row h-100 w-100 m-0">
+            <div class="col-1">
+              <div class="row h-100 p-3">
+                <div class="col align-self-end mb-5 p-0 text-center">
+                  <!-- List of Social Links -->
+                  <ul class="social-list">
+                    <li class="social-list-item">
+                      <a href="https://github.com/VIII4" target="_blank">
+                        <i class="fab fa-github fa-3x fa-social-list"></i>
+                      </a>
+                    </li>
+                    <li class="social-list-item">
+                      <a
+                        href="https://www.linkedin.com/in/iyanlaylor"
+                        target="_blank"
+                        ><i class="fab fa-linkedin fa-3x fa-social-list"></i
+                      ></a>
+                    </li>
+                    <li class="social-list-item">
+                      <a
+                        href="https://stackoverflow.com/users/12654186/"
+                        target="_blank"
+                        ><i
+                          class="fab fa-stack-overflow fa-3x fa-social-list"
+                        ></i
+                      ></a>
+                    </li>
+                    <li class="social-list-item">
+                      <a href="" target="_blank">
+                        <i class="fab fa-codepen fa-3x fa-social-list"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Vertical Social Links -->
+            </div>
+            <div class="col-10">
+              <div class="row p-1 h-25"></div>
+              <div class="row p-1 h-50 d-flex justify-content-center">
+                <div class="col-8 align-self-center text-center">
+                  <h1 class="display-3 text-white cover-text">
+                    Web || XR || Native
+                  </h1>
+                  <hr class="white" />
+                  <h5 class="text-muted cover-subtext">
+                    Full Stack Developer and Interactive Content Designer
+                  </h5>
+                </div>
+              </div>
+              <div class="row p-1 h-25"></div>
+            </div>
+            <div class="col-1">
+              <!-- Contact Modal -->
+              <div class="row h-100 p-3">
+                <div class="col align-self-end mb-5 p-0">
+                  <div class="row">
+                    <span class="mx-auto mb-3"
+                      ><a href="" target="_blank">
+                        <i
+                          class="far fa-comment-alt fa-3x fa-social-list"
+                        ></i> </a
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Content -->
       </div>
@@ -228,16 +292,16 @@
         <!-- Titles Row -->
         <div class="row justify-content-center my-2 trigger">
           <div class="col text-center">
-            <h4>subtitle</h4>
-            <h2>Cooltitle #1</h2>
+            <h4>Passionate & Resourceful</h4>
+            <h2></h2>
           </div>
           <div class="col text-center">
             <h4>Multidisciplinary</h4>
             <h2>Designer / Developer</h2>
           </div>
           <div class="col text-center">
-            <h4>subtitle</h4>
-            <h2>Cooltitle #2</h2>
+            <h4>Effecient & Proactive</h4>
+            <h2>Executor</h2>
           </div>
         </div>
         <!-- ./ Titles -->
@@ -541,136 +605,6 @@
             class="col-2 bg-dark border-custom border border-dark ml-0 text-light text-center d-flex justify-content-start"
           >
             <h6 id="developer-title-4" class="px-2 py-1"></h6>
-          </div>
-          <div
-            class="col mr-0 p-0 border border-custom border-dark rounded-right"
-          >
-            <div class="progress h-100">
-              <div
-                class="progress-bar bg-dark developer-chart"
-                role="progressbar"
-                data-target="pos"
-                style="width: 0%;"
-                aria-valuenow="15"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-              <div
-                class="progress-bar bg-light developer-chart"
-                role="progressbar"
-                data-target="neg"
-                style="width: 0%;"
-                aria-valuenow="30"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-        </div>
-        <!-- Chart Row -->
-
-        <!-- Chart Row -->
-        <div class="row my-2 skill-row">
-          <!-- Left Chart -->
-          <div
-            class="col mr-0 p-0 border border-custom border-dark rounded-left"
-          >
-            <div class="progress h-100">
-              <div
-                class="progress-bar designer-chart bg-light"
-                role="progressbar"
-                data-target="neg"
-                style="width: 100%;"
-                aria-valuenow="15"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-              <div
-                class="progress-bar designer-chart bg-dark"
-                role="progressbar"
-                data-target="pos"
-                style="width: 0%;"
-                aria-valuenow="30"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div
-            class="col-2 bg-dark border-custom border border-dark ml-0 text-light text-center mr-2 d-flex justify-content-end"
-          >
-            <h6 id="designer-title-5" class="h6-responsive px-2 py-1"></h6>
-          </div>
-          <!-- Right Chart -->
-          <div
-            class="col-2 bg-dark border-custom border border-dark ml-0 text-light text-center d-flex justify-content-start"
-          >
-            <h6 id="developer-title-5" class="px-2 py-1"></h6>
-          </div>
-          <div
-            class="col mr-0 p-0 border border-custom border-dark rounded-right"
-          >
-            <div class="progress h-100">
-              <div
-                class="progress-bar bg-dark developer-chart"
-                role="progressbar"
-                data-target="pos"
-                style="width: 0%;"
-                aria-valuenow="15"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-              <div
-                class="progress-bar bg-light developer-chart"
-                role="progressbar"
-                data-target="neg"
-                style="width: 0%;"
-                aria-valuenow="30"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-        </div>
-        <!-- Chart Row -->
-
-        <!-- Chart Row -->
-        <div class="row my-2 skill-row">
-          <!-- Left Chart -->
-          <div
-            class="col mr-0 p-0 border border-custom border-dark rounded-left"
-          >
-            <div class="progress h-100">
-              <div
-                class="progress-bar designer-chart bg-light"
-                role="progressbar"
-                data-target="neg"
-                style="width: 100%;"
-                aria-valuenow="15"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-              <div
-                class="progress-bar designer-chart bg-dark"
-                role="progressbar"
-                data-target="pos"
-                style="width: 0%;"
-                aria-valuenow="30"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div
-            class="col-2 bg-dark border-custom border border-dark ml-0 text-light text-center mr-2 d-flex justify-content-end"
-          >
-            <h6 id="designer-title-6" class="px-2 py-1"></h6>
-          </div>
-          <!-- Right Chart -->
-          <div
-            class="col-2 bg-dark border-custom border border-dark ml-0 text-light text-center d-flex justify-content-start"
-          >
-            <h6 id="developer-title-6" class="px-2 py-1"></h6>
           </div>
           <div
             class="col mr-0 p-0 border border-custom border-dark rounded-right"
@@ -1400,7 +1334,7 @@
     </footer>
     <!-- ./ Footer -->
 
-    <!-- Modal -->
+    <!-- Portfolio Details Modal -->
     <div
       class="modal fade"
       id="details-modal"
@@ -1491,6 +1425,48 @@
       </div>
     </div>
     <!-- ./ Modal -->
+
+    <!-- Contact Me Modal -->
+    <div
+      class="modal fade right"
+      id="contactFormModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalPreviewLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-side modal-bottom-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalPreviewLabel">
+              Contact Me
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
 
     <!-- iniatilize WOW -->
     <!-- <script type="text/javascript">
