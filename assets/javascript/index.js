@@ -155,7 +155,42 @@ var googleBooks = new ProjectDetails(
   ]
 );
 
-allProjectDetails.push(seniorPets, loveBug, trek, clickyGame, googleBooks);
+var caren = new ProjectDetails(
+  // Project Name
+  "Care'n",
+  // Role
+  "MERN Full Stack Developer",
+  // Image file location
+  {
+    desktop: [
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon.jpg",
+    ],
+    mobile: [
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon-mob.jpg",
+    ],
+  },
+  // Techs used
+  ["html", "bootstrap", "javascript"],
+  // Bullets
+  [
+    "CRUD blajaj an lj;k h;hkg ;k ;a ",
+    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
+    "lkugljh gljhf gluyfv",
+  ]
+);
+
+allProjectDetails.push(
+  seniorPets,
+  loveBug,
+  trek,
+  clickyGame,
+  googleBooks,
+  caren
+);
 
 //#endregion
 

@@ -120,7 +120,7 @@
     </nav> -->
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-      <span class="navbar-brand ml-5" href="#">IyanLaylor.dev</span>
+      <span class="navbar-brand ml-md-5" href="#">Iyan Laylor</span>
       <!-- Collapse button -->
       <button
         class="navbar-toggler float-right"
@@ -167,7 +167,7 @@
     </nav>
 
     <!-- Full Page Intro -->
-    <div class="view scr-view">
+    <div class="view scr-view d-none d-md-block">
       <!-- Possibly do a canvas here... -->
       <video
         class="video-intro"
@@ -189,6 +189,7 @@
       >
         <!-- Place Content over BG here, if we want the page to scroll over BG add  -->
         <div class="container h-100 mw-100 p-3">
+          <!-- Desktop Header -->
           <div class="row h-100 w-100 m-0">
             <!-- Vertical Social Links -->
             <div class="col-1">
@@ -263,6 +264,7 @@
               </div>
             </div>
           </div>
+          <!-- Mobile Header -->
         </div>
         <!-- Content -->
       </div>
@@ -272,43 +274,49 @@
 
     <!-- Main Content -->
     <div class="container">
-      <!-- About  -->
-      <!-- <div id="about-content" class="row m-4">
-        <div class="col-md-8 offset-md-2 bg-white">
-          <h3 id="contentTitle" class="m-2">About Me</h3>
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <img
-                class="profile-pic img-thumbnail img-fluid"
-                src="assets/images/ProfilePic.jpg"
-                alt=""
-              />
-            </div>
+      <!-- Mobile Banner -->
+      <div class="row bg-dark p-3 mobile-banner d-block d-md-none">
+        <div class="col no-gutters m-0 p-0 mt-2">
+          <div class="row no-gutters">
+            <h1
+              class="h1-responsive text-center text-white text-wrap banner-text my-3 mx-auto"
+            >
+              WEB || XR || NATIVE
+            </h1>
+          </div>
+          <div class="row no-gutters">
+            <p class="text-muted text-center banner-subtext">
+              Full Stack Developer and Interactive Content Designer
+            </p>
+          </div>
+          <div class="row no-gutters text-center mt-2">
             <div class="col">
-              <p class="bio-text">
-                hmmm where should I start? Born and raised in New York City. I
-                Left in 2004 and joined the Military, where I traveled the world
-                serving the country and all that other fun stuff. After
-                Honorable discharging from the US Navy, my wife, newborn son and
-                I packed up and moved to California to go to school. I got my
-                Bachelors in Game Art and Design down in Los Angeles, then moved
-                to the Bay Area in 2014.
-              </p>
-              <p class="bio-text">
-                After graduating, I did alot of 3D design freelance work while
-                doing senior management at logistics companies (military
-                background), until I decided to start my own company, an
-                immersive entertainment studio focusing on web content designed
-                for emerging technologies like virtual reality. If im not
-                churning away at 3d art assets, designing interactive content or
-                attempting to learn C#, I'm playing Minecraft, Brawlhalla, or
-                Monster Hunter World with my 9 year old son.
-              </p>
+              <span class="banner-link"
+                ><a href="https://github.com/VIII4" target="_blank">
+                  <i class="fab fa-github fa-2x fa-social-list"></i> </a
+              ></span>
+              <span class="banner-link"
+                ><a
+                  href="https://www.linkedin.com/in/iyanlaylor"
+                  target="_blank"
+                  ><i class="fab fa-linkedin fa-2x fa-social-list"></i></a
+              ></span>
+              <span class="banner-link"
+                ><a
+                  href="https://stackoverflow.com/users/12654186/"
+                  target="_blank"
+                  ><i class="fab fa-stack-overflow fa-2x fa-social-list"></i></a
+              ></span>
+              <span class="banner-link"
+                ><a href="" target="_blank">
+                  <i class="fab fa-codepen fa-2x fa-social-list"></i> </a
+              ></span>
             </div>
+
+            <!-- Links -->
           </div>
         </div>
-      </div> -->
-      <!-- ./ About -->
+      </div>
 
       <!-- About -->
       <div id="about-content" class="container-fluid p-3 my-3">
@@ -1541,7 +1549,7 @@
             </div>
           </div>
           <div class="modal-footer d-flex justify-content-center">
-            <button class="btn btn-unique disabled">
+            <button class="btn btn-dark disabled">
               Under Construction <i class="fas fa-paper-plane-o ml-1"></i>
             </button>
           </div>
