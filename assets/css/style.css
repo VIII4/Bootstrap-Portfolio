@@ -60,7 +60,6 @@ header,
 
 /* Mobile Banner */
 .mobile-banner {
-  height: 30vh;
   margin-top: 5vh;
 }
 
@@ -190,3 +189,8 @@ header,
 }
 
 /*  */
+
+.img-portrait {
+  width: 100%;
+  height: auto;
+}
