@@ -63,6 +63,17 @@ header,
   margin-top: 5vh;
 }
 
+@media (min-width: 760px) {
+  .mobile-banner {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+}
+
 /* /Mobile Banner */
 
 /* Scrollable Content displayed over Background .... */
@@ -84,7 +95,7 @@ header,
 
 /* Project Panel */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .row.project-panel {
     border: #000000;
     border-style: solid;
@@ -170,6 +181,11 @@ header,
     font-size: 0.6rem;
   }
 }
+@media (min-width: 680px) and (max-width: 760px) {
+  .nav-link.nav-filter {
+    font-size: 0.85rem;
+  }
+}
 
 .nav-link.nav-filter.active {
   background-color: #1c2331;
@@ -221,6 +237,18 @@ header,
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .btn.btn-project {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .git-link {
+    padding-right: 0.65rem !important;
+    padding-left: 0.65rem !important;
+  }
+}
 /* Horizontal Chart styling */
 .progress {
   border-radius: 0;
