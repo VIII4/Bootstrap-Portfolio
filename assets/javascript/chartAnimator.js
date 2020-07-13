@@ -77,6 +77,8 @@ function setChartNames() {
   $(".skill-row").each(function (i) {
     $("#designer-title-" + i).text(chartData.designer[i].skill);
     $("#developer-title-" + i).text(chartData.developer[i].skill);
+    $("#mobile-desTitle-" + i).text(chartData.designer[i].skill);
+    $("#mobile-devTitle-" + i).text(chartData.developer[i].skill);
   });
 }
 

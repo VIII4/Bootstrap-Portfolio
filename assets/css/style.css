@@ -120,6 +120,11 @@ header,
   margin-right: 1rem;
   margin-left: 1rem;
 }
+
+.mobile-skill {
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
 /* ./ Typography */
 
 /* Filter Nav tabs */
