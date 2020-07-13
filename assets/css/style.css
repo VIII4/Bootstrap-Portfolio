@@ -82,6 +82,17 @@ header,
   scrollbar-width: none; /* Firefox */
 }
 
+/* Project Panel */
+
+@media (max-width: 700px) {
+  .row.project-panel {
+    border: #000000;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 10px;
+  }
+}
+
 /* Typography */
 
 .bio-text {
@@ -125,6 +136,13 @@ header,
   margin-bottom: 0rem;
   margin-top: 1rem;
 }
+
+@media (min-width: 1024px) {
+  .filter-text {
+    font-size: 1.5rem;
+  }
+}
+
 /* ./ Typography */
 
 /* Filter Nav tabs */
@@ -179,6 +197,28 @@ header,
 .btn-project {
   font-weight: bold;
   letter-spacing: 0.5px;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .btn.btn-project {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+  }
+  .git-link {
+    padding-right: 0.65rem !important;
+    padding-left: 0.65rem !important;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 400px) {
+  .btn.btn-project {
+    padding-right: 0.95rem;
+    padding-left: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
 }
 
 /* Horizontal Chart styling */

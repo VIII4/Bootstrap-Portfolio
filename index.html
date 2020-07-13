@@ -793,7 +793,9 @@
 
       <!-- Portfolio -->
       <div id="portfolio-content" class="row m-0 mx-sm-4 my-sm-4 center-text">
-
+        <div class="col my-2">
+          <h1 class="text-center h1-responsive">My Works</h1>
+        </div>
         <!-- Content -->
         <div class="container my-3">
           <!-- Filter Buttons -->
@@ -801,7 +803,7 @@
           <!-- current filters: html, javascript, node, react, backend, unity3d -->
           <ul
             id="portfolio-tab"
-            class="nav nav-pills nav-justified mb-3 p-2 border border-dark border-strong rounded"
+            class="nav nav-pills nav-justified mb-1 mb-md-3 p-2 border border-dark border-strong rounded"
           >
             <li class="nav-item">
               <a
@@ -911,8 +913,15 @@
             </li>
           </ul>
           <!-- ./ Filter Buttons -->
-          <hr class="w-50 my-5" />
-          <h2 id="filtered-by" class="text-center">ALL PROJECTS</h2>
+          <div class="row mb-5">
+            <div class="col">
+              <h6 class="text-center filter-text">
+                <small>Filter by: </small
+                ><strong id="filtered-by">ALL PROJECTS</strong>
+              </h6>
+            </div>
+          </div>
+
           <!-- Filtered Content -->
 
           <!-- Project (Set up: put proper data tags for project, 
@@ -1191,7 +1200,6 @@
           <!-- ./ Filtered Content -->
         </div>
         <!-- ./ Content  -->
-
       </div>
       <!-- ./ Portfolio -->
 
