@@ -89,7 +89,7 @@ var triggerFinder = function () {
 
   // checking whether fully visible
   if (position.top >= 0 && position.bottom <= window.innerHeight) {
-    console.log("Element is fully visible in screen");
+    // console.log("Element is fully visible in screen");
   }
 
   // checking for partial visibility
