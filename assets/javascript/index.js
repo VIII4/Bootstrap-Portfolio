@@ -4,6 +4,7 @@
 
 //#region Variables
 var allProjectDetails = [];
+var headerHieght;
 //#endregion
 
 //#region Objects
@@ -197,11 +198,10 @@ allProjectDetails.push(
 //#region Functions
 
 function slideBody(target) {
-  var headerHieght = $("#fixedHeader").height();
   console.log(headerHieght);
   $("html,body").animate(
     {
-      scrollTop: $(target).offset().top - headerHieght,
+      scrollTop: $(target).offset().top - (headerHieght + 5),
     },
     "slow"
   );
@@ -216,15 +216,6 @@ function handleNavLinkClick() {
       .attr("aria-expanded", "false");
     $(".navbar-collapse").removeClass("show");
   }
-
-  /* toggle collaspe bar
-  collasped:
-    buttton class= collasped, aria-expanded=false
-    Navbar-collaspe class= collasped
-
-  Show:
-    button class="", aria-expanded=true
-  */
 }
 
 function handleFilterClick() {
@@ -319,6 +310,7 @@ function handleModalCloseEvent() {
 //#region Events
 
 $().ready(function () {
+  headerHieght = $("#fixedHeader").height();
   //Nav Link clicked slide to target
   $(".nav-main").click(handleNavLinkClick);
   $(".nav-filter").click(handleFilterClick);
