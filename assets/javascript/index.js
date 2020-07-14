@@ -197,9 +197,11 @@ allProjectDetails.push(
 //#region Functions
 
 function slideBody(target) {
+  var headerHieght = $("#fixedHeader").height();
+  console.log(headerHieght);
   $("html,body").animate(
     {
-      scrollTop: $(target).offset().top,
+      scrollTop: $(target).offset().top - headerHieght,
     },
     "slow"
   );
@@ -208,6 +210,21 @@ function slideBody(target) {
 function handleNavLinkClick() {
   event.preventDefault();
   slideBody($(this).data("target"));
+  if (!$("button.navbar-toggler").hasClass("collapsed")) {
+    $("button.navbar-toggler")
+      .addClass("collapsed")
+      .attr("aria-expanded", "false");
+    $(".navbar-collapse").removeClass("show");
+  }
+
+  /* toggle collaspe bar
+  collasped:
+    buttton class= collasped, aria-expanded=false
+    Navbar-collaspe class= collasped
+
+  Show:
+    button class="", aria-expanded=true
+  */
 }
 
 function handleFilterClick() {
