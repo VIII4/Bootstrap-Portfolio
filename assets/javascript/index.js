@@ -234,64 +234,60 @@ function handleFilterClick() {
 }
 
 function handleDetailsClick() {
-  //check screen size adjust for mobile
+  //check screen size adjust for mobile(window.screen.width....)
   var name = $(this).data("project");
 
-  allProjectDetails.forEach(function (project) {
-    if (name === project.name) {
-      //Update modal text content
-      $("#detail-name").text(project.name);
-      $("#detail-role").html("Role: " + project.roles);
-      // TO DO: generate bullets
+  let project = allProjectDetails.find((project) => project.name === name);
+  console.log(project);
+  console.log(window.screen.width);
 
-      //Create Tech Icons
-      for (var i = 0; i < project.techs.length; i++) {
-        console.log(project.techs[i]);
-        var icon =
-          project.techs[i] === "html"
-            ? "fab fa-html5"
-            : project.techs[i] === "bootstrap"
-            ? "fab fa-bootstrap"
-            : project.techs[i] === "javascript"
-            ? "fab fa-js-square"
-            : project.techs[i] === "mysql"
-            ? "icon-mysql"
-            : project.techs[i] === "handlebars"
-            ? "icon-handlebars-alt"
-            : project.techs[i] === "sequelize"
-            ? "icon-sequelize-alt"
-            : project.techs[i] === "heroku"
-            ? "icon-heroku"
-            : project.techs[i] === "express"
-            ? "icon-express"
-            : "";
-        icon = icon + " fa-3x text-dark mr-3";
+  //Update modal text content
+  $("#detail-name").text(project.name);
+  $("#detail-role").html("Role: " + project.roles);
+  // TO DO: generate bullets
 
-        var $i = $("<i>").addClass(icon);
-        $("#detail-tech").append($i);
-      }
+  //Create Tech Icons
+  for (var i = 0; i < project.techs.length; i++) {
+    var icon =
+      project.techs[i] === "html"
+        ? "fab fa-html5"
+        : project.techs[i] === "bootstrap"
+        ? "fab fa-bootstrap"
+        : project.techs[i] === "javascript"
+        ? "fab fa-js-square"
+        : project.techs[i] === "mysql"
+        ? "icon-mysql"
+        : project.techs[i] === "handlebars"
+        ? "icon-handlebars-alt"
+        : project.techs[i] === "sequelize"
+        ? "icon-sequelize-alt"
+        : project.techs[i] === "heroku"
+        ? "icon-heroku"
+        : project.techs[i] === "express"
+        ? "icon-express"
+        : "";
+    icon = icon + " fa-3x text-dark mr-3";
 
-      var imgs;
-      //Adjust images and modal for screen
-      if (window.screen.width <= 400) {
-        //adjust modal to md
-        $(".modal-dialog").removeClass("modal-xl").addClass("modal-md");
-        imgs = project.images.mobile;
-      } else {
-        imgs = project.images.desktop;
-      }
+    var $i = $("<i>").addClass(icon);
+    $("#detail-tech").append($i);
+  }
 
-      //Load Images
-      for (var i = 0; i < imgs.length; i++) {
-        $("#carousel-img-" + i).attr("src", imgs[i]);
-      }
+  var imgs;
+  //Adjust images and modal for screen
+  if (window.screen.width <= 400) {
+    //adjust modal to md
+    $(".modal-dialog").removeClass("modal-xl").addClass("modal-md");
+    imgs = project.images.mobile;
+  } else {
+    imgs = project.images.desktop;
+  }
 
-      $("#details-modal").modal("show");
-      return;
-    }
+  //Load Images
+  for (var i = 0; i < imgs.length; i++) {
+    $("#carousel-img-" + i).attr("src", imgs[i]);
+  }
 
-    //TO DO: enable modal
-  });
+  $("#details-modal").modal("show");
 }
 
 function handleModalCloseEvent() {
