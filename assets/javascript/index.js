@@ -164,9 +164,9 @@ var caren = new ProjectDetails(
   // Image file location
   {
     desktop: [
-      "assets/images/coming-soon.jpg",
-      "assets/images/coming-soon.jpg",
-      "assets/images/coming-soon.jpg",
+      "assets/images/coming-soon2.png",
+      "assets/images/coming-soon2.png",
+      "assets/images/coming-soon2.png",
     ],
     mobile: [
       "assets/images/coming-soon-mob.jpg",

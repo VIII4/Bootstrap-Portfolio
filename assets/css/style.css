@@ -286,3 +286,12 @@ header,
   width: 100%;
   height: auto;
 }
+
+/* MODALS */
+
+.modal-content.modal-details {
+  border: #000000;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-radius: 10px;
+}
