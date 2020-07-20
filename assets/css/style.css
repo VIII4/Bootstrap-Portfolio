@@ -40,6 +40,33 @@ header,
   }
 }
 
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.canvas-overlay {
+  z-index: 10;
+}
+
+#canvas-social {
+  position: absolute;
+  left: 4rem;
+  bottom: 4rem;
+}
+#canvas-contact {
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
+}
+
 /* Navbar Styling */
 
 .top-nav-collapse {
@@ -116,7 +143,19 @@ header,
   letter-spacing: 1rem;
   filter: drop-shadow(0px 0px 2.5px #0099cc);
 }
-
+@media (min-width: 925px) and (max-width: 1024px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+  .cover-text {
+    letter-spacing: 0.5rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .display-3 {
+    font-size: 3rem;
+  }
+}
 .banner-text {
   letter-spacing: 0.5rem;
   filter: drop-shadow(0px 0px 2.5px #0099cc);

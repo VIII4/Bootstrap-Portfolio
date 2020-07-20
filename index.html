@@ -63,6 +63,7 @@
     ></script>
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
   </head>
 
   <body>
@@ -112,10 +113,14 @@
       </div>
       <!-- CTA -->
     </nav>
-
+    
+    
+    
+    
+    
     <!-- Full Page Intro -->
     <div class="view scr-view d-none d-lg-block ">
-      <!-- Possibly do a canvas here... -->
+      
       <video
         class="video-intro"
         poster="assets/images/background-still/ezgif-frame-001.jpg"
@@ -130,20 +135,76 @@
           type="video/mp4"
         />
       </video>
-
+      
+      
+      
       <!-- Mask & flexbox options-->
       <div
-        class="mask rgba-black-light d-flex justify-content-center align-items-center"
+        class="mask rgba-black-light d-flex justify-content-center "
       >
+        <div id="particles-js"></div>
+        <div id="canvas-social" class="canvas-overlay align-self-end ">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href="https://github.com/VIII4" target="_blank">
+                <i class="fab fa-github fa-3x fa-social-list"></i>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                href="https://www.linkedin.com/in/iyanlaylor"
+                target="_blank"
+                ><i class="fab fa-linkedin fa-3x fa-social-list"></i
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a
+                href="https://stackoverflow.com/users/12654186/"
+                target="_blank"
+                ><i
+                  class="fab fa-stack-overflow fa-3x fa-social-list"
+                ></i
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="https://codepen.io/viii4" target="_blank">
+                <i class="fab fa-codepen fa-3x fa-social-list"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="align-self-center text-center mx-auto w-75">
+          <h1 class="display-3 text-white cover-text">
+            Web || XR || Native
+          </h1>
+          <hr class="white" />
+          <h5 class="text-muted cover-subtext">
+            Full Stack Developer and Interactive Content Designer
+          </h5>
+        </div>
+        <div class="canvas-overlay align-self-end ">
+          <span id="canvas-contact" class="mx-auto mb-3 "
+                      ><a
+                        href=""
+                        target="_blank"
+                        data-toggle="modal"
+                        data-target="#contactFormModal"
+                      >
+                        <i
+                          class="far fa-comment-alt fa-3x fa-social-list"
+                        ></i> </a
+                    ></span>
+        </div>
+        
+        
         <!-- Place Content over BG here, if we want the page to scroll over BG add  -->
-        <div class="container h-100 mw-100 p-3">
+        <!-- <div class="container header-content h-100 mw-100 p-3"> -->
           <!-- Desktop Header -->
-          <div class="row h-100 w-100 m-0">
+          <!-- <div class="row h-100 w-100 m-0"> -->
             <!-- Vertical Social Links -->
-            <div class="col-1">
+            <!-- <div class="col-1">
               <div class="row h-100 p-3">
                 <div class="col align-self-end mb-5 p-0 text-center">
-                  <!-- List of Social Links -->
                   <ul class="social-list">
                     <li class="social-list-item">
                       <a href="https://github.com/VIII4" target="_blank">
@@ -174,9 +235,9 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- Cover Banner and Text -->
-            <div class="col-10">
+            <!-- <div class="col-10">
               <div class="row p-1 h-25"></div>
               <div class="row p-1 h-50 d-flex justify-content-center">
                 <div class="col-8 align-self-center text-center">
@@ -190,9 +251,9 @@
                 </div>
               </div>
               <div class="row p-1 h-25"></div>
-            </div>
+            </div> -->
             <!-- Contact Modal -->
-            <div class="col-1">
+            <!-- <div class="col-1">
               <div class="row h-100 p-3">
                 <div class="col align-self-end mb-5 p-0">
                   <div class="row">
@@ -210,10 +271,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- Mobile Header -->
-        </div>
+            </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
         <!-- Content -->
       </div>
       <!-- Mask & flexbox options-->
@@ -1427,7 +1487,9 @@
       new WOW().init();
     </script> -->
     <!-- Custom javascript -->
+    <script src="assets/javascript/particles.js"></script>
     <script src="assets/javascript/index.js"></script>
     <script src="assets/javascript/chartAnimator.js"></script>
+    
   </body>
 </html>
