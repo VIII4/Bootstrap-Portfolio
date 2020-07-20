@@ -1,4 +1,4 @@
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+/* load particle config */
 
 particlesJS(
   "particles-js",
@@ -30,7 +30,7 @@ particlesJS(
           height: 100,
           anim: {
             enable: true,
-            speed: 3,
+            speed: 5,
             frameWidth: 64,
             totalFrames: 16,
           },
