@@ -319,9 +319,13 @@ var caren = new ProjectDetails(
   ["html", "bootstrap", "javascript"],
   // Bullets
   [
-    "CRUD blajaj an lj;k h;hkg ;k ;a ",
-    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
-    "lkugljh gljhf gluyfv",
+    "Created 80% of App React components",
+    "Implemented React Google Maps API",
+    "Dynamic Google Maps Components based on location tracking",
+    "Backend dependent React component creation with state and hooks logic",
+    "All front end routing and communication to backend",
+    "Image frontend uploading, server hosting/storage request to cloud",
+    "Review and manage project and task",
   ]
 );
 
@@ -384,7 +388,16 @@ function handleDetailsClick() {
 
   //Update modal text content
   $("#detail-name").text(project.name);
-  $("#detail-role").html("Role: " + project.roles);
+  $("#detail-role").html(project.roles);
+
+  // Create Bullet Cards
+  project.bullets.forEach((text) => {
+    $("#detail-duties").append(
+      $(
+        `<div class='card card-duties'><div class='card-body'>${text}</div></div>`
+      )
+    );
+  });
   // TO DO: generate bullets
 
   //Create Tech Icons
@@ -436,6 +449,7 @@ function handleModalCloseEvent() {
   $("#detail-name").empty();
   $("#detail-role").empty();
   $("#detail-tech").empty();
+  $("#detail-duties").empty();
   $(".carousel-inner").each(function () {
     $(this).find("img").attr("src", "");
   });
@@ -448,7 +462,7 @@ function handleModalCloseEvent() {
 
 $().ready(function () {
   headerHieght = $("#fixedHeader").height();
-  console.log(window.screen.width, window.screen.height);
+
   //Nav Link clicked slide to target
   $(".nav-main").click(handleNavLinkClick);
   $(".nav-filter").click(handleFilterClick);

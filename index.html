@@ -1312,10 +1312,17 @@
       <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
       <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content modal-details">
-          <div class="modal-header">
-            <h3 id="detail-name" class="h3-responsive">
-              <strong></strong>
-            </h3>
+          <div class="modal-header ">
+            <div class="row">
+              <div class="col">
+                <h3 id="detail-name" class="h3-responsive align-self-end">
+                  <strong></strong>
+                </h3>
+                <h6 id="detail-role" class="h6-responsive  align-self-center"></h6>
+              </div>
+            </div>
+            <span id="detail-tech" class="float-right align-self-end " style="font-size: .6rem;"> </span>
+            
           </div>
           <div class="modal-body">
             <div class="container-fluid">
@@ -1323,10 +1330,9 @@
                 <!-- Details -->
                 <div class="col-md-4 col-12 order-last order-lg-first">
                   <div class="row my-2 my-md-1">
-                    <h5 id="detail-role" class="h5-responsive"></h5>
+                    <h6 class="h6-responsive">Accomplishments</h6>
                   </div>
-                  <div class="row p-2 m-2">
-                    <span id="detail-tech" class="mr-3 mt-2 mx-auto"> </span>
+                  <div id="detail-duties" class="row mh-100">
                   </div>
                 </div>
                 <!-- Image Gallery -->
