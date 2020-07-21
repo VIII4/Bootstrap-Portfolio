@@ -436,6 +436,7 @@ function handleModalCloseEvent() {
 
 $().ready(function () {
   headerHieght = $("#fixedHeader").height();
+  console.log(window.screen.width, window.screen.height);
   //Nav Link clicked slide to target
   $(".nav-main").click(handleNavLinkClick);
   $(".nav-filter").click(handleFilterClick);
