@@ -5,6 +5,13 @@
 /* GitHub : github.com/VincentGarreau/particles.js
 /* How to use? : Check the GitHub README
 /* v2.0.0
+/* ----------------------------------------------- 
+/* Add ons by Iyan Laylor(VIII4)
+/* Animated sprite sheet: using png sprite sheet as src,
+/* select desired speed and frame width. then particle.js
+/* will randomize frame start on initial draw command of 
+/* particle. On update change to next frame of sprite after speed
+/* steps complete. 
 /* ----------------------------------------------- */
 
 var pJS = function (tag_id, params) {
