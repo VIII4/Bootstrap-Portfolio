@@ -1,12 +1,11 @@
 /* load particle config */
-
 particlesJS(
   "particles-js",
 
   {
     particles: {
       number: {
-        value: 25,
+        value: 55,
         density: {
           enable: true,
           value_area: 800,
@@ -24,20 +23,33 @@ particlesJS(
         polygon: {
           nb_sides: 5,
         },
-        image: {
-          src: "assets/images/particles/bubbleSheet.png",
-          width: 100,
-          height: 100,
-          anim: {
-            enable: true,
-            speed: 5,
-            frameWidth: 64,
-            totalFrames: 16,
+        image: [
+          {
+            src: "assets/images/particles/bubbleSheetA.png",
+            width: 100,
+            height: 100,
+            anim: {
+              enable: true,
+              speed: 6,
+              frameWidth: 64,
+              totalFrames: 16,
+            },
           },
-        },
+          {
+            src: "assets/images/particles/bubbleSheetC.png",
+            width: 100,
+            height: 100,
+            anim: {
+              enable: true,
+              speed: 10,
+              frameWidth: 64,
+              totalFrames: 12,
+            },
+          },
+        ],
       },
       opacity: {
-        value: 0.8,
+        value: 0.1,
         random: false,
         anim: {
           enable: false,
@@ -47,7 +59,7 @@ particlesJS(
         },
       },
       size: {
-        value: 30,
+        value: 28,
         random: true,
         anim: {
           enable: false,
@@ -65,7 +77,7 @@ particlesJS(
       },
       move: {
         enable: true,
-        speed: 5,
+        speed: 1,
         direction: "top",
         random: true,
         straight: false,
@@ -85,7 +97,7 @@ particlesJS(
           mode: "repulse",
         },
         onclick: {
-          enable: false,
+          enable: true,
           mode: "push",
         },
         resize: true,
