@@ -381,19 +381,27 @@ var pJS = function (tag_id, params) {
     }
 
     if (this.shape == "image") {
-      var sh = pJS.particles.shape;
+      var image = pJS.particles.shape.image;
+
+      /* assign a random image if image is an array */
+      if (image instanceof Array)
+        image = image[Math.floor(Math.random() * image.length)];
+
       this.img = {
-        src: sh.image.src,
-        ratio: sh.image.width / sh.image.height,
-        // Added
-        currentFrame: 0,
+        src: image.src,
+        ratio: image.width / image.height,
+        obj: image.obj,
+        type: image.type,
+        source_svg: image.source_svg,
+        frameWidth: image.anim.frameWidth,
+        totalFrames: image.anim.totalFrames,
+        currentFrame: Math.floor(Math.random() * image.anim.totalFrames),
         frameStep: 0,
-        speed: sh.image.anim.speed,
-        frameWidth: sh.image.anim.frameWidth,
-        totalFrames: sh.image.anim.totalFrames,
+        speed: image.anim.speed,
+        animated: image.anim.enable,
       };
       if (!this.img.ratio) this.img.ratio = 1;
-      if (pJS.tmp.img_type == "svg" && pJS.tmp.source_svg != undefined) {
+      if (this.img.type == "svg" && this.img.source_svg != undefined) {
         pJS.fn.vendors.createSvgImg(this);
         if (pJS.tmp.pushing) {
           this.img.loaded = false;
@@ -488,7 +496,7 @@ var pJS = function (tag_id, params) {
       // HERE IS WHERE IMAGE IS DRAWN
       case "image":
         //TO DO: Check if animated
-        if (!pJS.particles.shape.image.anim.enable) {
+        if (!p.img.animated) {
           function draw() {
             pJS.canvas.ctx.drawImage(
               img_obj,
@@ -516,11 +524,7 @@ var pJS = function (tag_id, params) {
           }
         }
 
-        if (pJS.tmp.img_type == "svg") {
-          var img_obj = p.img.obj;
-        } else {
-          var img_obj = pJS.tmp.img_obj;
-        }
+        var img_obj = p.img.obj;
 
         if (img_obj) {
           draw();
@@ -570,7 +574,7 @@ var pJS = function (tag_id, params) {
       }
 
       // Change parameters of Image
-      if (pJS.particles.shape.image.anim.enable) {
+      if (p.img.animated) {
         //Need a global var to check and increment for step, when steps complete update frame
         if (p.img.frameStep === p.img.speed) {
           p.img.frameStep = 0;
@@ -628,19 +632,36 @@ var pJS = function (tag_id, params) {
         };
       }
 
-      if (p.x - p.radius > pJS.canvas.w) {
-        p.x = new_pos.x_left;
-        p.y = Math.random() * pJS.canvas.h;
-      } else if (p.x + p.radius < 0) {
-        p.x = new_pos.x_right;
-        p.y = Math.random() * pJS.canvas.h;
-      }
-      if (p.y - p.radius > pJS.canvas.h) {
-        p.y = new_pos.y_top;
-        p.x = Math.random() * pJS.canvas.w;
-      } else if (p.y + p.radius < 0) {
-        p.y = new_pos.y_bottom;
-        p.x = Math.random() * pJS.canvas.w;
+      /* remove the particle from the array if it is out of canvas */
+      if (pJS.particles.move.out_mode == "destroy") {
+        if (
+          p.x - p.radius > pJS.canvas.w ||
+          p.x + p.radius < 0 ||
+          p.y - p.radius > pJS.canvas.h ||
+          p.y + p.radius < 0
+        ) {
+          pJS.particles.array.splice(i, 1);
+
+          /* remove the canvas if the arary is empty */
+          if (pJS.particles.array.length == 0) {
+            pJS.fn.vendors.destroypJS();
+          }
+        }
+      } else {
+        if (p.x - p.radius > pJS.canvas.w) {
+          p.x = new_pos.x_left;
+          p.y = Math.random() * pJS.canvas.h;
+        } else if (p.x + p.radius < 0) {
+          p.x = new_pos.x_right;
+          p.y = Math.random() * pJS.canvas.h;
+        }
+        if (p.y - p.radius > pJS.canvas.h) {
+          p.y = new_pos.y_top;
+          p.x = Math.random() * pJS.canvas.w;
+        } else if (p.y + p.radius < 0) {
+          p.y = new_pos.y_bottom;
+          p.x = Math.random() * pJS.canvas.w;
+        }
       }
 
       /* out of canvas modes */
@@ -721,8 +742,6 @@ var pJS = function (tag_id, params) {
     /* init all */
     cancelRequestAnimFrame(pJS.fn.checkAnimFrame);
     cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
-    pJS.tmp.source_svg = undefined;
-    pJS.tmp.img_obj = undefined;
     pJS.tmp.count_svg = 0;
     pJS.fn.particlesEmpty();
     pJS.fn.canvasClear();
@@ -1268,7 +1287,7 @@ var pJS = function (tag_id, params) {
 
   pJS.fn.vendors.createSvgImg = function (p) {
     /* set color to svg element */
-    var svgXml = pJS.tmp.source_svg,
+    var svgXml = p.img.source_svg,
       rgbHex = /#([0-9A-F]{3,6})/gi,
       coloredSvgXml = svgXml.replace(rgbHex, function (m, r, g, b) {
         if (p.color.rgb) {
@@ -1352,17 +1371,19 @@ var pJS = function (tag_id, params) {
     window.open(pJS.canvas.el.toDataURL("image/png"), "_blank");
   };
 
-  pJS.fn.vendors.loadImg = function (type) {
+  pJS.fn.vendors.loadImg = function (image) {
     pJS.tmp.img_error = undefined;
 
-    if (pJS.particles.shape.image.src != "") {
-      if (type == "svg") {
+    image.type = image.src.substr(image.src.length - 3);
+
+    if (image.src != "") {
+      if (image.type == "svg") {
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", pJS.particles.shape.image.src);
+        xhr.open("GET", image.src);
         xhr.onreadystatechange = function (data) {
           if (xhr.readyState == 4) {
             if (xhr.status == 200) {
-              pJS.tmp.source_svg = data.currentTarget.response;
+              image.source_svg = data.currentTarget.response;
               pJS.fn.vendors.checkBeforeDraw();
             } else {
               console.log("Error pJS - Image not found");
@@ -1374,10 +1395,10 @@ var pJS = function (tag_id, params) {
       } else {
         var img = new Image();
         img.addEventListener("load", function () {
-          pJS.tmp.img_obj = img;
+          image.obj = img;
           pJS.fn.vendors.checkBeforeDraw();
         });
-        img.src = pJS.particles.shape.image.src;
+        img.src = image.src;
       }
     } else {
       console.log("Error pJS - No image.src");
@@ -1386,8 +1407,8 @@ var pJS = function (tag_id, params) {
   };
 
   pJS.fn.vendors.draw = function () {
-    if (pJS.particles.shape.type == "image") {
-      if (pJS.tmp.img_type == "svg") {
+    if (isInArray("image", pJS.particles.shape.type)) {
+      if (pJS.tmp.all_svgs) {
         if (pJS.tmp.count_svg >= pJS.particles.number.value) {
           pJS.fn.particlesDraw();
           if (!pJS.particles.move.enable)
@@ -1399,7 +1420,7 @@ var pJS = function (tag_id, params) {
             pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
         }
       } else {
-        if (pJS.tmp.img_obj != undefined) {
+        if (pJS.tmp.images_loaded) {
           pJS.fn.particlesDraw();
           if (!pJS.particles.move.enable)
             cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
@@ -1419,8 +1440,15 @@ var pJS = function (tag_id, params) {
 
   pJS.fn.vendors.checkBeforeDraw = function () {
     // if shape is image
-    if (pJS.particles.shape.type == "image") {
-      if (pJS.tmp.img_type == "svg" && pJS.tmp.source_svg == undefined) {
+    if (isInArray("image", pJS.particles.shape.type)) {
+      if (
+        (pJS.particles.shape.image instanceof Array &&
+          pJS.particles.shape.image.every(function (image) {
+            return image.type == "svg" && image.source_svg == undefined;
+          })) ||
+        (pJS.particles.shape.image.type == "svg" &&
+          pJS.particles.shape.image.source_svg == undefined)
+      ) {
         pJS.tmp.checkAnimFrame = requestAnimFrame(check);
       } else {
         //console.log('images loaded! cancel check');
@@ -1449,14 +1477,31 @@ var pJS = function (tag_id, params) {
     pJS.particles.line_linked.color_rgb_line = hexToRgb(
       pJS.particles.line_linked.color
     );
+
+    pJS.tmp.all_svgs =
+      (pJS.particles.shape.image instanceof Array &&
+        pJS.particles.shape.image.every(function (image) {
+          return image.type == "svg";
+        })) ||
+      pJS.particles.shape.image.type == "svg";
+
+    pJS.tmp.images_loaded =
+      (pJS.particles.shape.image instanceof Array &&
+        pJS.particles.shape.image.every(function (image) {
+          return image.obj != undefined;
+        })) ||
+      pJS.particles.shape.image.obj != undefined;
   };
 
   pJS.fn.vendors.start = function () {
     if (isInArray("image", pJS.particles.shape.type)) {
-      pJS.tmp.img_type = pJS.particles.shape.image.src.substr(
-        pJS.particles.shape.image.src.length - 3
-      );
-      pJS.fn.vendors.loadImg(pJS.tmp.img_type);
+      if (pJS.particles.shape.image instanceof Array) {
+        pJS.particles.shape.image.forEach(function (image) {
+          pJS.fn.vendors.loadImg(image);
+        });
+      } else {
+        pJS.fn.vendors.loadImg(pJS.particles.shape.image);
+      }
     } else {
       pJS.fn.vendors.checkBeforeDraw();
     }
