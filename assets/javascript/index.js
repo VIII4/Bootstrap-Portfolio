@@ -179,9 +179,13 @@ var seniorPets = new ProjectDetails(
   ["html", "bootstrap", "mysql", "handlebars"],
   // Bullets
   [
-    "CRUD blajaj an lj;k h;hkg ;k ;a ",
-    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
-    "lkugljh gljhf gluyfv",
+    "100% designed webapp layout and user interface",
+    "developed dynamic HTML using the Handlebars.js",
+    "started with bootstrap css framework but integrated custom styling for complete unique look",
+    "developed and implemented interaction logic between the model, view and controller",
+    "assisted in server-side API logic",
+    "assisted with sequelize/mysql Schema and controller on backend server",
+    "heavily assisted with troubleshooting of team issues and bugs",
   ]
 );
 
@@ -291,9 +295,12 @@ var googleBooks = new ProjectDetails(
   ["html", "bootstrap", "javascript"],
   // Bullets
   [
-    "CRUD blajaj an lj;k h;hkg ;k ;a ",
-    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
-    "lkugljh gljhf gluyfv",
+    "React Single-Page Application",
+    "Implement React Router for conditional rendering of components",
+    "Created React components utilizing React lifecycle methods.",
+    "React State logic with query and display books based on Googlebooks API searches and CRUD database request",
+    "Created and configured Moongoose/MongoDB Schema and controller on backend server",
+    "Configure and deployed fullstack MERN application",
   ]
 );
 
