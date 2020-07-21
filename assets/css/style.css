@@ -280,6 +280,8 @@ header,
 
 /* ./ Filter Nav tabs */
 
+/* Project Buttons */
+
 .git-link {
   padding-right: 1rem !important;
 
@@ -325,6 +327,9 @@ header,
     padding-left: 0.65rem !important;
   }
 }
+
+/* ./ Project Buttons */
+
 /* Horizontal Chart styling */
 .progress {
   border-radius: 0;
@@ -333,8 +338,7 @@ header,
 .border-custom {
   border-width: thick !important;
 }
-
-/*  */
+/*  Horizontal Chart styling */
 
 /* Social Icons list */
 .social-list {
@@ -370,4 +374,17 @@ header,
   border-style: solid;
   border-width: 0.2rem;
   border-radius: 10px;
+}
+
+.card-duties {
+  padding: 0;
+  margin-bottom: 0.5rem;
+  width: 95%;
+  font-size: 1rem;
+  /* text styling */
+  /* padding */
+}
+
+.card-duties > .card-body {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
