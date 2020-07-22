@@ -211,9 +211,10 @@ var loveBug = new ProjectDetails(
   ["html", "bootstrap", "mysql", "express"],
   // Bullets
   [
-    "CRUD blajaj an lj;k h;hkg ;k ;a ",
-    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
-    "lkugljh gljhf gluyfv",
+    "Designed webapp HTML layout and user interface",
+    "Utilized bootstrap framework along with custom CSS",
+    "Developed client-side logic to fetch server side db-less data",
+    "Configured express server routing to serve static files and update data",
   ]
 );
 
