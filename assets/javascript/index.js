@@ -240,9 +240,10 @@ var trek = new ProjectDetails(
   ["html", "bootstrap", "javascript"],
   // Bullets
   [
-    "CRUD blajaj an lj;k h;hkg ;k ;a ",
-    "hgjljhfljhf ljf ljyf  ljf luyf l oyg ",
-    "lkugljh gljhf gluyfv",
+    "Designed layout, typography, and logo element for cohesive sleek look",
+    "Lead front end team in developing webapp html and css",
+    "implented jQuery logic to handle and render dynamic data",
+    "assisted with client-side logic to fetch API request",
   ]
 );
 
