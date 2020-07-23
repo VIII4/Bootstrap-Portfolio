@@ -335,13 +335,6 @@ var caren = new ProjectDetails(
     "All front end routing and communication to backend",
     "Image frontend uploading, server hosting/storage request to cloud",
     "Review and manage project and task",
-    "Created 80% of App React components",
-    "Implemented React Google Maps API",
-    "Dynamic Google Maps Components based on location tracking",
-    "Backend dependent React component creation with state and hooks logic",
-    "All front end routing and communication to backend",
-    "Image frontend uploading, server hosting/storage request to cloud",
-    "Review and manage project and task",
   ]
 );
 
