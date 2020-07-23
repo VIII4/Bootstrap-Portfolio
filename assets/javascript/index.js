@@ -319,15 +319,22 @@ var caren = new ProjectDetails(
       "assets/images/coming-soon2.png",
     ],
     mobile: [
-      "assets/images/coming-soon-mob.jpg",
-      "assets/images/coming-soon-mob.jpg",
-      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon2.png",
+      "assets/images/coming-soon2.png",
+      "assets/images/coming-soon2.png",
     ],
   },
   // Techs used
   ["html", "bootstrap", "javascript"],
   // Bullets
   [
+    "Created 80% of App React components",
+    "Implemented React Google Maps API",
+    "Dynamic Google Maps Components based on location tracking",
+    "Backend dependent React component creation with state and hooks logic",
+    "All front end routing and communication to backend",
+    "Image frontend uploading, server hosting/storage request to cloud",
+    "Review and manage project and task",
     "Created 80% of App React components",
     "Implemented React Google Maps API",
     "Dynamic Google Maps Components based on location tracking",
@@ -439,11 +446,11 @@ function handleFilterClick() {
 
 function handleDetailsClick() {
   //check screen size adjust for mobile(window.screen.width....)
+  var test = $(".carousel-item > img").hieght;
+  console.log();
   var name = $(this).data("project");
 
   let project = allProjectDetails.find((project) => project.name === name);
-  console.log(project);
-  console.log(window.screen.width);
 
   //Update modal text content
   $("#detail-name").text(project.name);
@@ -575,5 +582,7 @@ $(".btn-contact").on("click", function (e) {
   e.preventDefault();
   handleContactForm($(this).data("formtype"));
 });
+
+$(window).resize(function () {});
 
 //#endregion
