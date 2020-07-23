@@ -519,8 +519,10 @@ function handleContactForm($type) {
   //validate form data
   let validate = validateForm($type);
   if (!validate.isValid) {
-    //toast alerts
-    validate.msg.forEach((msg) => alert(msg));
+    var alertmsg = "";
+    validate.msg.forEach((msg) => (alertmsg += `${msg}\n`));
+    //TO DO: Replace with alerts
+    alert(alertmsg);
     return;
   }
 
@@ -534,7 +536,7 @@ function handleContactForm($type) {
       // success
       form.reset();
       if ($type === "modal") {
-        // close modal
+        $("#contactFormModal").modal("hide");
       }
       //toast success alert
       alert("sucess");
