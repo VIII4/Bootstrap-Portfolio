@@ -522,7 +522,8 @@ function handleContactForm($type) {
     var alertmsg = "";
     validate.msg.forEach((msg) => (alertmsg += `${msg}\n`));
     //TO DO: Replace with alerts
-    alert(alertmsg);
+    //alert(alertmsg);
+    $("#my-toast").toast("show");
     return;
   }
 
@@ -539,7 +540,7 @@ function handleContactForm($type) {
         $("#contactFormModal").modal("hide");
       }
       //toast success alert
-      alert("sucess");
+      $("#my-toast").toast("show");
     },
     function () {
       // error
