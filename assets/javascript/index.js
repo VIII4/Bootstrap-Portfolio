@@ -5,7 +5,7 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 55,
+        value: 50,
         density: {
           enable: true,
           value_area: 800,
@@ -120,7 +120,7 @@ particlesJS(
           distance: 100,
         },
         push: {
-          particles_nb: 4,
+          particles_nb: 3,
         },
         remove: {
           particles_nb: 2,
@@ -365,6 +365,42 @@ function ajax(method, url, data, success, error) {
   xhr.send(data);
 }
 
+function validateForm(type) {
+  console.log(type);
+  //Validation results
+  let result = {
+    isValid: true,
+    msg: [],
+  };
+
+  var name = $(`#${type}-name`).val();
+  console.log(name);
+  if (name === "") {
+    result.msg.push("Name cannot be empty");
+  }
+  var email = $(`#${type}-email`).val();
+  console.log(email);
+  if (email === "") {
+    result.msg.push("Email cannot be empty");
+  } else {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!re.test(email)) {
+      console.log(email);
+      result.msg.push("Email format invalid");
+    }
+  }
+  var subject = $(`#${type}-subject`).val();
+  if (subject == "") {
+    result.msg.push("Subject cannot be empty");
+  }
+  var message = $(`#${type}-message`).val();
+  if (message == "") {
+    result.msg.push("Message cannot be empty");
+  }
+  if (result.msg.length > 0) result.isValid = false;
+  return result;
+}
+
 function slideBody(target) {
   console.log(headerHieght);
   $("html,body").animate(
@@ -480,6 +516,14 @@ function handleModalCloseEvent() {
 }
 
 function handleContactForm($type) {
+  //validate form data
+  let validate = validateForm($type);
+  if (!validate.isValid) {
+    //toast alerts
+    validate.msg.forEach((msg) => alert(msg));
+    return;
+  }
+
   var form = document.getElementById(`${$type}-contact-form`);
   var data = new FormData(form);
   ajax(
@@ -492,6 +536,7 @@ function handleContactForm($type) {
       if ($type === "modal") {
         // close modal
       }
+      //toast success alert
       alert("sucess");
     },
     function () {
@@ -499,8 +544,6 @@ function handleContactForm($type) {
       alert("error");
     }
   );
-
-  //reset form
 }
 
 //#endregion

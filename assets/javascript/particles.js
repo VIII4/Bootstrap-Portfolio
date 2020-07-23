@@ -585,7 +585,7 @@ var pJS = function (tag_id, params) {
         //Need a global var to check and increment for step, when steps complete update frame
         if (p.img.frameStep === p.img.speed) {
           p.img.frameStep = 0;
-          if (p.img.currentFrame <= p.img.totalFrames) {
+          if (p.img.currentFrame < p.img.totalFrames) {
             p.img.currentFrame++;
           } else {
             p.img.currentFrame = 0;
