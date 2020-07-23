@@ -319,9 +319,9 @@ var caren = new ProjectDetails(
       "assets/images/coming-soon2.png",
     ],
     mobile: [
-      "assets/images/coming-soon-mob.jpg",
-      "assets/images/coming-soon-mob.jpg",
-      "assets/images/coming-soon-mob.jpg",
+      "assets/images/coming-soon2.png",
+      "assets/images/coming-soon2.png",
+      "assets/images/coming-soon2.png",
     ],
   },
   // Techs used
@@ -439,11 +439,11 @@ function handleFilterClick() {
 
 function handleDetailsClick() {
   //check screen size adjust for mobile(window.screen.width....)
+  var test = $(".carousel-item > img").hieght;
+  console.log();
   var name = $(this).data("project");
 
   let project = allProjectDetails.find((project) => project.name === name);
-  console.log(project);
-  console.log(window.screen.width);
 
   //Update modal text content
   $("#detail-name").text(project.name);
@@ -575,5 +575,7 @@ $(".btn-contact").on("click", function (e) {
   e.preventDefault();
   handleContactForm($(this).data("formtype"));
 });
+
+$(window).resize(function () {});
 
 //#endregion
