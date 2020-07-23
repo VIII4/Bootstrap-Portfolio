@@ -1216,7 +1216,7 @@
       <hr class="w-75" />
 
       <!-- Contact -->
-      <div id="contact-content" class="row m-4">
+      <div id="contact-content" class="row mx-1 my-4 m-md-4 contact-row">
         <div class="col-md"></div>
         <div class="col-md-8 mt-5 bg-white">
           <div class="row">
@@ -1228,38 +1228,47 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <form>
-                    <div class="form-group">
-                      <label for="exampleFormControlInput1">Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlInput1"
-                        >Email address</label
+                  <form id="page-contact-form"  action="https://formspree.io/myynleoo"
+                  method="POST">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="contact-name" name="name" class="form-control validate" />
+                      <label data-error="wrong" data-success="right" for="form34"
+                        >Your name</label
                       >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="name@example.com"
-                      />
                     </div>
 
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Message</label>
-                      <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="5"
-                      ></textarea>
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" name="_replyto" class="form-control validate" />
+                      <label data-error="wrong" data-success="right" for="form29"
+                        >Your email</label
+                      >
                     </div>
-                    <button type="button" class="btn btn-outline-dark">
-                      Submit
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" name="subject" class="form-control validate" />
+                      <label data-error="wrong" data-success="right" for="form32"
+                        >Subject</label
+                      >
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea
+                        type="text"
+                        id="form8"
+                        class="md-textarea form-control"
+                        name="message"
+                        rows="4"
+                      ></textarea>
+                      <label data-error="wrong" data-success="right" for="form8"
+                        >Your message</label
+                      >
+                    </div>
+                    <button type="button"  data-formtype="page" class="btn btn-dark rounded btn-project btn-contact">
+                      Send
                     </button>
                   </form>
                 </div>
@@ -1437,46 +1446,50 @@
             </button>
           </div>
           <div class="modal-body mx-3">
-            <div class="md-form mb-5">
-              <i class="fas fa-user prefix grey-text"></i>
-              <input type="text" id="form34" class="form-control validate" />
-              <label data-error="wrong" data-success="right" for="form34"
-                >Your name</label
-              >
-            </div>
+            <form id="modal-contact-form"  action="https://formspree.io/myynleoo"
+            method="POST">
+              <div class="md-form mb-5">
+                <i class="fas fa-user prefix grey-text"></i>
+                <input type="text" id="contact-name" name="name" class="form-control validate" />
+                <label data-error="wrong" data-success="right" for="form34"
+                  >Your name</label
+                >
+              </div>
 
-            <div class="md-form mb-5">
-              <i class="fas fa-envelope prefix grey-text"></i>
-              <input type="email" id="form29" class="form-control validate" />
-              <label data-error="wrong" data-success="right" for="form29"
-                >Your email</label
-              >
-            </div>
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="email" id="form29" name="_replyto" class="form-control validate" />
+                <label data-error="wrong" data-success="right" for="form29"
+                  >Your email</label
+                >
+              </div>
 
-            <div class="md-form mb-5">
-              <i class="fas fa-tag prefix grey-text"></i>
-              <input type="text" id="form32" class="form-control validate" />
-              <label data-error="wrong" data-success="right" for="form32"
-                >Subject</label
-              >
-            </div>
+              <div class="md-form mb-5">
+                <i class="fas fa-tag prefix grey-text"></i>
+                <input type="text" id="form32" name="subject" class="form-control validate" />
+                <label data-error="wrong" data-success="right" for="form32"
+                  >Subject</label
+                >
+              </div>
 
-            <div class="md-form">
-              <i class="fas fa-pencil prefix grey-text"></i>
-              <textarea
-                type="text"
-                id="form8"
-                class="md-textarea form-control"
-                rows="4"
-              ></textarea>
-              <label data-error="wrong" data-success="right" for="form8"
-                >Your message</label
-              >
-            </div>
+              <div class="md-form">
+                <i class="fas fa-pencil prefix grey-text"></i>
+                <textarea
+                  type="text"
+                  id="form8"
+                  class="md-textarea form-control"
+                  name="message"
+                  rows="4"
+                ></textarea>
+                <label data-error="wrong" data-success="right" for="form8"
+                  >Your message</label
+                >
+              </div>
+            </form>
           </div>
           <div class="modal-footer d-flex justify-content-center">
-            <button class="btn btn-dark disabled">
-              Under Construction <i class="fas fa-paper-plane-o ml-1"></i>
+            <button  data-formtype="modal" class="btn btn-dark btn-contact" type="submit">
+              Send <i class="fas fa-paper-plane-o ml-1"></i>
             </button>
           </div>
         </div>

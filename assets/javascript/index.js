@@ -350,6 +350,20 @@ allProjectDetails.push(
 //#endregion
 
 //#region Functions
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+}
 
 function slideBody(target) {
   console.log(headerHieght);
@@ -465,6 +479,30 @@ function handleModalCloseEvent() {
   $(".modal-dialog").removeClass("modal-md").addClass("modal-xl");
 }
 
+function handleContactForm($type) {
+  var form = document.getElementById(`${$type}-contact-form`);
+  var data = new FormData(form);
+  ajax(
+    form.method,
+    form.action,
+    data,
+    function () {
+      // success
+      form.reset();
+      if ($type === "modal") {
+        // close modal
+      }
+      alert("sucess");
+    },
+    function () {
+      // error
+      alert("error");
+    }
+  );
+
+  //reset form
+}
+
 //#endregion
 
 //#region Events
@@ -485,6 +523,11 @@ $().ready(function () {
 
 $("#details-modal").on("hidden.bs.modal", function (e) {
   handleModalCloseEvent();
+});
+
+$(".btn-contact").on("click", function (e) {
+  e.preventDefault();
+  handleContactForm($(this).data("formtype"));
 });
 
 //#endregion

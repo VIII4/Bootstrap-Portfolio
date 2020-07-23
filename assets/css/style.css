@@ -289,6 +289,7 @@ header,
 }
 
 .btn-project {
+  font-size: 0.65rem;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
@@ -315,8 +316,9 @@ header,
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1024px) {
+@media (min-width: 1024px) {
   .btn.btn-project {
+    font-size: 0.65rem;
     padding-right: 0.75rem;
     padding-left: 0.75rem;
     font-weight: bold;
@@ -325,6 +327,11 @@ header,
   .git-link {
     padding-right: 0.65rem !important;
     padding-left: 0.65rem !important;
+  }
+}
+@media (min-width: 1440px) {
+  .btn.btn-project {
+    font-size: 0.7rem;
   }
 }
 
@@ -369,7 +376,8 @@ header,
 
 /* MODALS */
 
-.modal-content.modal-details {
+.modal-content.modal-details,
+.contact-row {
   border: #000000;
   border-style: solid;
   border-width: 0.2rem;
