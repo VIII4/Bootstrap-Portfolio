@@ -397,7 +397,7 @@ header,
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   #detail-duties {
     height: 423px !important;
     overflow-y: scroll;
