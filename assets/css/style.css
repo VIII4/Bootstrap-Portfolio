@@ -218,11 +218,28 @@ header,
   font-weight: bolder;
 }
 
-.overlay:hover .bio-desc-block {
+/* .overlay:hover .bio-desc-block {
   opacity: 0;
 }
 .overlay:hover img.about-pic {
   filter: blur(2px);
+} */
+
+.hover.bio-desc-block {
+  opacity: 0;
+}
+
+.hover.about-pic {
+  filter: blur(2px);
+}
+
+.hover.zoom > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hover.mask {
+  opacity: 1;
 }
 
 .stretch-text {

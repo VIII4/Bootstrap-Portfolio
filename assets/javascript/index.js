@@ -117,7 +117,7 @@ particlesJS(
           speed: 10,
         },
         repulse: {
-          distance: 100,
+          distance: 150,
         },
         push: {
           particles_nb: 3,
@@ -146,6 +146,22 @@ particlesJS(
 //#region Variables
 var allProjectDetails = [];
 var headerHieght;
+var screenThird = window.innerHeight / 3;
+var middleThird = {
+  bottom: screenThird,
+  top: screenThird * 2,
+  center: screenThird + screenThird / 2,
+};
+middleThird.range = {
+  start: middleThird.center - 225,
+  end: middleThird.center,
+};
+var isTriggered = false;
+// middleThird.bottom = window.innerHeight / 3 + window.innerHeight / 3;
+// middleThird.top = middleThird.bottom + window.innerHeight / 3;
+// middleThird.center =
+//   middleThird.bottom + (middleThird.top - middleThird.bottom) / 2;
+
 //#endregion
 
 //#region Objects
@@ -549,6 +565,41 @@ function handleContactForm($type) {
   );
 }
 
+function handleHoverToggle(toggle) {
+  if (toggle) {
+    $(".bio-desc-block").addClass("hover");
+    $(".about-pic").addClass("hover");
+    $(".zoom").addClass("hover");
+    $(".mask").addClass("hover");
+    //$(".about-pic").addClass("hover");
+  } else {
+    $(".bio-desc-block").removeClass("hover");
+    $(".about-pic").removeClass("hover");
+    $(".zoom").removeClass("hover");
+    $(".mask").removeClass("hover");
+
+    //$(".about-pic").removeClass("hover");
+  }
+}
+
+function handlePicTrigger() {
+  let bioPic = document.querySelector(".about-pic");
+  let position = bioPic.getBoundingClientRect();
+  let picMiddle = position.top + (position.bottom - position.top) / 2;
+
+  // check if center of pic is at center of screen
+  if (
+    picMiddle > middleThird.range.start &&
+    picMiddle < middleThird.range.end
+  ) {
+    handleHoverToggle(true);
+    isTriggered = true;
+  } else {
+    handleHoverToggle(false);
+    isTriggered = false;
+  }
+}
+
 //#endregion
 
 //#region Events
@@ -576,6 +627,19 @@ $(".btn-contact").on("click", function (e) {
   handleContactForm($(this).data("formtype"));
 });
 
+$(".overlay").hover(
+  function () {
+    if (!isTriggered) handleHoverToggle(true);
+  },
+  function () {
+    if (!isTriggered) handleHoverToggle(false);
+  }
+);
+
 $(window).resize(function () {});
 
+// Check if bio pic is at top of screen,
+window.addEventListener("scroll", function () {
+  handlePicTrigger();
+});
 //#endregion

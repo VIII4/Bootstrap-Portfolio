@@ -90,11 +90,12 @@ var triggerFinder = function () {
   // checking whether fully visible
   if (position.top >= 0 && position.bottom <= window.innerHeight) {
     // console.log("Element is fully visible in screen");
+    animateCharts();
   }
 
   // checking for partial visibility
   if (position.top < window.innerHeight && position.bottom >= 0) {
-    animateCharts();
+    //animateCharts();
   }
 };
 //#endregion
