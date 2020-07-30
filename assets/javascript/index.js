@@ -629,17 +629,19 @@ $(".btn-contact").on("click", function (e) {
 
 $(".overlay").hover(
   function () {
-    if (!isTriggered) handleHoverToggle(true);
+    if (!isTriggered && window.screen.width > 768) handleHoverToggle(true);
   },
   function () {
-    if (!isTriggered) handleHoverToggle(false);
+    if (!isTriggered && window.screen.width > 768) handleHoverToggle(false);
   }
 );
 
-$(window).resize(function () {});
+$(".mobile-bio-mask").on("click", function (e) {
+  $("#collapsedBio").collapse("toggle");
+});
 
 // Check if bio pic is at top of screen,
 window.addEventListener("scroll", function () {
-  handlePicTrigger();
+  if (window.screen.width > 768) handlePicTrigger();
 });
 //#endregion
