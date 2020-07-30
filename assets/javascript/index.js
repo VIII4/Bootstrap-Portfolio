@@ -639,6 +639,12 @@ $(".overlay").hover(
 $(".mobile-bio-mask").on("click", function (e) {
   $("#collapsedBio").collapse("toggle");
 });
+$("#collapsedBio").on("shown.bs.collapse", function () {
+  $("#bio-instruct").hide("fast");
+});
+$("#collapsedBio").on("hidden.bs.collapse", function () {
+  $("#bio-instruct").show("fast");
+});
 
 // Check if bio pic is at top of screen,
 window.addEventListener("scroll", function () {
