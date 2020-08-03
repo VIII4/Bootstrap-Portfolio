@@ -183,7 +183,7 @@ var seniorPets = new ProjectDetails(
     desktop: [
       "assets/images/app-screens/senior-screens-a.png",
       "assets/images/app-screens/senior-screens-b.png",
-      "assets/images/coming-soon.jpg",
+      "assets/images/app-screens/senior-screens-c.png",
     ],
     mobile: [
       "assets/images/coming-soon-mob.jpg",
@@ -213,9 +213,9 @@ var loveBug = new ProjectDetails(
   // Image file location
   {
     desktop: [
-      "assets/images/coming-soon.jpg",
-      "assets/images/coming-soon.jpg",
-      "assets/images/coming-soon.jpg",
+      "assets/images/app-screens/lovebug-screens-a.png",
+      "assets/images/app-screens/lovebug-screens-b.png",
+      "assets/images/app-screens/lovebug-screens-a.png",
     ],
     mobile: [
       "assets/images/coming-soon-mob.jpg",
@@ -242,9 +242,9 @@ var trek = new ProjectDetails(
   // Image file location
   {
     desktop: [
-      "assets/images/coming-soon.jpg",
-      "assets/images/coming-soon.jpg",
-      "assets/images/coming-soon.jpg",
+      "assets/images/app-screens/trek-screens-a.png",
+      "assets/images/app-screens/trek-screens-b.png",
+      "assets/images/app-screens/trek-screens-c.png",
     ],
     mobile: [
       "assets/images/coming-soon-mob.jpg",
