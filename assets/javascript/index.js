@@ -181,8 +181,8 @@ var seniorPets = new ProjectDetails(
   // Image file location
   {
     desktop: [
-      "assets/images/coming-soon.jpg",
-      "assets/images/coming-soon.jpg",
+      "assets/images/app-screens/senior-screens-a.png",
+      "assets/images/app-screens/senior-screens-b.png",
       "assets/images/coming-soon.jpg",
     ],
     mobile: [
@@ -330,9 +330,9 @@ var caren = new ProjectDetails(
   // Image file location
   {
     desktop: [
-      "assets/images/coming-soon2.png",
-      "assets/images/coming-soon2.png",
-      "assets/images/coming-soon2.png",
+      "assets/images/app-screens/caren-screens-a.png",
+      "assets/images/app-screens/caren-screens-b.png",
+      "assets/images/app-screens/caren-screens-c.png",
     ],
     mobile: [
       "assets/images/coming-soon2.png",
@@ -506,11 +506,8 @@ function handleDetailsClick() {
   if (window.screen.width <= 400) {
     //adjust modal to md
     $(".modal-dialog").removeClass("modal-xl").addClass("modal-md");
-    imgs = project.images.mobile;
-  } else {
-    imgs = project.images.desktop;
   }
-
+  imgs = project.images.desktop;
   //Load Images
   for (var i = 0; i < imgs.length; i++) {
     $("#carousel-img-" + i).attr("src", imgs[i]);
