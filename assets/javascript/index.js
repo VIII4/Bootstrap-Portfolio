@@ -157,6 +157,7 @@ middleThird.range = {
   end: middleThird.center,
 };
 var isTriggered = false;
+var isHovered = false;
 // middleThird.bottom = window.innerHeight / 3 + window.innerHeight / 3;
 // middleThird.top = middleThird.bottom + window.innerHeight / 3;
 // middleThird.center =
@@ -589,8 +590,10 @@ function handlePicTrigger() {
     picMiddle > middleThird.range.start &&
     picMiddle < middleThird.range.end
   ) {
-    handleHoverToggle(true);
-    isTriggered = true;
+    if (!isHovered) {
+      handleHoverToggle(true);
+      isTriggered = true;
+    }
   } else {
     handleHoverToggle(false);
     isTriggered = false;
@@ -625,14 +628,20 @@ $(".btn-contact").on("click", function (e) {
 });
 
 //Issues with hover when scroll transition happens prior, disable for now
-// $(".overlay").hover(
-//   function () {
-//     if (!isTriggered && window.screen.width > 768) handleHoverToggle(true);
-//   },
-//   function () {
-//     if (!isTriggered && window.screen.width > 768) handleHoverToggle(false);
-//   }
-// );
+$(".overlay").hover(
+  function () {
+    if (!isTriggered && window.screen.width > 768) {
+      isHovered = true;
+      handleHoverToggle(true);
+    }
+  },
+  function () {
+    if (!isTriggered && window.screen.width > 768) {
+      isHovered = false;
+      handleHoverToggle(false);
+    }
+  }
+);
 
 $(".mobile-bio-mask").on("click", function (e) {
   $("#collapsedBio").collapse("toggle");
@@ -646,6 +655,9 @@ $("#collapsedBio").on("hidden.bs.collapse", function () {
 
 // Check if bio pic is at top of screen,
 window.addEventListener("scroll", function () {
+  if (isHovered) {
+    return;
+  }
   if (window.screen.width > 768) handlePicTrigger();
 });
 //#endregion
