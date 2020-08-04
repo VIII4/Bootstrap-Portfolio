@@ -624,14 +624,15 @@ $(".btn-contact").on("click", function (e) {
   handleContactForm($(this).data("formtype"));
 });
 
-$(".overlay").hover(
-  function () {
-    if (!isTriggered && window.screen.width > 768) handleHoverToggle(true);
-  },
-  function () {
-    if (!isTriggered && window.screen.width > 768) handleHoverToggle(false);
-  }
-);
+//Issues with hover when scroll transition happens prior, disable for now
+// $(".overlay").hover(
+//   function () {
+//     if (!isTriggered && window.screen.width > 768) handleHoverToggle(true);
+//   },
+//   function () {
+//     if (!isTriggered && window.screen.width > 768) handleHoverToggle(false);
+//   }
+// );
 
 $(".mobile-bio-mask").on("click", function (e) {
   $("#collapsedBio").collapse("toggle");
