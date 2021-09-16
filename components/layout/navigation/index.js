@@ -10,6 +10,7 @@ import {
   MDBCollapse,
   MDBIcon,
 } from "mdb-react-ui-kit";
+import Link from "next/link";
 import styles from "./navigation.module.css";
 
 export default function Navigation() {
@@ -40,15 +41,15 @@ export default function Navigation() {
           <MDBCollapse navbar show={showNav}>
             <MDBNavbarNav>
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="page" href="#">
+                <Link active aria-current="page" href="#">
                   About
-                </MDBNavbarLink>
+                </Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Portfolio</MDBNavbarLink>
+                <Link href="#">Portfolio</Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Contact</MDBNavbarLink>
+                <Link href="#">Contact</Link>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

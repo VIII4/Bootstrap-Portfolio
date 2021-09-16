@@ -11,27 +11,22 @@ export default function Footer() {
       className="text-center"
     >
       <MDBContainer fluid className="p-3">
-        <a href="https://github.com/VIII4" target="_blank" className="p-1 mx-2">
+        <a href="https://github.com/VIII4" className="p-1 mx-2">
           <MDBIcon color="light" size="3x" fab icon="github" />
         </a>
 
-        <a
-          href="https://www.linkedin.com/in/iyanlaylor"
-          target="_blank"
-          className="p-1 mx-2"
-        >
+        <a href="https://www.linkedin.com/in/iyanlaylor" className="p-1 mx-2">
           <MDBIcon color="light" size="3x" fab icon="linkedin" />
         </a>
 
         <a
           href="https://stackoverflow.com/users/12654186/"
-          target="_blank"
           className="p-1 mx-2"
         >
           <MDBIcon color="light" size="3x" fab icon="stack-overflow" />
         </a>
 
-        <a href="" target="_blank" className="p-1 mx-2">
+        <a href="" className="p-1 mx-2">
           <MDBIcon color="light" size="3x" fab icon="codepen" />
         </a>
       </MDBContainer>
