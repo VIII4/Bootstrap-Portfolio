@@ -1,0 +1,1623 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/icons/favicon.png"
+    />
+    <title>Iyan Laylor</title>
+
+    <!--               CSS             -->
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--            JavaScript       -->
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"
+    ></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav
+      id="fixedHeader"
+      class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar"
+    >
+      <span class="navbar-brand ml-md-5" href="#">Iyan Laylor</span>
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler float-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link nav-main" data-target="#about-content" href="#"
+              >About</a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a
+              class="nav-link nav-main"
+              data-target="#portfolio-content"
+              href="#"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link nav-main" data-target="#contact-content" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- Links -->
+      </div>
+      <!-- CTA -->
+    </nav>
+    <!-- ./ Navigation Bar -->
+
+    <!-- Full Page Intro -->
+    <div class="view scr-view d-none d-lg-block">
+      <video
+        class="video-intro"
+        poster="assets/images/background-still/underwaterBGStill.jpg"
+        playsinline
+        autoplay
+        muted
+        loop
+      >
+        <source src="assets/videos/underwaterBG.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-black-light d-flex justify-content-center">
+        <div
+          id="my-toast"
+          class="toast"
+          data-delay="1500"
+          style="position: absolute; top: 1.5rem; right: 1.5rem; z-index: 1032"
+        >
+          <div class="card rounded success-color">
+            <div class="card-body text-light">
+              <h5 class="card-title p-0 m-0">Message Sent</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Particles -->
+        <div id="particles-js"></div>
+
+        <!-- Notification -->
+
+        <div id="canvas-social" class="canvas-overlay align-self-end">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href="https://github.com/VIII4" target="_blank">
+                <i class="fab fa-github fa-3x fa-social-list"></i>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="https://www.linkedin.com/in/iyanlaylor" target="_blank"
+                ><i class="fab fa-linkedin fa-3x fa-social-list"></i
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a
+                href="https://stackoverflow.com/users/12654186/"
+                target="_blank"
+                ><i class="fab fa-stack-overflow fa-3x fa-social-list"></i
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="https://codepen.io/viii4" target="_blank">
+                <i class="fab fa-codepen fa-3x fa-social-list"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="align-self-center text-center mx-auto w-75">
+          <h1 class="display-3 text-white cover-text">Web || XR || Native</h1>
+          <hr class="white" />
+          <h5 class="text-muted cover-subtext">
+            Full Stack Developer and Interactive Content Designer
+          </h5>
+        </div>
+        <div class="canvas-overlay align-self-end">
+          <span id="canvas-contact" class="mx-auto mb-3 social-list-item">
+            <a
+              href=""
+              target="_blank"
+              data-toggle="modal"
+              data-target="#contactFormModal"
+            >
+              <i class="far fa-comment-alt fa-3x fa-social-list"></i>
+            </a>
+          </span>
+        </div>
+
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+    <!-- ./ Full Page Intro -->
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Mobile Banner -->
+      <div class="row bg-dark p-3 mobile-banner d-block d-lg-none">
+        <div class="col no-gutters m-0 p-0 mt-2">
+          <div class="row no-gutters">
+            <h1
+              class="
+                h1-responsive
+                text-center text-white text-wrap
+                banner-text
+                my-3
+                mx-auto
+              "
+            >
+              WEB || XR || NATIVE
+            </h1>
+          </div>
+          <div class="row no-gutters">
+            <p class="text-muted text-center banner-subtext">
+              Full Stack Developer and Interactive Content Designer
+            </p>
+          </div>
+          <div class="row no-gutters text-center mt-2">
+            <div class="col">
+              <span class="banner-link"
+                ><a href="https://github.com/VIII4" target="_blank">
+                  <i class="fab fa-github fa-2x fa-social-list"></i> </a
+              ></span>
+              <span class="banner-link"
+                ><a
+                  href="https://www.linkedin.com/in/iyanlaylor"
+                  target="_blank"
+                  ><i class="fab fa-linkedin fa-2x fa-social-list"></i></a
+              ></span>
+              <span class="banner-link"
+                ><a
+                  href="https://stackoverflow.com/users/12654186/"
+                  target="_blank"
+                  ><i class="fab fa-stack-overflow fa-2x fa-social-list"></i></a
+              ></span>
+              <span class="banner-link"
+                ><a href="https://codepen.io/viii4" target="_blank">
+                  <i class="fab fa-codepen fa-2x fa-social-list"></i> </a
+              ></span>
+            </div>
+
+            <!-- Links -->
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div id="about-content" class="container-fluid p-3 my-3">
+        <!-- Photo and BIO -->
+
+        <!-- Desktop version -->
+        <div class="row p-3 d-none d-md-block">
+          <div class="view overlay w-75 zoom mx-auto rounded">
+            <img
+              class="img-fluid w-100 about-pic"
+              src="assets/images/biopic/banner.png"
+              alt=""
+            />
+            <div
+              class="
+                bio-desc-block
+                d-flex
+                justify-content-end
+                align-items-center
+                p-2
+              "
+            >
+              <h4 class="bio-desc h4-responsive w-75 text-center">
+                Efficient and Proactive Executor of Elegant, Simple, and
+                Pragmatic Solutions for Complex Problems.
+              </h4>
+            </div>
+            <div
+              class="
+                mask
+                d-flex
+                justify-content-center
+                align-items-center
+                rgba-black-light
+              "
+            >
+              <h4 class="h4-responsive mr-3 bio-qoute text-right">
+                <strong
+                  >Always learning, always growing and always sharing ideas to
+                  cultivate thriving team based environments.</strong
+                >
+              </h4>
+              <p class="p-3 bio-text">
+                Hello, My name is Iyan, I’m a Full Stack developer with a
+                background in video game design. I love to create, code and
+                learn, what better way to do all three than to be a developer.
+                When I’m not behind the blue lights, I’m cycling with my wife or
+                gaming with my son. Currently I am creating web based VR
+                experiences with the company I founded, ixport Technologies, but
+                always looking for opportunities to grow and/or to collaborate.
+                Please don't hesitate to reach out.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile -->
+        <div class="row d-block d-md-none row-cols-1">
+          <!-- portrait -->
+          <div class="col-10 mx-auto p-0">
+            <div class="view">
+              <img
+                class="img-portrait rounded"
+                src="./assets/images/biopic/portrait_interlaced.png"
+                alt="Portrait"
+              />
+              <div class="mobile-bio-mask mask d-flex justify-content-center">
+                <h6
+                  id="bio-instruct"
+                  class="text-center text-dark align-self-end font-weight-bold"
+                >
+                  Tap Image for More About Me
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 mx-auto bg-dark rounded p-0">
+            <div class="collapse" id="collapsedBio">
+              <div class="card card-body">
+                <h6
+                  class="
+                    mobile-bio mobile-bio-qoute
+                    font-weight-bold
+                    mb-3
+                    text-center
+                    mx-0
+                    px-0
+                  "
+                >
+                  Always learning, always growing and always sharing ideas to
+                  cultivate thriving team based environments.
+                </h6>
+                <p class="mobile-bio mobile-bio-desc mb-0 text-center">
+                  Hello, My name is Iyan, I’m a Full Stack developer with a
+                  background in video game design. I love to create, code and
+                  learn, what better way to do all three than to be a developer.
+                  When I’m not behind the blue lights, I’m cycling with my wife
+                  or gaming with my son. Currently I am creating web based VR
+                  experiences with the company I founded, ixport Technologies,
+                  but always looking for opportunities to grow and/or to
+                  collaborate. Please don't hesitate to reach out.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- portrait -->
+          <!-- Bio Statement -->
+        </div>
+
+        <!-- ./ Photo and BIO -->
+
+        <hr class="w-75" />
+
+        <!-- Titles Row -->
+        <div class="row justify-content-center my-2 trigger">
+          <div class="col text-center">
+            <h5 class="stretch-text mx-auto text-center">Multidisciplinary</h5>
+            <h2>Designer || Developer</h2>
+          </div>
+        </div>
+        <!-- ./ Titles -->
+
+        <!-- Skill Charts  -->
+
+        <!-- Chart Row -->
+        <div class="row">
+          <div class="col text-center">
+            <h6
+              id="mobile-desTitle-0"
+              class="h6-reposponsive d-block d-md-none mobile-skill"
+            ></h6>
+          </div>
+          <div class="col text-center">
+            <h6
+              id="mobile-devTitle-0"
+              class="h6-responsive d-block d-md-none mobile-skill"
+            ></h6>
+          </div>
+        </div>
+        <div class="row my-0 my-md-2 skill-row">
+          <!-- Left Chart -->
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-left"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar designer-chart bg-light"
+                role="progressbar"
+                data-target="neg"
+                style="width: 100%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar designer-chart bg-dark"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              mr-2
+              d-flex
+              justify-content-end
+            "
+          >
+            <h6 id="designer-title-0" class="px-2 py-1 d-none d-md-block"></h6>
+          </div>
+          <!-- Right Chart -->
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              d-flex
+              justify-content-start
+            "
+          >
+            <h6
+              id="developer-title-0"
+              class="h6-responsive px-2 py-1 d-none d-md-block"
+            ></h6>
+          </div>
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-right"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar bg-dark developer-chart"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-light developer-chart"
+                role="progressbar"
+                data-target="neg"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Chart Row -->
+
+        <!-- Chart Row -->
+        <div class="row">
+          <div class="col text-center">
+            <h6
+              id="mobile-desTitle-1"
+              class="h6-reposponsive d-block d-md-none mobile-skill"
+            ></h6>
+          </div>
+          <div class="col text-center">
+            <h6
+              id="mobile-devTitle-1"
+              class="h6-responsive d-block d-md-none mobile-skill"
+            ></h6>
+          </div>
+        </div>
+        <div class="row my-0 my-md-2 skill-row">
+          <!-- Left Chart -->
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-left"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar designer-chart bg-light"
+                role="progressbar"
+                data-target="neg"
+                style="width: 100%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar designer-chart bg-dark"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              mr-2
+              d-flex
+              justify-content-end
+            "
+          >
+            <h6 id="designer-title-1" class="px-2 py-1 d-none d-md-block"></h6>
+          </div>
+          <!-- Right Chart -->
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              d-flex
+              justify-content-start
+            "
+          >
+            <h6 id="developer-title-1" class="px-2 py-1 d-none d-md-block"></h6>
+          </div>
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-right"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar bg-dark developer-chart"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-light developer-chart"
+                role="progressbar"
+                data-target="neg"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Chart Row -->
+
+        <!-- Chart Row -->
+        <div class="row">
+          <div class="col text-center">
+            <h6
+              id="mobile-desTitle-2"
+              class="h6-reposponsive d-block d-md-none mobile-skill"
+            ></h6>
+          </div>
+          <div class="col text-center">
+            <h6
+              id="mobile-devTitle-2"
+              class="h6-responsive d-block d-md-none mobile-skill"
+            ></h6>
+          </div>
+        </div>
+        <div class="row my-0 my-md-2 skill-row">
+          <!-- Left Chart -->
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-left"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar designer-chart bg-light"
+                role="progressbar"
+                data-target="neg"
+                style="width: 100%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar designer-chart bg-dark"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              mr-2
+              d-flex
+              justify-content-end
+            "
+          >
+            <h6 id="designer-title-2" class="px-2 py-1 d-none d-md-block"></h6>
+          </div>
+          <!-- Right Chart -->
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              d-flex
+              justify-content-start
+            "
+          >
+            <h6 id="developer-title-2" class="px-2 py-1 d-none d-md-block"></h6>
+          </div>
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-right"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar bg-dark developer-chart"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-light developer-chart"
+                role="progressbar"
+                data-target="neg"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Chart Row -->
+
+        <!-- Chart Row -->
+        <div class="row">
+          <div class="col text-center">
+            <h6
+              id="mobile-desTitle-3"
+              class="h6-reposponsive d-block d-md-none mobile-skill"
+            ></h6>
+          </div>
+          <div class="col text-center">
+            <h6
+              id="mobile-devTitle-3"
+              class="h6-responsive d-block d-md-none mobile-skill"
+            ></h6>
+          </div>
+        </div>
+        <div class="row my-0 my-md-2 skill-row">
+          <!-- Left Chart -->
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-left"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar designer-chart bg-light"
+                role="progressbar"
+                data-target="neg"
+                style="width: 100%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar designer-chart bg-dark"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              mr-2
+              d-flex
+              justify-content-end
+            "
+          >
+            <h6 id="designer-title-3" class="px-2 py-1 d-none d-md-block"></h6>
+          </div>
+          <!-- Right Chart -->
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              d-flex
+              justify-content-start
+            "
+          >
+            <h6 id="developer-title-3" class="px-2 py-1 d-none d-md-block"></h6>
+          </div>
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-right"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar bg-dark developer-chart"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-light developer-chart"
+                role="progressbar"
+                data-target="neg"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Chart Row -->
+
+        <!-- Chart Row -->
+        <div class="row">
+          <div class="col text-center">
+            <h6
+              id="mobile-desTitle-4"
+              class="d-block d-md-none mb-0 mobile-skill"
+            ></h6>
+          </div>
+          <div class="col text-center">
+            <h6
+              id="mobile-devTitle-4"
+              class="d-block d-md-none mb-0 mobile-skill"
+            ></h6>
+          </div>
+        </div>
+        <div class="row my-0 my-md-2 skill-row">
+          <!-- Left Chart -->
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-left"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar designer-chart bg-light"
+                role="progressbar"
+                data-target="neg"
+                style="width: 100%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar designer-chart bg-dark"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              mr-2
+              d-flex
+              justify-content-end
+            "
+          >
+            <h6 id="designer-title-4" class="px-2 py-1 d-none d-md-block"></h6>
+          </div>
+          <!-- Right Chart -->
+          <div
+            class="
+              col-2
+              bg-dark
+              border-custom border border-dark
+              ml-0
+              text-light text-center
+              d-flex
+              justify-content-start
+            "
+          >
+            <h6 id="developer-title-4" class="px-2 py-1 d-none d-md-block"></h6>
+          </div>
+          <div
+            class="col mr-0 p-0 border border-custom border-dark rounded-right"
+          >
+            <div class="progress h-100">
+              <div
+                class="progress-bar bg-dark developer-chart"
+                role="progressbar"
+                data-target="pos"
+                style="width: 0%"
+                aria-valuenow="15"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-light developer-chart"
+                role="progressbar"
+                data-target="neg"
+                style="width: 0%"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Chart Row -->
+
+        <!-- SKill Charts -->
+      </div>
+
+      <!-- About -->
+
+      <hr class="w-75" />
+
+      <!-- Portfolio -->
+      <div id="portfolio-content" class="row m-0 mx-sm-4 my-sm-4 center-text">
+        <div class="col my-2">
+          <h1 class="text-center h1-responsive">My Works</h1>
+        </div>
+        <!-- Content -->
+        <div class="container my-3">
+          <!-- Filter Buttons -->
+          <!-- React, node, Express, JS, C#, Unity3d, VR, Babylon.js ...   -->
+          <!-- current filters: html, JavaScript, node, react, backend, unity3d -->
+          <ul
+            id="portfolio-tab"
+            class="
+              nav nav-pills nav-justified
+              mb-1 mb-md-3
+              p-2
+              border border-dark border-strong
+              rounded
+            "
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter active align-self-center"
+                id="all-tab"
+                data-toggle="tab"
+                data-filter="all"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fas fa-ellipsis-h fa-3x"></i>
+                <p class="filter-text p-1"></p
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="html-tab"
+                data-toggle="tab"
+                data-filter="html"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-html5 fa-2x"></i>
+                <p class="filter-text">HTML</p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="js-tab"
+                data-toggle="tab"
+                data-filter="javascript"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-js-square fa-2x"></i>
+                <p class="filter-text">Javascript</p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="node-tab"
+                data-toggle="tab"
+                data-filter="node"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-node fa-2x"></i>
+                <p class="filter-text">Node</p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="react-tab"
+                data-toggle="tab"
+                data-filter="react"
+                href="#"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-react fa-2x"></i>
+                <p class="filter-text">React</p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="backend-tab"
+                data-toggle="tab"
+                data-filter="backend"
+                href="#js-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fas fa-server fa-2x"></i>
+                <p class="filter-text">Backend</p></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-filter"
+                id="unity3d-tab"
+                data-toggle="tab"
+                data-filter="unity3d"
+                href="#js-panel"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+                ><i class="fab fa-unity fa-2x"></i>
+                <p class="filter-text">Unity3D</p></a
+              >
+            </li>
+          </ul>
+          <!-- ./ Filter Buttons -->
+          <div class="row mb-5">
+            <div class="col">
+              <h6 class="text-center filter-text">
+                <small>Filter by: </small
+                ><strong id="filtered-by">ALL PROJECTS</strong>
+              </h6>
+            </div>
+          </div>
+
+          <!-- Filtered Content -->
+
+          <!-- Care'n -->
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="html javascript bootstrap react"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-lg-4 order-last order-lg-first">
+              <div class="row">
+                <h2>Care'n</h2>
+                <p>
+                  A Full Stack MERN application bootstrapped by Create-React-App
+                  framework and powered by Google Maps API; Care'n provides
+                  prioritization of community desired change by presenting
+                  real-time location based issues for users to vote on, with a
+                  unique limited vote token system.
+                </p>
+
+                <a
+                  target="_blank"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
+                  data-project="Care'n"
+                >
+                  Details
+                </a>
+                <a
+                  href="https://care-n.herokuapp.com/"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
+                >
+                  See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/Care-n-v2"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col my-3 my-lg-1">
+              <div class="row">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/app-screens/caren-main_b.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- Senior Pets -->
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="mysql express html javascript node"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-lg-4 order-last order-lg-first">
+              <div class="row">
+                <h2>Senior Pets</h2>
+                <p>
+                  A Full Stack MVC web application with Express/MySQL Backend
+                  and Handlebars; Senior Pets creates a platform for volunteers
+                  that wish to assist seniors with pet care needs. Users can log
+                  in and see what tasks are available on specific days in their
+                  area, using the dynamic calendar. All active and completed
+                  tasks are tracked and presented to user in sleek UI designed
+                  for web and mobile screens
+                </p>
+                <!-- Data-Project: MUST MATCH PROJECT NAME OF OBJECT IN JS -->
+                <a
+                  target="_blank"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
+                  data-project="Senior Pets"
+                >
+                  Details
+                </a>
+
+                <a
+                  href="https://seniorpets22.herokuapp.com/"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
+                >
+                  See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/SeniorPets"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col my-3 my-lg-1">
+              <div class="row">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/app-screens/seniorPets-main.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="html javascript backend node"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-lg-4 order-last order-lg-first">
+              <div class="row">
+                <h2>LoveBug</h2>
+                <p>
+                  LoveBug is a web app designed to allows user to quickly find a
+                  match by simply completing a survey. The app then uses an
+                  algorithm to processes the best match based on user results
+                  comparison. Lovebug tracks all matches, allowing users to see
+                  all profiles and how many times they have been matched with
+                  someone. Lovebug provides an API to allow developers to
+                  retrieve all profiles in json format.
+                </p>
+
+                <a
+                  target="_blank"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
+                  data-project="LoveBug"
+                >
+                  Details
+                </a>
+                <a
+                  href="https://lovebug-app.herokuapp.com/"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
+                >
+                  See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/LoveBug"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col my-3 my-lg-1">
+              <div class="row">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/app-screens/loveBug-main.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- Trek -->
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="html javascript bootstrap"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-lg-4 order-last order-lg-first">
+              <div class="row">
+                <h2>Trek</h2>
+                <p>
+                  Trek! A convenient travel tool to learn about a destination
+                  city of your choice. Enter a destination city to receive
+                  current weather information, a 7 day weather forecast, and a
+                  sample of ten local events for that city. If you would like
+                  step by step driving directions to that city, simply enter
+                  your origin city for the search.
+                </p>
+
+                <a
+                  target="_blank"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
+                  data-project="Trek"
+                >
+                  Details
+                </a>
+                <a
+                  href="https://benjamintownsend02.github.io/TrekProject/"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
+                >
+                  See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/Trek"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col my-3 my-lg-1">
+              <div class="row">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/app-screens/trek-main.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- Google Books-->
+          <!-- Project (Set up: put proper data tags for project, 
+            link deployed on button, add project name on details button data)-->
+          <div
+            class="row p-3 my-3 project-panel"
+            data-tags="html javascript bootstrap react backend"
+          >
+            <!-- Project Name, Desc, details button-->
+            <div class="col-12 col-lg-4 order-last order-lg-first">
+              <div class="row">
+                <h2>Google Books</h2>
+                <p>
+                  A Full Stack MERN web app, utilizing Google Books API. Google
+                  Books provides users with a platform to search books with an
+                  option to add to their reading/favorites list, user can then
+                  view and remove books from the list as necessary .
+                </p>
+
+                <a
+                  target="_blank"
+                  class="btn btn-sm btn-dark btn-details rounded btn-project"
+                  data-project="Google Books"
+                >
+                  Details
+                </a>
+                <a
+                  href="https://googlebooksmernapp.herokuapp.com/"
+                  class="btn btn-sm btn-outline-dark rounded btn-project"
+                >
+                  See Deployed
+                </a>
+                <a
+                  href="https://github.com/VIII4/googleBooks"
+                  class="btn btn-sm btn-outline-dark rounded git-link"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project images -->
+            <div class="col my-3 my-lg-1">
+              <div class="row">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/app-screens/googleBooks-main.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ./  Project -->
+
+          <!-- ./ Filtered Content -->
+        </div>
+        <!-- ./ Content  -->
+      </div>
+      <!-- ./ Portfolio -->
+
+      <hr class="w-75" />
+
+      <!-- Contact -->
+      <div id="contact-content" class="row mx-1 my-4 m-md-4 contact-row">
+        <div class="col-md"></div>
+        <div class="col-md-8 mt-5 bg-white">
+          <div class="row">
+            <div class="col">
+              <div class="row pb-3">
+                <div class="col">
+                  <h3 id="contentTitle" class="m-2">Contact</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <form
+                    id="page-contact-form"
+                    action="https://formspree.io/myynleoo"
+                    method="POST"
+                  >
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input
+                        type="text"
+                        id="page-name"
+                        name="name"
+                        class="form-control validate"
+                      />
+                      <label
+                        data-error="wrong"
+                        data-success="right"
+                        for="form34"
+                        >Your name</label
+                      >
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input
+                        type="email"
+                        id="page-email"
+                        name="_replyto"
+                        class="form-control validate"
+                      />
+                      <label
+                        data-error="wrong"
+                        data-success="right"
+                        for="form29"
+                        >Your email</label
+                      >
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input
+                        type="text"
+                        id="page-subject"
+                        name="subject"
+                        class="form-control validate"
+                      />
+                      <label
+                        data-error="wrong"
+                        data-success="right"
+                        for="form32"
+                        >Subject</label
+                      >
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea
+                        type="text"
+                        id="page-message"
+                        class="md-textarea form-control"
+                        name="message"
+                        rows="4"
+                      ></textarea>
+                      <label data-error="wrong" data-success="right" for="form8"
+                        >Your message</label
+                      >
+                    </div>
+                    <button
+                      type="button"
+                      data-formtype="page"
+                      class="btn btn-dark rounded btn-project btn-contact"
+                    >
+                      Send
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md"></div>
+      </div>
+      <!-- ./ Contact -->
+    </div>
+    <!-- ./ Main Content -->
+
+    <!-- Footer -->
+    <footer class="page-footer bg-dark text-center wow fadeIn">
+      <!-- Social icons -->
+      <div class="pt-4 mb-2">
+        <a href="https://github.com/VIII4" target="_blank">
+          <i class="fab fa-github fa-2x mr-3"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/iyanlaylor" target="_blank"
+          ><i class="fab fa-linkedin fa-2x mr-3"></i
+        ></a>
+
+        <a href="https://stackoverflow.com/users/12654186/" target="_blank"
+          ><i class="fab fa-stack-overflow fa-2x mr-3"></i
+        ></a>
+
+        <a href="" target="_blank">
+          <i class="fab fa-codepen fa-2x"></i>
+        </a>
+      </div>
+      <!-- Social icons -->
+
+      <!--Copyright-->
+      <div class="footer-copyright py-3"></div>
+      <!--/.Copyright-->
+    </footer>
+    <!-- ./ Footer -->
+
+    <!-- Portfolio Details Modal -->
+    <div
+      class="modal fade"
+      id="details-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content modal-details">
+          <div class="modal-header">
+            <div class="row">
+              <div class="col">
+                <h3 id="detail-name" class="h3-responsive align-self-end">
+                  <strong></strong>
+                </h3>
+                <h6
+                  id="detail-role"
+                  class="h6-responsive align-self-center"
+                ></h6>
+              </div>
+            </div>
+            <span
+              id="detail-tech"
+              class="float-right align-self-end"
+              style="font-size: 0.6rem"
+            >
+            </span>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Details -->
+                <div class="col-lg-4 col-12 order-last order-lg-first">
+                  <div class="row my-2 my-md-1">
+                    <h6 class="h6-responsive">Accomplishments</h6>
+                  </div>
+                  <div
+                    id="detail-duties"
+                    class="row p-1 custom-scrollbar"
+                  ></div>
+                </div>
+                <!-- Image Gallery -->
+                <div class="col-lg-8 col-12">
+                  <div class="row">
+                    <!--Carousel Wrapper-->
+                    <div
+                      id="carouselExampleControls"
+                      class="carousel slide"
+                      data-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            id="carousel-img-0"
+                            class="d-block w-100"
+                            alt="First slide"
+                          />
+                          <div class="view"></div>
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            id="carousel-img-1"
+                            class="d-block w-100"
+                            alt="Second slide"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            id="carousel-img-2"
+                            class="d-block w-100"
+                            alt="Third slide"
+                          />
+                        </div>
+                      </div>
+                      <a
+                        class="carousel-control-prev"
+                        href="#carouselExampleControls"
+                        role="button"
+                        data-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a
+                        class="carousel-control-next"
+                        href="#carouselExampleControls"
+                        role="button"
+                        data-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-sm btn-close btn-outline-dark rounded"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./ Portfolio Details Modal -->
+
+    <!-- Contact Modal -->
+    <div
+      class="modal fade right"
+      id="contactFormModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalPreviewLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-side modal-bottom-right" role="document">
+        <div class="modal-content modal-details">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Reach Out</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <form
+              id="modal-contact-form"
+              action="https://formspree.io/myynleoo"
+              method="POST"
+            >
+              <div class="md-form mb-5">
+                <i class="fas fa-user prefix grey-text"></i>
+                <input
+                  type="text"
+                  id="modal-name"
+                  name="name"
+                  class="form-control validate"
+                />
+                <label data-error="wrong" data-success="right" for="form34"
+                  >Your name</label
+                >
+              </div>
+
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input
+                  type="email"
+                  id="modal-email"
+                  name="_replyto"
+                  class="form-control validate"
+                />
+                <label data-error="wrong" data-success="right" for="form29"
+                  >Your email</label
+                >
+              </div>
+
+              <div class="md-form mb-5">
+                <i class="fas fa-tag prefix grey-text"></i>
+                <input
+                  type="text"
+                  id="modal-subject"
+                  name="subject"
+                  class="form-control validate"
+                />
+                <label data-error="wrong" data-success="right" for="form32"
+                  >Subject</label
+                >
+              </div>
+
+              <div class="md-form">
+                <i class="fas fa-pencil prefix grey-text"></i>
+                <textarea
+                  type="text"
+                  id="modal-message"
+                  class="md-textarea form-control"
+                  name="message"
+                  rows="4"
+                ></textarea>
+                <label data-error="wrong" data-success="right" for="form8"
+                  >Your message</label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button
+              data-formtype="modal"
+              class="btn btn-dark btn-contact"
+              type="submit"
+            >
+              Send <i class="fas fa-paper-plane-o ml-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /. Contact Modal -->
+
+    <!-- initialize WOW -->
+    <!-- <script type="text/javascript">
+      // Animations initialization
+      new WOW().init();
+    </script> -->
+    <!-- Custom javascript -->
+    <script src="assets/javascript/particles.js"></script>
+    <script src="assets/javascript/index.js"></script>
+    <script src="assets/javascript/chartAnimator.js"></script>
+  </body>
+</html>
