@@ -1,21 +1,3 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Navbar Styling */
-
 .top-nav-collapse {
   background-color: black !important;
 }
@@ -29,5 +11,3 @@ a {
     background-color: black !important;
   }
 }
-
-/* ./Navbar Styling */
