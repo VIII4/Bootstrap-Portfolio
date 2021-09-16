@@ -8,7 +8,7 @@ export default function Home() {
     <Layout>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Coming Soon<a href="https://nextjs.org">Next.js! OVERHAUL</a>
+          Coming Soon <a href="https://nextjs.org">Next.js!</a> OVERHAUL
         </h1>
       </main>
     </Layout>

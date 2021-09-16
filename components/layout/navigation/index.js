@@ -42,14 +42,18 @@ export default function Navigation() {
             <MDBNavbarNav>
               <MDBNavbarItem>
                 <Link active aria-current="page" href="#">
-                  About
+                  <a className="nav-link">About</a>
                 </Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <Link href="#">Portfolio</Link>
+                <Link active aria-current="page" href="#">
+                  <a className="nav-link">Portfolio</a>
+                </Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <Link href="#">Contact</Link>
+                <Link active aria-current="page" href="#">
+                  <a className="nav-link">Contact</a>
+                </Link>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
