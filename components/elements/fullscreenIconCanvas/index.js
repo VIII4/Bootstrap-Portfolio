@@ -56,8 +56,8 @@ export default function FullscreenIconCanvas({ handleContactClick }) {
           className={`${styles.canvasContact} ${styles.socialListItem} mx-auto mb-3`}
         >
           <a
-            dataToggle="modal"
-            dataTarget="#contactFormModal"
+            data-toggle="modal"
+            data-target="#contactFormModal"
             onClick={handleContactClick}
           >
             <MDBIcon
