@@ -4,7 +4,7 @@ import styles from "./fullscreenDisplayText.module.css";
 
 export default function fullscreenDisplayText(props) {
   return (
-    <div class="align-self-center text-center mx-auto w-75">
+    <div className="align-self-center text-center mx-auto w-75">
       <MDBTypography
         tag="div"
         className={`${styles.coverText} display-3 text-white `}
