@@ -6,12 +6,14 @@ export default function FullScreenVideo(props) {
     <video
       className={`${styles.videoIntro}`}
       poster="/images/background-still/underwaterBGStill.jpg"
-      playsInline
       autoPlay
       muted
       loop
     >
-      <source src="/videos/underwaterBG.mp4" type="video/mp4" />
+      <source
+        src="https://res.cloudinary.com/darv9txct/video/upload/v1631854829/il-portfolio/underwaterBG_i7lmlt.mp4"
+        type="video/mp4"
+      />
     </video>
   );
 }
