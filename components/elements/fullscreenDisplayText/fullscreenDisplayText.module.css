@@ -1,0 +1,20 @@
+.coverText {
+  letter-spacing: 1rem;
+  filter: drop-shadow(0px 0px 4px #0099cc);
+}
+
+.coverSubtext {
+  letter-spacing: 1rem;
+  filter: drop-shadow(0px 0px 5.5px #000000);
+}
+
+@media (max-width: 768px) {
+  .coverText {
+    font-size: 2.1rem;
+  }
+
+  .coverSubtext {
+    font-size: 1.25rem;
+    letter-spacing: 0.75rem;
+  }
+}
