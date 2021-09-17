@@ -22,7 +22,7 @@ export default function Navigation() {
     <>
       <MDBNavbar
         expand="lg"
-        light
+        dark
         bgColor="dark"
         className="p-2 fixed-top scrolling-navbar"
       >

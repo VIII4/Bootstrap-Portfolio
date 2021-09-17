@@ -1,0 +1,16 @@
+.view {
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 760px) {
+  .view {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 400px) {
+  .view {
+    display: none;
+  }
+}
