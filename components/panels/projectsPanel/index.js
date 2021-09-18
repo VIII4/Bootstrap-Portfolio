@@ -22,6 +22,7 @@ export default function ProjectsPanel(props) {
       {projects.map((project) => {
         return (
           <ProjectCard
+            key={project.title}
             title={project.title}
             desc={project.desc}
             deployed={project.deployed}
