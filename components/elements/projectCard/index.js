@@ -10,12 +10,12 @@ BREAK DOWN
 
 
     CARD
-        Project Title Block
-        Project Desc Block
-        Button Block
-            Details Button
-            Deployed Button
-            Github Button
+        Project Title Block *
+        Project Desc Block *
+        Button Block *
+            Details Button *
+            Deployed Button *
+            Github Button *
         Visual Display Block
             Media frame
                 Image
@@ -25,21 +25,28 @@ BREAK DOWN
 
 */
 
-export default function ProjectCard({ tags }) {
+export default function ProjectCard({
+  tags,
+  title,
+  desc,
+  deployed,
+  deployLink,
+  repoLink,
+  handledetailClick,
+}) {
   return (
     <MDBRow className={styles.projectCard} data-tags={tags}>
       <MDBCol size="12" lg="4" className="order-last order-lg-first">
         {/* Title, Desc, Buttons Block */}
         <MDBRow>
-          <MDBTypography tag="h2">Care'n</MDBTypography>
-          <MDBTypography tag="p">
-            A Full Stack MERN application bootstrapped by Create-React-App
-            framework and powered by Google Maps API; Care'n provides
-            prioritization of community desired change by presenting real-time
-            location based issues for users to vote on, with a unique limited
-            vote token system.
-          </MDBTypography>
-          <ButtonBlock />
+          <MDBTypography tag="h2">{title}</MDBTypography>
+          <MDBTypography tag="p">{desc}</MDBTypography>
+          <ButtonBlock
+            deployed={deployed}
+            deployLink={deployLink}
+            repoLink={repoLink}
+            handledetailClick={handledetailClick}
+          />
         </MDBRow>
       </MDBCol>
       <MDBCol>{/* Images */}</MDBCol>

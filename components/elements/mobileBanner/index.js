@@ -10,8 +10,8 @@ import styles from "./mobileBanner.module.css";
 
 export default function MobileBanner(props) {
   return (
-    <MDBRow className={`${styles.mobileBanner} bg-dark d-flex d-lg-none p-1`}>
-      <MDBCol className="">
+    <MDBRow className={`${styles.mobileBanner} bg-dark d-flex d-md-none p-1`}>
+      <MDBCol>
         <MDBRow>
           <MDBTypography
             tag="h2"
