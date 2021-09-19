@@ -4,6 +4,7 @@ import styles from "./projectCard.module.css";
 
 // Blocks
 import ButtonBlock from "./buttonBlock";
+import ImageBlock from "./imageBlock";
 
 /*
 BREAK DOWN
@@ -30,13 +31,20 @@ export default function ProjectCard({
   title,
   desc,
   deployed,
-  deployLink,
+  deployedLink,
   repoLink,
   handleDetailClick,
+  imgSrc,
 }) {
   return (
-    <MDBRow id={id} className={styles.projectCard} /*data-project={id}*/>
-      <MDBCol size="12" lg="4" className="order-last order-lg-first">
+    <MDBRow center id={id} className={styles.projectCard} /*data-project={id}*/>
+      <MDBCol
+        size="12"
+        md="8"
+        lg="4"
+        xl="2"
+        className="order-last order-lg-first mx-lg-2"
+      >
         {/* Title, Desc, Buttons Block */}
         <MDBRow>
           <MDBTypography tag="h2" data-project={id}>
@@ -46,13 +54,16 @@ export default function ProjectCard({
           <ButtonBlock
             projectId={id}
             deployed={deployed}
-            deployLink={deployLink}
+            deployedLink={deployedLink}
             repoLink={repoLink}
             handleDetailClick={handleDetailClick}
           />
         </MDBRow>
       </MDBCol>
-      <MDBCol>{/* Images */}</MDBCol>
+      <MDBCol size="12" md="8" lg="4" xl="3" className="my-3 my-lg-1 mx-lg-2">
+        {/* Images */}
+        <ImageBlock imgSrc={imgSrc} />
+      </MDBCol>
     </MDBRow>
   );
 }

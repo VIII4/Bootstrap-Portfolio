@@ -34,9 +34,10 @@ export default function ProjectsPanel(props) {
             key={project.id}
             title={project.title}
             id={project.id}
+            imgSrc={project.imgUrl.hero}
             desc={project.desc}
             deployed={project.deployed}
-            deployLink={project.deployedLink}
+            deployedLink={project.deployedLink}
             repoLink={project.repoLink}
             type={project.type}
             tags={project.tags}
