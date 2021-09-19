@@ -3,6 +3,7 @@ export const projects = [
   {
     title: "Ixport Technologies",
     desc: "",
+    id: "ixport",
     role: "Full Stack Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
@@ -19,6 +20,7 @@ export const projects = [
   // {
   //   title: "Bookla",
   //   desc: "",
+  //   id: "bookla",
   //   role: "Full Stack Developer",
   //   type: "hybrid",
   //   tags: ["html", "bootstrap", "javascript"],
@@ -35,6 +37,7 @@ export const projects = [
   // {
   //   title: "Realtor App",
   //   desc: "",
+  //   id: "realtor",
   //   role: "Full Stack Developer",
   //   type: "hybrid",
   //   tags: ["html", "bootstrap", "javascript"],
@@ -51,6 +54,7 @@ export const projects = [
   // {
   //   title: "Med Sim VR",
   //   desc: "",
+  //  id: "medsim"
   //   role: "Full Stack Developer",
   //   type: "hybrid",
   //   tags: ["html", "bootstrap", "javascript"],
@@ -67,6 +71,7 @@ export const projects = [
   // {
   //   title: "Bottled Watermark",
   //   desc: "",
+  //  id: "bottledW",
   //   role: "Full Stack Developer",
   //   type: "mobile",
   //   tags: ["html", "bootstrap", "javascript"],
@@ -83,6 +88,7 @@ export const projects = [
   {
     title: "Care'n",
     desc: "A Full Stack MERN application bootstrapped by Create-React-App framework and powered by Google Maps API; Care'n provides prioritization of community desired change by presenting real-time location based issues for users to vote on, with a unique limited vote token system.",
+    id: "caren",
     role: "Full Stack Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "javascript"],
@@ -107,6 +113,7 @@ export const projects = [
   {
     title: "Trek",
     desc: "Trek! A convenient travel tool to learn about a destination city of your choice. Enter a destination city to receive current weather information, a 7 day weather forecast, and a sample of ten local events for that city. If you would like step by step driving directions to that city, simply enter your origin city for the search.",
+    id: "trek",
     role: "Full Stack Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
@@ -128,6 +135,7 @@ export const projects = [
   {
     title: "Senior Pets",
     desc: "A Fullstack MVC web application. Senior Pets is a platform for volunteers that wish to assist seniors with pet care needs. Users can log in and see what tasks are available on specific days in their area, using the dynamic calendar. All active and completed tasks are tracked and presented to user in sleek UI designed for web and mobile screens",
+    id: "seniorPets",
     role: "Frontend Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "mysql", "handlebars"],
@@ -152,6 +160,7 @@ export const projects = [
   {
     title: "Because Zombies!",
     desc: "",
+    id: "becauseZombies",
     role: "Full Stack Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "javascript"],
@@ -168,6 +177,7 @@ export const projects = [
   {
     title: "Lovebug",
     desc: "LoveBug is a web app designed to allows user to quickly find a match by simply completing a survey. The app then uses an algorithm to processes the best match based on user results comparison. Lovebug tracks all matches, allowing users to see all profiles and how many times they have been matched with someone. Lovebug provides an API to allow developers to retrieve all profiles in json format.",
+    id: "lovebug",
     role: "Full Stack Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "mysql", "express"],
@@ -189,6 +199,7 @@ export const projects = [
   {
     title: "Google Books",
     desc: "A Full Stack MERN web app, utilizing Google Books API. Google Books provides users with a platform to search books with an option to add to their reading/favorites list, user can then view and remove books from the list as necessary .",
+    id: "googleBooks",
     role: "Full Stack Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "javascript"],

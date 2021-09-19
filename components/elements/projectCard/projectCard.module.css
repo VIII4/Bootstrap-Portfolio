@@ -11,3 +11,8 @@
     border-radius: 5px; */
   }
 }
+
+.slideAnimation {
+  opacity: 0;
+  transform: translateX(-20px);
+}

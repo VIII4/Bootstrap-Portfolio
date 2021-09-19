@@ -26,26 +26,29 @@ BREAK DOWN
 */
 
 export default function ProjectCard({
-  tags,
+  id,
   title,
   desc,
   deployed,
   deployLink,
   repoLink,
-  handledetailClick,
+  handleDetailClick,
 }) {
   return (
-    <MDBRow className={styles.projectCard} data-tags={tags}>
+    <MDBRow id={id} className={styles.projectCard} /*data-project={id}*/>
       <MDBCol size="12" lg="4" className="order-last order-lg-first">
         {/* Title, Desc, Buttons Block */}
         <MDBRow>
-          <MDBTypography tag="h2">{title}</MDBTypography>
+          <MDBTypography tag="h2" data-project={id}>
+            {title}
+          </MDBTypography>
           <MDBTypography tag="p">{desc}</MDBTypography>
           <ButtonBlock
+            projectId={id}
             deployed={deployed}
             deployLink={deployLink}
             repoLink={repoLink}
-            handledetailClick={handledetailClick}
+            handleDetailClick={handleDetailClick}
           />
         </MDBRow>
       </MDBCol>

@@ -12,9 +12,9 @@ import styles from "./buttonBlock.module.css";
  *
  */
 export default function ButtonBlock({
+  projectId,
   deployed,
   deployedLink,
-  detailTag,
   repoLink,
   handleDetailClick,
 }) {
@@ -23,11 +23,11 @@ export default function ButtonBlock({
       <MDBBtnGroup shadow="0" size="sm">
         <MDBBtn
           color="dark"
-          data-project={detailTag}
+          data-project={projectId}
           tag="a"
           className={styles.btnProject}
           onClick={() => {
-            handleDetailClick(detailTag);
+            handleDetailClick(projectId);
           }}
         >
           Details

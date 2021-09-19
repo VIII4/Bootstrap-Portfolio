@@ -9,6 +9,15 @@ import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
 import { projects } from "../../../data";
 
 export default function ProjectsPanel(props) {
+  const [allProjects, setAllProjects] = useState(projects);
+
+  const handleDetailClick = (id) => {
+    // When details button is clicked modal pops up with project bullets
+    // TESTING SLIDE IN ANIMATION
+    // let card = document.querySelector(`[data-project=${id}]`);
+    // card.classList.add("slideIn");
+  };
+
   return (
     <MDBContainer id="portfolio-content" fluid className="my-2">
       <MDBRow>
@@ -19,19 +28,24 @@ export default function ProjectsPanel(props) {
         </MDBCol>
       </MDBRow>
       <MDBRow>{/* FILTER BLOCK */}</MDBRow>
-      {projects.map((project) => {
+      {allProjects.map((project) => {
         return (
           <ProjectCard
-            key={project.title}
+            key={project.id}
             title={project.title}
+            id={project.id}
             desc={project.desc}
             deployed={project.deployed}
             deployLink={project.deployedLink}
             repoLink={project.repoLink}
+            type={project.type}
+            tags={project.tags}
+            handleDetailClick={handleDetailClick}
           />
         );
       })}
     </MDBContainer>
+    // Details Modal //
   );
   //
 }
