@@ -31,8 +31,7 @@ export default function ProjectCard({
   title,
   desc,
   deployed,
-  deployedLink,
-  repoLink,
+  repo,
   handleDetailClick,
   imgSrc,
 }) {
@@ -43,7 +42,7 @@ export default function ProjectCard({
         md="8"
         lg="4"
         xl="2"
-        className="order-last order-lg-first mx-lg-2"
+        className="order-last order-lg-first mx-lg-2 "
       >
         {/* Title, Desc, Buttons Block */}
         <MDBRow>
@@ -54,8 +53,7 @@ export default function ProjectCard({
           <ButtonBlock
             projectId={id}
             deployed={deployed}
-            deployedLink={deployedLink}
-            repoLink={repoLink}
+            repo={repo}
             handleDetailClick={handleDetailClick}
           />
         </MDBRow>

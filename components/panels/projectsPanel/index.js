@@ -37,8 +37,7 @@ export default function ProjectsPanel(props) {
             imgSrc={project.imgUrl.hero}
             desc={project.desc}
             deployed={project.deployed}
-            deployedLink={project.deployedLink}
-            repoLink={project.repoLink}
+            repo={project.repo}
             type={project.type}
             tags={project.tags}
             handleDetailClick={handleDetailClick}

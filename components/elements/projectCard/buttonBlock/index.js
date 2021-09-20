@@ -1,5 +1,5 @@
-import React from "react";
-import { MDBIcon, MDBBtn, MDBBtnGroup } from "mdb-react-ui-kit";
+import React, { useState } from "react";
+import { MDBIcon, MDBBtn, MDBBtnGroup, MDBTooltip } from "mdb-react-ui-kit";
 import styles from "./buttonBlock.module.css";
 
 /**
@@ -14,10 +14,30 @@ import styles from "./buttonBlock.module.css";
 export default function ButtonBlock({
   projectId,
   deployed,
-  deployedLink,
-  repoLink,
+  repo,
   handleDetailClick,
 }) {
+  const [hovering, setHovering] = useState(false);
+  // On hover, create tooltip at mouse position for private github
+
+  //TO DO: Create on hover handler
+  const handleOnHover = (e) => {
+    console.log("mouse location:", e.clientX, e.clientY);
+    // TO DO: check if git is active
+    if (!repo.active) {
+      // TO DO: Get Mouse position
+    }
+  };
+
+  const handleExitHover = () => {
+    //
+  };
+
+  const handleClick = () => {
+    //
+    alert("private repo");
+  };
+
   return (
     <>
       <MDBBtnGroup shadow="0" size="sm">
@@ -35,15 +55,36 @@ export default function ButtonBlock({
         <MDBBtn
           tag="a"
           color="dark"
-          href={deployedLink}
-          className={`${styles.btnProject} ${!deployed ? "disabled" : ""}`}
+          href={deployed.link}
+          className={`${styles.btnProject} ${
+            !deployed.active ? "disabled" : ""
+          }`}
         >
           Deployed
         </MDBBtn>
-        <MDBBtn tag="a" color="dark" href={repoLink}>
-          <MDBIcon fab icon="github" size="2x"></MDBIcon>
-        </MDBBtn>
+        {repo.active ? (
+          <MDBBtn
+            onMouseOver={handleOnHover}
+            onClick={handleClick}
+            tag="a"
+            color="dark"
+            href={repo.active ? repo.link : "javascript:;"}
+          >
+            <MDBIcon fab icon="github" size="2x"></MDBIcon>
+          </MDBBtn>
+        ) : (
+          <MDBTooltip
+            toolTipTag="a"
+            wrapperProps={{ color: "dark", href: "javascript:;" }}
+            title={`${!repo.active ? "Disabled: Repo is Private" : ""}`}
+            href={repo.active ? repo.link : "javascript:;"}
+          >
+            <MDBIcon fab icon="github" size="2x"></MDBIcon>
+          </MDBTooltip>
+        )}
       </MDBBtnGroup>
+
+      <div></div>
     </>
   );
 }

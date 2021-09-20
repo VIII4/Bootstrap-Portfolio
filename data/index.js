@@ -7,9 +7,14 @@ export const projects = [
     role: "Full Stack Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
-    repoLink: "",
-    deployed: true,
-    deployedLink: "",
+    deployed: {
+      active: false,
+      link: "",
+    },
+    repo: {
+      active: false,
+      link: "",
+    },
     imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
     bullets: [],
   },
@@ -21,54 +26,56 @@ export const projects = [
     role: "Full Stack Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
-    repoLink: "",
-    deployed: false,
-    deployedLink: "",
+    repo: {
+      active: false,
+      link: "",
+    },
+    deployed: {
+      active: false,
+      link: "",
+    },
     imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
     bullets: [],
   },
   // Real Estate VR
-  {
-    title: "Realtor App",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
-    id: "realtor",
-    role: "Full Stack Developer",
-    type: "hybrid",
-    tags: ["html", "bootstrap", "javascript"],
-    repoLink: "",
-    deployed: false,
-    deployedLink: "",
-    imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
-    bullets: [],
-  },
+  // {
+  //   title: "Realtor App",
+  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
+  //   id: "realtor",
+  //   role: "Full Stack Developer",
+  //   type: "hybrid",
+  //   tags: ["html", "bootstrap", "javascript"],
+  //   repo: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   deployed: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
+  //   bullets: [],
+  // },
   // Med Sim
-  {
-    title: "Med Sim VR",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
-    id: "medsim",
-    role: "Full Stack Developer",
-    type: "hybrid",
-    tags: ["html", "bootstrap", "javascript"],
-    repoLink: "",
-    deployed: false,
-    deployedLink: "",
-    imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
-    bullets: [],
-  },
-  // BOTTLED WATERMARK
-  {
-    title: "Bottled Watermark",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
-    id: "bottledW",
-    role: "Full Stack Developer",
-    type: "mobile",
-    tags: ["html", "bootstrap", "javascript"],
-    repoLink: "",
-    deployed: false,
-    deployedLink: "",
-    imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
-    bullets: [],
-  },
+  // {
+  //   title: "Med Sim VR",
+  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
+  //   id: "medsim",
+  //   role: "Full Stack Developer",
+  //   type: "hybrid",
+  //   tags: ["html", "bootstrap", "javascript"],
+  //   repo: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   deployed: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
+  //   bullets: [],
+  // },
+
   // CARE'N
   {
     title: "Care'n",
@@ -77,9 +84,14 @@ export const projects = [
     role: "Full Stack Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "javascript"],
-    repoLink: "https://github.com/VIII4/Care-n-v2",
-    deployed: true,
-    deployedLink: "https://care-n.herokuapp.com/",
+    repo: {
+      active: true,
+      link: "https://github.com/VIII4/Care-n-v2",
+    },
+    deployed: {
+      active: true,
+      link: "https://care-n.herokuapp.com/",
+    },
     imgUrl: { hero: "/images/app-screens/caren-main_b.png", subImgs: [] },
     bullets: [
       "Created 80% of App React components",
@@ -91,6 +103,25 @@ export const projects = [
       "Review and manage project and task",
     ],
   },
+  // BOTTLED WATERMARK
+  {
+    title: "Bottled Watermark",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
+    id: "bottledW",
+    role: "Full Stack Developer",
+    type: "mobile",
+    tags: ["html", "bootstrap", "javascript"],
+    repo: {
+      active: false,
+      link: "",
+    },
+    deployed: {
+      active: false,
+      link: "",
+    },
+    imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
+    bullets: [],
+  },
   // TREK
   {
     title: "Trek",
@@ -99,9 +130,15 @@ export const projects = [
     role: "Full Stack Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
-    repoLink: "https://github.com/VIII4/Care-n-v2",
-    deployed: true,
-    deployedLink: "https://care-n.herokuapp.com/",
+    repo: {
+      active: true,
+      link: "https://github.com/VIII4/Trek",
+    },
+
+    deployed: {
+      active: true,
+      link: "https://benjamintownsend02.github.io/TrekProject/",
+    },
     imgUrl: { hero: "/images/app-screens/trek-main.png", subImgs: [] },
     bullets: [
       "Designed layout, typography, and logo element for cohesive sleek look",
@@ -118,9 +155,11 @@ export const projects = [
     role: "Frontend Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "mysql", "handlebars"],
-    repoLink: "https://github.com/VIII4/SeniorPets",
-    deployed: true,
-    deployedLink: "https://seniorpets22.herokuapp.com/",
+    repo: {
+      active: true,
+      link: "https://github.com/VIII4/SeniorPets",
+    },
+    deployed: { active: true, link: "https://seniorpets22.herokuapp.com/" },
     imgUrl: { hero: "/images/app-screens/seniorPets-main.png", subImgs: [] },
     bullets: [
       "100% designed webapp layout and user interface",
@@ -140,9 +179,12 @@ export const projects = [
     role: "Full Stack Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "javascript"],
+    repo: {
+      active: false,
+      link: "",
+    },
     repoLink: "",
-    deployed: false,
-    deployedLink: "",
+    deployed: { active: false, link: "" },
     imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
     bullets: [],
   },
@@ -154,9 +196,11 @@ export const projects = [
     role: "Full Stack Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "mysql", "express"],
-    repoLink: "https://github.com/VIII4/LoveBug",
-    deployed: true,
-    deployedLink: "https://lovebug-app.herokuapp.com/",
+    repo: {
+      active: true,
+      link: "https://github.com/VIII4/LoveBug",
+    },
+    deployed: { active: true, link: "https://lovebug-app.herokuapp.com/" },
     imgUrl: { hero: "/images/app-screens/loveBug-main.png", subImgs: [] },
     bullets: [
       "Designed webapp HTML layout and user interface",
@@ -173,9 +217,14 @@ export const projects = [
     role: "Full Stack Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "javascript"],
-    repoLink: "https://github.com/VIII4/Care-n-v2",
-    deployed: true,
-    deployedLink: "https://care-n.herokuapp.com/",
+    repo: {
+      active: true,
+      link: "https://github.com/VIII4/googleBooks",
+    },
+    deployed: {
+      active: true,
+      link: "https://googlebooksmernapp.herokuapp.com/",
+    },
     imgUrl: { hero: "/images/app-screens/googleBooks-main.png", subImgs: [] },
     bullets: [
       "React Single-Page Application",
