@@ -1,0 +1,30 @@
+.skillsBackground {
+  position: relative;
+  top: -5rem;
+  padding: 2rem;
+  height: 800px;
+  width: 100vw;
+  background-color: #262626;
+  z-index: -1;
+}
+
+.skillsWrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.imgPortrait {
+  height: auto !important;
+  max-width: 55% !important;
+}
+
+.imgWrapper {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* TO DO: responsiveness for desktop */
+
+.introText {
+  color: rgb(143, 143, 143);
+}

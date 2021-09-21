@@ -6,11 +6,16 @@ import FullScreenIntro from "../components/panels/fullscreenIntro";
 import MobileBanner from "../components/elements/mobileBanner";
 import ProjectsPanel from "../components/panels/projectsPanel";
 
+import { AboutMePanel, MySkillsPanel } from "../components/panels";
+
 export default function Home() {
   return (
     <Layout>
       <FullScreenIntro />
       <MobileBanner />
+      <AboutMePanel />
+      <MySkillsPanel />
+      <hr class="w-75 mx-auto" />
       <ProjectsPanel />
       <main className={styles.main}>
         <h1 className={styles.title}>
