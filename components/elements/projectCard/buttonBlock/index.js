@@ -17,27 +17,6 @@ export default function ButtonBlock({
   repo,
   handleDetailClick,
 }) {
-  const [hovering, setHovering] = useState(false);
-  // On hover, create tooltip at mouse position for private github
-
-  //TO DO: Create on hover handler
-  const handleOnHover = (e) => {
-    console.log("mouse location:", e.clientX, e.clientY);
-    // TO DO: check if git is active
-    if (!repo.active) {
-      // TO DO: Get Mouse position
-    }
-  };
-
-  const handleExitHover = () => {
-    //
-  };
-
-  const handleClick = () => {
-    //
-    alert("private repo");
-  };
-
   return (
     <>
       <MDBBtnGroup shadow="0" size="sm">
@@ -60,12 +39,10 @@ export default function ButtonBlock({
             !deployed.active ? "disabled" : ""
           }`}
         >
-          Deployed
+          {deployed.active ? `Deployed` : `Coming Soon`}
         </MDBBtn>
         {repo.active ? (
           <MDBBtn
-            onMouseOver={handleOnHover}
-            onClick={handleClick}
             tag="a"
             color="dark"
             href={repo.active ? repo.link : "javascript:;"}

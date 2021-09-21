@@ -8,9 +8,9 @@ export default function Footer() {
       tag="footer"
       bgColor="dark"
       color="light"
-      className="text-center"
+      className="text-center p-5"
     >
-      <MDBContainer fluid className="p-3">
+      <MDBContainer fluid className="p-2 my-2">
         <a href="https://github.com/VIII4" className="p-1 mx-2">
           <MDBIcon color="light" size="3x" fab icon="github" />
         </a>
@@ -32,13 +32,16 @@ export default function Footer() {
       </MDBContainer>
 
       <div
-        className="text-center p-3"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
+        className="text-center p-4"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
       >
-        {/* &copy; {new Date().getFullYear()} Copyright:{" "} */}
-        <a className="text-light" href="https://mdbootstrap.com/">
-          Iyan Laylor Full Stack Developer Portfolio 2021
-        </a>
+        <span className="text-light">Crafted by Iyan Laylor </span>
+        &copy; {new Date().getFullYear()}{" "}
+      </div>
+      <div className="text-center my-1">
+        <span className="text-light"> Made with: React </span>
+        <MDBIcon fab size="lg" icon="react" />
+        <span className="text-light"> , Next.js, and MDB </span>
       </div>
     </MDBFooter>
   );
