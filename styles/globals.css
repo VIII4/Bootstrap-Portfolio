@@ -10,9 +10,9 @@ body {
   text-decoration: none;
 } */
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 /* Navbar Styling */
 
@@ -31,3 +31,33 @@ body {
 }
 
 /* ./Navbar Styling */
+
+/* ANIMATIONS */
+.slideAnimation {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.slideIn {
+  animation: slide 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* ANIMATIONS - END - */

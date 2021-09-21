@@ -1,6 +1,6 @@
 import { MDBContainer } from "mdb-react-ui-kit";
 import React, { useState } from "react";
-import styles from "./conactModal.module.css";
+import styles from "./contactModal.module.css";
 
 export default function ContactModal() {
   return (
