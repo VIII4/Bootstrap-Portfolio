@@ -15,7 +15,7 @@ export default function Home() {
       <MobileBanner />
       <AboutMePanel />
       <MySkillsPanel />
-      <hr class="w-75 mx-auto" />
+      <hr className="w-75 mx-auto" />
       <ProjectsPanel />
       <main className={styles.main}>
         <h1 className={styles.title}>
