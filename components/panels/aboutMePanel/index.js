@@ -7,17 +7,22 @@ export function AboutMePanel() {
   //
   return (
     <>
-      <MDBContainer fluid className="p-4 mt-2">
+      <MDBContainer fluid className="p-4 mt-2 ">
         {/* White BG  */}
-        <MDBRow className={`${styles.aboutMeBackground} mt-3 p-3`}>
-          <MDBCol /* TO DO: STYLE To make element shift aboove background */
-            className={styles.aboutMeWrapper}
+        <MDBRow center className={` mt-3 p-3`}>
+          <MDBCol
+            size="12"
+            md="8"
+            lg="8"
+            className={`${styles.aboutMeBackground}`}
           >
-            <MDBRow className="rounded bg-dark text-center p-2">
-              <MDBTypography tag="h6" className="text-muted m-0">
-                Hello, My name is Iyan. I’m a Developer, Designer and an
-                Entrepreneur.
-              </MDBTypography>
+            <MDBRow center className={`${styles.aboutMeHeader} `}>
+              <MDBCol size="10" className="rounded bg-dark text-center p-2">
+                <MDBTypography tag="h6" className="text-muted m-0">
+                  Hello, My name is Iyan. I’m a Developer, Designer and an
+                  Entrepreneur.
+                </MDBTypography>
+              </MDBCol>
             </MDBRow>
             <MDBRow center className={styles.imgWrapper}>
               <img
@@ -25,18 +30,19 @@ export function AboutMePanel() {
                 className={styles.imgPortrait}
               />
             </MDBRow>
-            <MDBRow className="text-center p-2">
-              <MDBTypography tag="h6" className="text-dark m-0">
-                I love to create, code and learn, what better way to do all
-                three than to be a full stack developer. When I’m not behind the
-                blue lights, I’m cycling with my wife or gaming with my son.
-                Currently I am creating web based VR experiences with the
-                company I founded, ixport Technologies, but always looking for
-                opportunities to grow and/or to collaborate. Please don't
-                hesitate to reach out.
-              </MDBTypography>
+            <MDBRow center className="text-center p-2 mb-4">
+              <MDBCol size="12" md="8" lg="6">
+                <MDBTypography tag="h6" className="text-dark m-0">
+                  I love to create, code and learn, what better way to do all
+                  three than to be a full stack developer. When I’m not behind
+                  the blue lights, I’m cycling with my wife or gaming with my
+                  son. Currently I am creating web based VR experiences with the
+                  company I founded, ixport Technologies, but always looking for
+                  opportunities to grow and/or to collaborate. Please don't
+                  hesitate to reach out.
+                </MDBTypography>
+              </MDBCol>
             </MDBRow>
-            <MDBRow className="bg-success"></MDBRow>
           </MDBCol>
         </MDBRow>
       </MDBContainer>

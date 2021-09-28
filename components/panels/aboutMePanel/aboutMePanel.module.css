@@ -1,11 +1,17 @@
-.aboutMeWrapper {
-  position: relative;
-  top: -5.5%;
-}
-
 .aboutMeBackground {
   background-color: #f5f5f5;
-  height: 675px;
+}
+
+.aboutMeHeader {
+  position: relative;
+  top: -35px;
+}
+
+@media screen and (min-width: 780px) {
+  .aboutMeHeader {
+    position: relative;
+    top: -20px;
+  }
 }
 
 .imgPortrait {
@@ -13,8 +19,30 @@
   max-width: 55% !important;
 }
 
+/* Anything Greater than 780px */
+@media screen and (min-width: 780px) {
+  .imgPortrait {
+    height: auto !important;
+    max-width: 15% !important;
+  }
+}
+
+/* Tablet queries */
+@media (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
+  .imgPortrait {
+    height: auto !important;
+    max-width: 30% !important;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .imgPortrait {
+    height: auto !important;
+    max-width: 30% !important;
+  }
+}
+
 .imgWrapper {
-  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
