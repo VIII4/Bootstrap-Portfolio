@@ -48,7 +48,7 @@ export default function SkillsBlock({
         </MDBCol>
       </MDBRow>
       <MDBRow center className="my-2 ">
-        <MDBCol size="12" md="8" lg="8" className={styles.skillsCard}>
+        <MDBCol size="12" md="8" lg="4" className={styles.skillsCard}>
           <MDBTypography tag="strong" variant="h5" colorText="dark">
             {skillsHeader ? `${skillsHeader}:` : "What I design:"}
           </MDBTypography>
@@ -65,7 +65,7 @@ export default function SkillsBlock({
         </MDBCol>
       </MDBRow>
       <MDBRow center className={styles.toolsPanel}>
-        <MDBCol size="12" md="8" lg="8" className={styles.skillsCard}>
+        <MDBCol size="12" md="8" lg="4" className={styles.skillsCard}>
           <MDBTypography tag="strong" variant="h5" colorText="dark">
             The tools I use:
           </MDBTypography>
@@ -83,7 +83,7 @@ export default function SkillsBlock({
           {langList && (
             <>
               <MDBTypography tag="strong" variant="h5" colorText="dark">
-                The languages I speak:
+                Languages:
               </MDBTypography>
               <MDBTypography listInLine className="">
                 {langList.map((lang) => {

@@ -13,12 +13,15 @@ export function AboutMePanel() {
           <MDBCol
             size="12"
             md="8"
-            lg="8"
+            lg="4"
             className={`${styles.aboutMeBackground}`}
           >
             <MDBRow center className={`${styles.aboutMeHeader} `}>
-              <MDBCol size="10" className="rounded bg-dark text-center p-2">
-                <MDBTypography tag="h6" className="text-muted m-0">
+              <MDBCol
+                size="10"
+                className="rounded border border-dark border-2 bg-light text-center p-2"
+              >
+                <MDBTypography tag="h5" className="m-0">
                   Hello, My name is Iyan. I’m a Developer, Designer and an
                   Entrepreneur.
                 </MDBTypography>
@@ -31,8 +34,8 @@ export function AboutMePanel() {
               />
             </MDBRow>
             <MDBRow center className="text-center p-2 mb-4">
-              <MDBCol size="12" md="8" lg="6">
-                <MDBTypography tag="h6" className="text-dark m-0">
+              <MDBCol size="12" md="10">
+                <MDBTypography tag="h5" className="text-dark m-0">
                   I love to create, code and learn, what better way to do all
                   three than to be a full stack developer. When I’m not behind
                   the blue lights, I’m cycling with my wife or gaming with my
