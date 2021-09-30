@@ -1,65 +1,41 @@
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBTypography,
-  MDBListGroup,
-  MDBListGroupItem,
-} from "mdb-react-ui-kit";
+import { MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdb-react-ui-kit";
 import React, { useState } from "react";
-import Image from "next/image";
+
 import styles from "./mySkillsPanel.module.css";
 
+// Blocks
+import SkillsBlock from "./skillsBlock";
+
+//Data
+import { skillSet } from "../../../data";
+
 export function MySkillsPanel() {
-  //
+  const { designer, developer, languages } = skillSet;
   return (
-    <MDBContainer fluid className={`${styles.skillsBackground}`}>
-      <MDBRow center className={styles.skillsHeader}>
-        <MDBCol className="text-center ">
-          <MDBTypography tag="h4" className="text-muted ">
-            Design
-          </MDBTypography>
+    <MDBContainer fluid className="mt-3">
+      <MDBRow>
+        {/* Design */}
+        <MDBCol size="12" className="bg-dark">
+          <SkillsBlock
+            icon={<MDBIcon size="3x" color="dark" fas icon="pencil-ruler" />}
+            title="Designer"
+            subHeader="Some words about core design philosophies and compentecies"
+            skillsList={designer.skills}
+            toolsList={designer.tools}
+          />
         </MDBCol>
-      </MDBRow>
-      <MDBRow center className="mb-2 ">
-        <MDBCol
-          size="12"
-          md="8"
-          lg="8"
-          className="rounded bg-light text-center p-2"
-        >
-          <MDBListGroup flush>
-            <MDBListGroupItem>Cras justo odio</MDBListGroupItem>
-            <MDBListGroupItem>Dapibus ac facilisis in</MDBListGroupItem>
-            <MDBListGroupItem>Vestibulum at eros</MDBListGroupItem>
-            <MDBListGroupItem>Cras justo odio</MDBListGroupItem>
-            <MDBListGroupItem>Dapibus ac facilisis in</MDBListGroupItem>
-            <MDBListGroupItem>Vestibulum at eros</MDBListGroupItem>
-          </MDBListGroup>
-        </MDBCol>
-      </MDBRow>
-      <MDBRow center className={styles.skillsHeader}>
-        <MDBCol className="text-center">
-          <MDBTypography tag="h4" className="text-muted ">
-            Development
-          </MDBTypography>
-        </MDBCol>
-      </MDBRow>
-      <MDBRow center className="mb-5 ">
-        <MDBCol
-          size="12"
-          md="8"
-          lg="8"
-          className="rounded bg-light text-center p-3"
-        >
-          <MDBListGroup flush>
-            <MDBListGroupItem>Cras justo odio</MDBListGroupItem>
-            <MDBListGroupItem>Dapibus ac facilisis in</MDBListGroupItem>
-            <MDBListGroupItem>Vestibulum at eros</MDBListGroupItem>
-            <MDBListGroupItem>Cras justo odio</MDBListGroupItem>
-            <MDBListGroupItem>Dapibus ac facilisis in</MDBListGroupItem>
-            <MDBListGroupItem>Vestibulum at eros</MDBListGroupItem>
-          </MDBListGroup>
+        {/* Develop */}
+        <MDBCol size="12" className="" style={{ backgroundColor: "#E0E0E0" }}>
+          <SkillsBlock
+            icon={<MDBIcon size="3x" color="dark" fas icon="code" />}
+            title="Developer"
+            dark
+            skillsHeader="What I Develop"
+            subHeader="Some words about core design philosophies and compentecies"
+            skillsList={developer.skills}
+            toolsList={developer.tools}
+            langList={languages}
+          />
         </MDBCol>
       </MDBRow>
     </MDBContainer>

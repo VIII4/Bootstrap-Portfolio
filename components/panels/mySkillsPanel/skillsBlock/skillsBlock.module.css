@@ -1,0 +1,50 @@
+.skillsBackground {
+  padding: 2rem;
+  background-color: black;
+  z-index: 0;
+  margin-bottom: 2rem;
+}
+
+.skillsHeader {
+  padding: 0.5rem;
+}
+
+.iconWrapper {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #fbfbfb;
+  width: 95px;
+  margin-bottom: 0.5rem;
+}
+
+.panelWrapper {
+  position: relative;
+  top: -35px;
+}
+
+.toolsPanel {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.skillsList {
+  list-style-type: none;
+  padding-top: 0.25rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.skillsList > li {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.skillsCard {
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fbfbfb;
+  padding: 1rem;
+}

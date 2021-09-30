@@ -7,13 +7,27 @@
 
 .skillsHeader {
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .skillsWrapper {
 }
 
 /* TO DO: responsiveness for desktop */
+
+.iconWrapper {
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #fbfbfb;
+  width: 95px;
+  margin-bottom: 0.5rem;
+}
+
+.panelWrapper {
+  position: relative;
+  top: -35px;
+}
 
 .introText {
   color: rgb(143, 143, 143);

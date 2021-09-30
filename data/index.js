@@ -1,6 +1,6 @@
-export const skills = {
-  design: {
-    skills: ["Web", "Apps", "Video Game", "Simulation", "UI/UX"],
+export const skillSet = {
+  designer: {
+    skills: ["Web", "Apps", "Video Games", "Simulation", "UI/UX"],
     tools: ["Figma", "Inkscape", "Sketch", "Photoshop"],
   },
   developer: {
