@@ -10,7 +10,7 @@ import SkillsBlock from "./skillsBlock";
 import { skillSet } from "../../../data";
 
 export function MySkillsPanel() {
-  const { designer, developer, languages } = skillSet;
+  const { designer, developer, entrep, languages } = skillSet;
   return (
     <MDBContainer fluid className="mt-3">
       <MDBRow>
@@ -35,6 +35,17 @@ export function MySkillsPanel() {
             skillsList={developer.skills}
             toolsList={developer.tools}
             langList={languages}
+          />
+        </MDBCol>
+        {/* Entreprenuer */}
+        <MDBCol size="12" className="bg-dark">
+          <SkillsBlock
+            icon={<MDBIcon size="3x" color="dark" fas icon="user-tie" />}
+            title="Entrepreneur"
+            skillsHeader="What I..."
+            subHeader="Innovate..."
+            skillsList={entrep.skills}
+            toolsList={entrep.tools}
           />
         </MDBCol>
       </MDBRow>

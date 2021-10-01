@@ -19,6 +19,16 @@ export const skillSet = {
       "Google APIs",
     ],
   },
+  entrep: {
+    skills: ["Founder", "Freelance", "Consulting", "Training"],
+    tools: [
+      "Communication",
+      "Leadership",
+      "Problem-solving",
+      "Time Management",
+      "Teamwork",
+    ],
+  },
   languages: ["Typescript", "Javascript", "C#", "Html"],
 };
 
