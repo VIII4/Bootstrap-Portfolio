@@ -45,6 +45,15 @@
   border: 2px solid black;
   border-radius: 8px;
   text-align: center;
-  background-color: #fbfbfb;
   padding: 1rem;
+}
+
+.skillsCardLight {
+  background-color: #fbfbfb;
+  color: black;
+}
+
+.skillsCardDark {
+  background-color: #262626;
+  color: #fbfbfb;
 }

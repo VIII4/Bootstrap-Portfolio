@@ -28,7 +28,7 @@ export default function SkillsBlock({
         </MDBCol>
       </MDBRow>
       {/* Header */}
-      <MDBRow center className={styles.skillsHeader}>
+      <MDBRow center className={`${styles.skillsHeader} `}>
         <MDBCol className="text-center ">
           <MDBTypography
             tag="h3"
@@ -48,8 +48,15 @@ export default function SkillsBlock({
         </MDBCol>
       </MDBRow>
       <MDBRow center className="my-2 ">
-        <MDBCol size="12" md="8" lg="4" className={styles.skillsCard}>
-          <MDBTypography tag="strong" variant="h5" colorText="dark">
+        <MDBCol
+          size="12"
+          md="8"
+          lg="4"
+          className={`${styles.skillsCard} ${
+            dark ? styles.skillsCardDark : styles.skillsCardLight
+          }`}
+        >
+          <MDBTypography tag="strong" variant="h5">
             {skillsHeader ? `${skillsHeader}:` : "What I design:"}
           </MDBTypography>
           <MDBTypography listInLine className="mt-1">
@@ -65,8 +72,15 @@ export default function SkillsBlock({
         </MDBCol>
       </MDBRow>
       <MDBRow center className={styles.toolsPanel}>
-        <MDBCol size="12" md="8" lg="4" className={styles.skillsCard}>
-          <MDBTypography tag="strong" variant="h5" colorText="dark">
+        <MDBCol
+          size="12"
+          md="8"
+          lg="4"
+          className={`${styles.skillsCard} ${
+            dark ? styles.skillsCardDark : styles.skillsCardLight
+          }`}
+        >
+          <MDBTypography tag="strong" variant="h5">
             The tools I use:
           </MDBTypography>
           <ul className={styles.skillsList}>
@@ -82,7 +96,7 @@ export default function SkillsBlock({
 
           {langList && (
             <>
-              <MDBTypography tag="strong" variant="h5" colorText="dark">
+              <MDBTypography tag="strong" variant="h5">
                 Languages:
               </MDBTypography>
               <MDBTypography listInLine className="">
