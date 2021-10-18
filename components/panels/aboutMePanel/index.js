@@ -7,13 +7,14 @@ export function AboutMePanel() {
   //
   return (
     <>
-      <MDBContainer fluid className="p-4 mt-2 ">
+      <MDBContainer fluid className="p-4 mt-4 ">
         {/* White BG  */}
-        <MDBRow center className={` mt-3 p-3`}>
+        <MDBRow center className={` mt-4 p-3`}>
           <MDBCol
             size="12"
             md="8"
-            lg="4"
+            lg="8"
+            xl="6"
             className={`${styles.aboutMeBackground}`}
           >
             <MDBRow center className={`${styles.aboutMeHeader} `}>
@@ -28,12 +29,14 @@ export function AboutMePanel() {
               </MDBCol>
             </MDBRow>
             <MDBRow center className={styles.imgWrapper}>
-              <img
-                src="/images/biopic/portrait.png"
-                className={styles.imgPortrait}
-              />
+              <MDBCol center size="8" md="6" lg="4" xl="4">
+                <img
+                  src="/images/biopic/portrait.png"
+                  className="img-fluid shadow-4-strong"
+                />
+              </MDBCol>
             </MDBRow>
-            <MDBRow center className="text-center p-2 mb-4">
+            <MDBRow center className="text-center p-4 mb-4">
               <MDBCol size="12" md="10">
                 <MDBTypography tag="h5" className="text-dark m-0">
                   I love to create, code and learn, what better way to do all

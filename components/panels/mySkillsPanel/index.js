@@ -11,11 +11,14 @@ import { skillSet } from "../../../data";
 
 export function MySkillsPanel() {
   const { designer, developer, entrep, languages } = skillSet;
+
+  const screensize = false;
+
   return (
-    <MDBContainer fluid className="mt-3">
-      <MDBRow>
+    <MDBContainer fluid className="mt-5">
+      <MDBRow className="">
         {/* Design */}
-        <MDBCol size="12" className="bg-dark">
+        <MDBCol size="12" xl="4" className="bg-dark">
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="pencil-ruler" />}
             title="Designer"
@@ -25,11 +28,11 @@ export function MySkillsPanel() {
           />
         </MDBCol>
         {/* Develop */}
-        <MDBCol size="12" className="" style={{ backgroundColor: "#E0E0E0" }}>
+        <MDBCol size="12" xl="4">
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="code" />}
             title="Developer"
-            dark
+            dark={true}
             skillsHeader="What I Develop"
             subHeader="I write efficient and elegant, pragmatic solutions for complex problems"
             skillsList={developer.skills}
@@ -38,7 +41,7 @@ export function MySkillsPanel() {
           />
         </MDBCol>
         {/* Entreprenuer */}
-        <MDBCol size="12" className="bg-dark">
+        <MDBCol size="12" xl="4" className="bg-dark">
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="user-tie" />}
             title="Entrepreneur"

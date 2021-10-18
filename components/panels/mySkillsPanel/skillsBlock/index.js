@@ -52,6 +52,7 @@ export default function SkillsBlock({
           size="12"
           md="8"
           lg="4"
+          xl="7"
           className={`${styles.skillsCard} ${
             dark ? styles.skillsCardDark : styles.skillsCardLight
           }`}
@@ -76,6 +77,7 @@ export default function SkillsBlock({
           size="12"
           md="8"
           lg="4"
+          xl="7"
           className={`${styles.skillsCard} ${
             dark ? styles.skillsCardDark : styles.skillsCardLight
           }`}

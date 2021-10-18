@@ -1,5 +1,5 @@
 .aboutMeBackground {
-  background-color: #dadada;
+  /* background-color: #dadada; */
 }
 
 .aboutMeHeader {
@@ -24,6 +24,14 @@
   .imgPortrait {
     height: auto !important;
     max-width: 15% !important;
+  }
+}
+
+/* Anything Greater than 780px */
+@media screen and (min-width: 1024px) {
+  .imgPortrait {
+    height: auto !important;
+    max-width: 50% !important;
   }
 }
 
