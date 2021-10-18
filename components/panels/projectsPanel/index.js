@@ -51,7 +51,7 @@ export default function ProjectsPanel(props) {
   };
 
   return (
-    <MDBContainer id="portfolio-content" fluid className="p-2">
+    <MDBContainer id="portfolio-content" fluid className="p-3">
       <MDBRow center>
         <MDBCol
           size="11"
@@ -65,7 +65,7 @@ export default function ProjectsPanel(props) {
           </MDBTypography>
         </MDBCol>
       </MDBRow>
-      <MDBRow center>
+      <MDBRow center className="p-2">
         <MDBCol center size="12" md="10" lg="6" xl="4" className="p-0">
           <ul id="filterTabs" className="nav nav-pills nav-justified mx-auto">
             <li className="nav-item">

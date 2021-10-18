@@ -6,6 +6,9 @@ import styles from "./projectCard.module.css";
 import ButtonBlock from "./buttonBlock";
 import ImageBlock from "./imageBlock";
 
+//Elements
+import ImageCarousel from "../imageCarousel";
+
 /*
 BREAK DOWN
 
@@ -40,6 +43,7 @@ export default function ProjectCard({
       <MDBRow center>
         <MDBCol size="12" md="8" lg="4" xl="3" className="my-3 my-lg-1 mx-lg-2">
           {/* Images */}
+
           <ImageBlock imgSrc={imgSrc} />
         </MDBCol>
       </MDBRow>
