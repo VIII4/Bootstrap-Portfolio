@@ -1,3 +1,37 @@
+export const skillSet = {
+  designer: {
+    skills: ["Web", "Apps", "Video Games", "Simulation", "UI/UX"],
+    tools: ["Figma", "Inkscape", "Sketch", "Photoshop"],
+  },
+  developer: {
+    skills: ["Front End", "Back End", "Video Game", "Interactive Simulation"],
+    tools: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "WebXR",
+      "Unity3D",
+      "Blender",
+      "MongoDB",
+      "Babylon.js",
+      "Three.js",
+      "A-frame",
+      "Google APIs",
+    ],
+  },
+  entrep: {
+    skills: ["Founder", "Freelance", "Consulting", "Training"],
+    tools: [
+      "Communication",
+      "Leadership",
+      "Problem-solving",
+      "Time Management",
+      "Teamwork",
+    ],
+  },
+  languages: ["Typescript", "Javascript", "C#", "Html"],
+};
+
 export const projects = [
   // IXPORT TECHNOLOGIES
   {

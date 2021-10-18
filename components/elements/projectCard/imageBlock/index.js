@@ -14,7 +14,7 @@ export default function ImageBlock({ imgSrc }) {
   //TO DO: Add slide animation class
   return (
     <MDBRow middle className="text-center ">
-      {imgSrc && <img className="p-2" src={imgSrc} />}
+      {imgSrc && <img className="p-2" src={imgSrc} alt="test" />}
     </MDBRow>
   );
 }

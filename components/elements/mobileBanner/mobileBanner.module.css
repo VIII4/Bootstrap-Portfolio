@@ -2,19 +2,34 @@
   margin-top: 5vh;
   margin-left: 0;
   margin-right: 0;
-  height: 25vh;
+  height: 30vh;
   align-items: flex-end;
   justify-content: center;
+  display: flex;
 }
 
-@media (orientation: landscape) and (max-height: 400px) {
+@media (max-width: 320px) {
   .mobileBanner {
-    margin-top: 5vh;
-    margin-left: 0;
-    margin-right: 0;
-    height: 55vh;
-    align-items: flex-end;
-    justify-content: center;
+    margin-top: 10vh;
+    height: 45vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobileBanner {
+    display: none;
+  }
+}
+@media (orientation: landscape) and (max-height: 450px) {
+  .mobileBanner {
+    height: 60vh;
+    display: flex;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .mobileBanner {
+    display: none;
   }
 }
 
