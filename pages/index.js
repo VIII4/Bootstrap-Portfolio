@@ -17,7 +17,6 @@ export default function Home() {
       <AboutMePanel />
       <MySkillsPanel />
 
-      <hr className="w-75 mx-auto" />
       <ProjectsPanel />
       <main className={styles.main}>
         <h1 className={styles.title}>

@@ -18,7 +18,7 @@ export function MySkillsPanel() {
     <MDBContainer fluid className="mt-5">
       <MDBRow className="">
         {/* Design */}
-        <MDBCol size="12" xl="4" className="bg-dark">
+        <MDBCol size="12" className="bg-dark">
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="pencil-ruler" />}
             title="Designer"
@@ -28,7 +28,7 @@ export function MySkillsPanel() {
           />
         </MDBCol>
         {/* Develop */}
-        <MDBCol size="12" xl="4">
+        <MDBCol size="12">
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="code" />}
             title="Developer"
@@ -41,7 +41,7 @@ export function MySkillsPanel() {
           />
         </MDBCol>
         {/* Entreprenuer */}
-        <MDBCol size="12" xl="4" className="bg-dark">
+        <MDBCol size="12" className="bg-dark">
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="user-tie" />}
             title="Entrepreneur"

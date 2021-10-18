@@ -32,6 +32,11 @@ body {
 
 /* ./Navbar Styling */
 
+.active-tab {
+  background-color: #262626 !important;
+  color: azure !important;
+}
+
 /* ANIMATIONS */
 .slideAnimation {
   transform: translateX(-50px);
