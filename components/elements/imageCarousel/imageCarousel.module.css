@@ -1,0 +1,16 @@
+.embla {
+  overflow: hidden;
+}
+.emblaContainer {
+  display: flex;
+}
+.emblaSlide {
+  position: relative;
+  flex: 0 0 100%;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.emblaButtons {
+  margin-top: 1.5rem;
+}

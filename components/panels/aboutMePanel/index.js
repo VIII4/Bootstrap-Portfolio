@@ -20,6 +20,7 @@ export function AboutMePanel() {
             <MDBRow center className={`${styles.aboutMeHeader} `}>
               <MDBCol
                 size="10"
+                xl="6"
                 className="rounded border border-dark border-2 bg-light text-center p-2"
               >
                 <MDBTypography tag="h5" className="m-0">
@@ -29,7 +30,7 @@ export function AboutMePanel() {
               </MDBCol>
             </MDBRow>
             <MDBRow center className={styles.imgWrapper}>
-              <MDBCol center size="8" md="6" lg="4" xl="4">
+              <MDBCol center size="8" md="6" lg="4" xl="3">
                 <img
                   src="/images/biopic/portrait.png"
                   className="img-fluid shadow-4-strong"
@@ -37,8 +38,8 @@ export function AboutMePanel() {
               </MDBCol>
             </MDBRow>
             <MDBRow center className="text-center p-4 mb-4">
-              <MDBCol size="12" md="10">
-                <MDBTypography tag="h5" className="text-dark m-0">
+              <MDBCol size="12" md="10" xl="6">
+                <MDBTypography tag="h6" className="text-dark m-0">
                   I love to create, code and learn, what better way to do all
                   three than to be a full stack developer. When I’m not behind
                   the blue lights, I’m cycling with my wife or gaming with my

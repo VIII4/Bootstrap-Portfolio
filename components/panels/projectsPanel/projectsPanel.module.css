@@ -1,0 +1,11 @@
+.panelWrapper {
+}
+
+.headerWrapper {
+  margin-top: 40px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #fbfbfb;
+}
