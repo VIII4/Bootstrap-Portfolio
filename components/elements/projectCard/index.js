@@ -42,9 +42,12 @@ export default function ProjectCard({
     <MDBContainer fluid id={id} className={styles.projectCard}>
       <MDBRow center>
         <MDBCol size="12" md="8" lg="4" xl="3" className="my-3 my-lg-1 mx-lg-2">
-          {/* Images */}
-
-          <ImageBlock imgSrc={imgSrc} />
+          {/* Images 
+              TO DO: Send PROPS data to carousel for image slides...
+          
+          */}
+          <ImageCarousel imgSrc={imgSrc} />
+          {/* <ImageBlock imgSrc={imgSrc} /> */}
         </MDBCol>
       </MDBRow>
       <MDBRow center /*data-project={id}*/>
