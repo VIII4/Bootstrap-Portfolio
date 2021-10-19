@@ -1,6 +1,14 @@
-.carousel {
-  text-align: center;
-  max-width: 850px;
-  max-height: 500px;
-  margin: 40px, auto;
+.embla {
+  overflow: hidden;
+}
+.emblaContainer {
+  display: flex;
+}
+.emblaSlide {
+  position: relative;
+  flex: 0 0 100%;
+}
+
+.emblaButtons {
+  margin-top: 1.5rem;
 }
