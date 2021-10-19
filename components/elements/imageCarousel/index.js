@@ -14,7 +14,7 @@ import styles from "./imageCarousel.module.css";
 // Elements
 import { DotButton } from "./carouselButtons";
 
-export default function EmblaCarousel({ imgSrc }) {
+export default function EmblaCarousel({ light, imgSrc }) {
   const [emblaRef, embla] = useEmblaCarousel({
     align: "start",
     // aligns the first slide to the start
@@ -113,6 +113,7 @@ export default function EmblaCarousel({ imgSrc }) {
         <div className={styles.emblaButtons}>
           {scrollSnaps.map((_, idx) => (
             <DotButton
+              light={light}
               key={idx}
               selected={idx === selectedIndex}
               onClick={() => {

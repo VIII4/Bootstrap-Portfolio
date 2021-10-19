@@ -12,6 +12,7 @@ import styles from "./buttonBlock.module.css";
  *
  */
 export default function ButtonBlock({
+  light,
   projectId,
   deployed,
   repo,
@@ -21,7 +22,7 @@ export default function ButtonBlock({
     <>
       <MDBBtnGroup shadow="0" size="sm">
         <MDBBtn
-          color="dark"
+          color={light ? "light" : "dark"}
           data-project={projectId}
           tag="a"
           className={styles.btnProject}
@@ -31,20 +32,21 @@ export default function ButtonBlock({
         >
           Details
         </MDBBtn>
-        <MDBBtn
-          tag="a"
-          color="dark"
-          href={deployed.link}
-          className={`${styles.btnProject} ${
-            !deployed.active ? "disabled" : ""
-          }`}
-        >
-          {deployed.active ? `Deployed` : `Coming Soon`}
-        </MDBBtn>
+        {deployed.active && (
+          <MDBBtn
+            tag="a"
+            color={light ? "light" : "dark"}
+            href={deployed.link}
+            className={styles.btnProject}
+          >
+            {deployed.active ? `Deployed` : `Coming Soon`}
+          </MDBBtn>
+        )}
+
         {repo.active ? (
           <MDBBtn
             tag="a"
-            color="dark"
+            color={light ? "light" : "dark"}
             href={repo.active ? repo.link : "javascript:;"}
           >
             <MDBIcon fab icon="github" size="2x"></MDBIcon>
@@ -52,7 +54,10 @@ export default function ButtonBlock({
         ) : (
           <MDBTooltip
             toolTipTag="a"
-            wrapperProps={{ color: "dark", href: "javascript:;" }}
+            wrapperProps={{
+              color: light ? "light" : "dark",
+              href: "javascript:;",
+            }}
             title={`${!repo.active ? "Disabled: Repo is Private" : ""}`}
             href={repo.active ? repo.link : "javascript:;"}
           >
