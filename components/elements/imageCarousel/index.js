@@ -74,7 +74,7 @@ export default function EmblaCarousel({ imgSrc }) {
                 <Image
                   src={imgSrc}
                   height={400}
-                  width={550}
+                  width={600}
                   className="rounded-lg"
                   alt="cover image"
                   placeholder="blur"
@@ -100,7 +100,7 @@ export default function EmblaCarousel({ imgSrc }) {
                 <Image
                   src={imgSrc}
                   height={400}
-                  width={550}
+                  width={600}
                   className="rounded-lg"
                   alt="cover image"
                   placeholder="blur"
