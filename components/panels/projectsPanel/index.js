@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./projectsPanel.module.css";
 
 // Elements
-import ProjectCard from "../../elements/projectCard";
+import { ProjectCard } from "../../elements/projectCard";
 import {
   MDBCol,
   MDBContainer,
@@ -51,104 +51,112 @@ export default function ProjectsPanel(props) {
   };
 
   return (
-    <MDBContainer id="portfolio-content" fluid className="p-3">
-      <MDBRow center>
-        <MDBCol
-          size="11"
-          md="10"
-          lg="6"
-          xl="4"
-          className={styles.headerWrapper}
-        >
-          <MDBTypography tag="h2" className="text-center m-0">
-            My Works
-          </MDBTypography>
-        </MDBCol>
-      </MDBRow>
-      <MDBRow center className="p-2">
-        <MDBCol center size="12" md="10" lg="6" xl="4" className="p-0">
-          <ul id="filterTabs" className="nav nav-pills nav-justified mx-auto">
-            <li className="nav-item">
-              <a
-                className="nav-link active-tab "
-                aria-current="page"
-                onClick={(e) => {
-                  handleTabClick(e, "tab1");
-                }}
-              >
-                All
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link "
-                onClick={(e) => {
-                  handleTabClick(e, "tab2");
-                }}
-              >
-                React
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link "
-                onClick={(e) => {
-                  handleTabClick(e, "tab3");
-                }}
-              >
-                WebXR
-              </a>
-            </li>
-          </ul>
-        </MDBCol>
-      </MDBRow>
-      {allProjects.map((project) => {
-        if (project.deployed.active) {
-          return (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              id={project.id}
-              imgSrc={project.imgUrl.hero}
-              desc={project.desc}
-              deployed={project.deployed}
-              repo={project.repo}
-              type={project.type}
-              tags={project.tags}
-              handleDetailClick={handleDetailClick}
-            />
-          );
-        }
-      })}
-      <MDBRow className="mt-3 bg-dark p-3">
-        <MDBCol>
-          <MDBTypography tag="h3" className="text-center text-light ">
-            In Development
-          </MDBTypography>
-          <MDBTypography tag="h5" className="text-center text-light">
-            Projects in the Works
-          </MDBTypography>
-        </MDBCol>
-      </MDBRow>
-      {allProjects.map((project) => {
-        if (!project.deployed.active) {
-          return (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              id={project.id}
-              imgSrc={project.imgUrl.hero}
-              desc={project.desc}
-              deployed={project.deployed}
-              repo={project.repo}
-              type={project.type}
-              tags={project.tags}
-              handleDetailClick={handleDetailClick}
-            />
-          );
-        }
-      })}
-    </MDBContainer>
+    <>
+      <MDBContainer id="portfolio-content" fluid className="p-3">
+        <MDBRow center>
+          <MDBCol
+            size="11"
+            md="10"
+            lg="6"
+            xl="4"
+            className={styles.headerWrapper}
+          >
+            <MDBTypography tag="h2" className="text-center m-0">
+              My Works
+            </MDBTypography>
+          </MDBCol>
+        </MDBRow>
+        <MDBRow center className="p-2">
+          <MDBCol center size="12" md="10" lg="6" xl="4" className="p-0">
+            <ul id="filterTabs" className="nav nav-pills nav-justified mx-auto">
+              <li className="nav-item">
+                <a
+                  className="nav-link active-tab "
+                  aria-current="page"
+                  onClick={(e) => {
+                    handleTabClick(e, "tab1");
+                  }}
+                >
+                  All
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link "
+                  onClick={(e) => {
+                    handleTabClick(e, "tab2");
+                  }}
+                >
+                  React
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link "
+                  onClick={(e) => {
+                    handleTabClick(e, "tab3");
+                  }}
+                >
+                  WebXR
+                </a>
+              </li>
+            </ul>
+          </MDBCol>
+        </MDBRow>
+        {allProjects.map((project) => {
+          if (project.deployed.active) {
+            return (
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                id={project.id}
+                imgSrc={project.imgUrl.hero}
+                desc={project.desc}
+                deployed={project.deployed}
+                repo={project.repo}
+                type={project.type}
+                tags={project.tags}
+                handleDetailClick={handleDetailClick}
+              />
+            );
+          }
+        })}
+      </MDBContainer>
+      <MDBContainer fluid className={`${styles.devWrapper} bg-dark`}>
+        {/* IN DEVELOPMENT  */}
+        <MDBContainer fluid className={styles.devPanel}>
+          <MDBRow center>
+            <MDBCol size="12" md="4">
+              <MDBTypography tag="h3" className={styles.devHeader}>
+                In Development
+              </MDBTypography>
+              <MDBTypography tag="h6" className="text-center text-light">
+                Check out These Projects in the Works!
+              </MDBTypography>
+            </MDBCol>
+          </MDBRow>
+          {allProjects.map((project) => {
+            if (!project.deployed.active) {
+              return (
+                <ProjectCard
+                  light
+                  key={project.id}
+                  title={project.title}
+                  id={project.id}
+                  imgSrc={project.imgUrl.hero}
+                  desc={project.desc}
+                  deployed={project.deployed}
+                  repo={project.repo}
+                  type={project.type}
+                  tags={project.tags}
+                  handleDetailClick={handleDetailClick}
+                />
+              );
+            }
+          })}
+        </MDBContainer>
+      </MDBContainer>
+    </>
     // Details Modal //
   );
   //

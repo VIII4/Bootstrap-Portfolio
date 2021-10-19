@@ -9,10 +9,12 @@ import {
 
 import styles from "./carouselButtons.module.css";
 
-export const DotButton = ({ selected, onClick }) => {
+export const DotButton = ({ light, selected, onClick }) => {
   return (
     <button
-      className={`${styles.dotButton} ${selected ? styles.selected : ""}`}
+      className={`${styles.dotButton} ${light ? styles.light : ""}  ${
+        selected ? styles.selected : ""
+      }`}
       onClick={onClick}
     ></button>
   );

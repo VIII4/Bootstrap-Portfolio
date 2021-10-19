@@ -29,7 +29,8 @@ BREAK DOWN
 
 */
 
-export default function ProjectCard({
+export function ProjectCard({
+  light,
   id,
   title,
   desc,
@@ -46,7 +47,7 @@ export default function ProjectCard({
               TO DO: Send PROPS data to carousel for image slides...
           
           */}
-          <ImageCarousel imgSrc={imgSrc} />
+          <ImageCarousel light={light} imgSrc={imgSrc} />
           {/* <ImageBlock imgSrc={imgSrc} /> */}
         </MDBCol>
       </MDBRow>
@@ -54,11 +55,18 @@ export default function ProjectCard({
         <MDBCol center size="12" md="8" lg="6" xl="4" className=" ">
           {/* Title, Desc, Buttons Block */}
           <MDBRow>
-            <MDBTypography tag="h2" data-project={id}>
+            <MDBTypography
+              colorText={light ? "light" : ""}
+              tag="h2"
+              data-project={id}
+            >
               {title}
             </MDBTypography>
-            <MDBTypography tag="p">{desc}</MDBTypography>
+            <MDBTypography tag="p" colorText={light ? "light" : ""}>
+              {desc}
+            </MDBTypography>
             <ButtonBlock
+              light={light}
               projectId={id}
               deployed={deployed}
               repo={repo}

@@ -1,14 +1,13 @@
 .projectCard {
   padding: 0.5rem;
-  margin: 5rem 0.25rem 5rem 0.25rem;
+  margin-top: 75px;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 @media (max-width: 768px) {
   .projectCard {
-    /* border: #000000;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-radius: 5px; */
+    margin-top: 55px;
   }
 }
 

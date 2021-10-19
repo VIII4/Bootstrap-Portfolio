@@ -16,13 +16,7 @@ export default function Home() {
       {/* about me and skills panels need to within bio */}
       <AboutMePanel />
       <MySkillsPanel />
-
       <ProjectsPanel />
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Coming Soon <a href="https://nextjs.org">Next.js!</a> OVERHAUL
-        </h1>
-      </main>
     </Layout>
   );
 }
