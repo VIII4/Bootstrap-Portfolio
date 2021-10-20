@@ -9,7 +9,7 @@ import FullscreenOverlay from "../../elements/fullscreenOverlay";
 import FullscreenDisplayText from "../../elements/fullscreenDisplayText";
 import FullscreenIconCanvas from "../../elements/fullscreenIconCanvas";
 
-export default function FullScreenIntro(props) {
+export function FullScreenIntro(props) {
   // TO DO: HANDLE MODAL
   const handleContactClick = () => {
     // alert("test");
