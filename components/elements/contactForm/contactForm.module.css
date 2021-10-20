@@ -4,11 +4,17 @@
   border-width: 0.15rem;
   border-radius: 10px;
   background-color: #fbfbfb;
-  padding: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .formRow {
   padding: 0.25rem;
 
   margin-bottom: 1rem;
+}
+
+.confirmMessage {
+  height: 250px;
 }

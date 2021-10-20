@@ -1,5 +1,6 @@
 // Modules
 import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 // Styles
 import styles from "./contactForm.module.css";
@@ -9,6 +10,7 @@ import {
   MDBContainer,
   MDBCol,
   MDBRow,
+  MDBTypography,
   MDBInput,
   MDBInputGroup,
   MDBInputGroupElement,
@@ -21,17 +23,29 @@ import {
 // Blocks
 
 export function ContactForm(props) {
+  const [state, handleSubmit] = useForm("myynleoo");
+  if (state.succeeded) {
+    return (
+      <MDBContainer
+        id="contact-wrapper"
+        fluid
+        className={styles.contactWrapper}
+      >
+        <MDBRow center middle className={styles.confirmMessage}>
+          <MDBCol center className="text-center">
+            <MDBTypography tag="h4">Message Sent</MDBTypography>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+    );
+  }
+
   return (
     <MDBContainer id="contact-wrapper" fluid className={styles.contactWrapper}>
-      <MDBRow>{/* Form Header */}</MDBRow>
-      <MDBRow>
+      <MDBRow className="my-4 p-3">
         {/* Form  */}
         <MDBCol>
-          <form
-            id="page-contact-form"
-            action="https://formspree.io/myynleoo"
-            method="POST"
-          >
+          <form onSubmit={handleSubmit}>
             {/* Name */}
             <MDBRow center className={styles.formRow}>
               <MDBCol center size="2" className="text-center">
@@ -43,7 +57,7 @@ export function ContactForm(props) {
                   id="page-name"
                   name="name"
                   label="Name"
-                  class="form-control validate"
+                  required
                 />
               </MDBCol>
             </MDBRow>
@@ -55,10 +69,15 @@ export function ContactForm(props) {
               <MDBCol size="10">
                 <MDBInput
                   type="email"
-                  id="page-email"
-                  name="_replyto"
+                  id="email"
+                  name="email"
                   label="Email"
-                  class="form-control validate"
+                  required
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </MDBCol>
             </MDBRow>
@@ -70,10 +89,9 @@ export function ContactForm(props) {
               <MDBCol size="10">
                 <MDBInput
                   type="text"
-                  id="page-subject"
+                  id="subject"
                   name="subject"
                   label="Subject"
-                  class="form-control validate"
                 />
               </MDBCol>
             </MDBRow>
@@ -82,19 +100,25 @@ export function ContactForm(props) {
               <MDBCol size="10">
                 <MDBInput
                   type="text"
-                  id="page-message"
+                  id="message"
                   textarea
-                  class="md-textarea form-control"
                   name="message"
                   label="Message"
                   rows={5}
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
                 />
               </MDBCol>
             </MDBRow>
             {/* Button */}
             <MDBRow start className="mx-1">
               <MDBCol size="2">
-                <MDBBtn color="dark">Send</MDBBtn>
+                <MDBBtn color="dark" type="submit" disabled={state.submitting}>
+                  Send
+                </MDBBtn>
               </MDBCol>
             </MDBRow>
           </form>
