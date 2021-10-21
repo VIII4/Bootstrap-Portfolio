@@ -22,13 +22,16 @@ import {
 
 // Blocks
 
-export function ContactForm({ modal }) {
+export function ContactForm({ modal, closeModal }) {
   const [state, handleSubmit] = useForm("myynleoo");
 
   const resetForm = () => {
     setTimeout(function () {
+      if (modal) {
+        closeModal();
+      }
       handleSubmit((state.succeeded = false));
-    }, 3500);
+    }, 3000);
   };
 
   if (state.succeeded) {

@@ -18,16 +18,15 @@ export function FullScreenIntro(props) {
 
   // TO DO: HANDLE MODAL
   const handleContactClick = () => {
-    toggleShow();
+    setShowModal(!showModal);
   };
 
-  //Toggle Modal
-  const toggleShow = () => setShowModal(!showModal);
-
-  //Methos
+  //Method
   const closeModal = () => {
-    toggleShow();
+    setShowModal(false);
   };
+
+  const getOpenState = (e) => setShowModal(e);
 
   return (
     <div className={`${styles.view}`}>
@@ -36,7 +35,11 @@ export function FullScreenIntro(props) {
         <FullscreenDisplayText />
         <FullscreenIconCanvas handleContactClick={handleContactClick} />
       </FullscreenOverlay>
-      <ContactModal showModal={showModal} closeModal={closeModal} />
+      <ContactModal
+        showModal={showModal}
+        closeModal={closeModal}
+        getOpenState={getOpenState}
+      />
     </div>
   );
 }

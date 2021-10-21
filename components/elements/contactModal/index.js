@@ -14,14 +14,18 @@ import {
 } from "mdb-react-ui-kit";
 import styles from "./contactModal.module.css";
 
-export default function ContactModal({ showModal, closeModal }) {
+export default function ContactModal({ showModal, closeModal, getOpenState }) {
   return (
     <>
-      <MDBModal show={showModal} animationDirection="left">
+      <MDBModal
+        show={showModal}
+        getOpenState={getOpenState}
+        animationDirection="left"
+      >
         <MDBModalDialog centered className="modal-side modal-bottom-right">
           <MDBModalContent>
             <MDBModalBody>
-              <ContactForm modal />
+              <ContactForm modal closeModal={closeModal} />
             </MDBModalBody>
 
             <MDBModalFooter>
