@@ -7,3 +7,4 @@ export * from "./mobileBanner";
 export * from "./projectCard";
 export * from "./imageCarousel";
 export * from "./contactForm";
+export * from "./particlesCanvas";
