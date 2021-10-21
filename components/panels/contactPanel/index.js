@@ -11,22 +11,26 @@ import { ContactForm } from "../../elements";
 // Blocks
 // import {} from "./blocks";
 
-export function ContactPanel(props) {
+export function ContactPanel({ props }) {
   return (
     <MDBContainer fluid className={styles.contactPanel}>
       <MDBRow center>
-        <MDBCol size="12" md="8" lg="6" className="text-center">
-          <MDBTypography tag="h2" colorText="light">
-            Reach Out
-          </MDBTypography>
-          <MDBTypography tag="h6" colorText="light">
-            Interested in Collaborating or ...
+        <MDBCol size="12" md="8" lg="6" xl="4" className="text-center">
+          <MDBTypography tag="h5" colorText="light" className="">
+            Interested in Collaborating? Want to discuss work and/or partnership
+            oppurtunities?
           </MDBTypography>
         </MDBCol>
       </MDBRow>
       <MDBRow center>
-        <MDBCol size="12" md="8" lg="6">
-          <ContactForm />
+        <MDBCol size="12" md="8" lg="6" xl="4">
+          <MDBContainer
+            id="contact-wrapper"
+            fluid
+            className={styles.formWrapper}
+          >
+            <ContactForm />
+          </MDBContainer>
         </MDBCol>
       </MDBRow>
     </MDBContainer>

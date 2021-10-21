@@ -22,33 +22,62 @@ import {
 
 // Blocks
 
-export function ContactForm(props) {
+export function ContactForm({ modal }) {
   const [state, handleSubmit] = useForm("myynleoo");
+
+  const resetForm = () => {
+    setTimeout(function () {
+      handleSubmit((state.succeeded = false));
+    }, 3500);
+  };
+
   if (state.succeeded) {
+    resetForm();
     return (
-      <MDBContainer
-        id="contact-wrapper"
-        fluid
-        className={styles.contactWrapper}
-      >
-        <MDBRow center middle className={styles.confirmMessage}>
-          <MDBCol center className="text-center">
-            <MDBTypography tag="h4">Message Sent</MDBTypography>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
+      <MDBRow center middle className={styles.confirmMessage}>
+        <MDBCol center className="text-center">
+          <MDBTypography tag="h4">Message Sent</MDBTypography>
+          <MDBIcon
+            far
+            size="5x"
+            icon="envelope"
+            className="animate__animated animate__bounceOutRight"
+          />
+        </MDBCol>
+      </MDBRow>
     );
   }
 
   return (
-    <MDBContainer id="contact-wrapper" fluid className={styles.contactWrapper}>
-      <MDBRow className="my-4 p-3">
+    <>
+      {!modal && (
+        <MDBRow className="m-2 p-1">
+          <MDBCol size="12">
+            <MDBTypography tag="h2" colorText="dark text-center">
+              Reach Out
+            </MDBTypography>
+          </MDBCol>
+        </MDBRow>
+      )}
+
+      {modal && (
+        <MDBRow className="m-2 p-1">
+          <MDBCol size="12">
+            <MDBTypography tag="h6" colorText="dark" className="">
+              Interested in collaborating or want to discuss work and or
+              partnership opportunities? Lets Talk!
+            </MDBTypography>
+          </MDBCol>
+        </MDBRow>
+      )}
+
+      <MDBRow className="my-2 p-1">
         {/* Form  */}
         <MDBCol>
           <form onSubmit={handleSubmit}>
             {/* Name */}
             <MDBRow center className={styles.formRow}>
-              <MDBCol center size="2" className="text-center">
+              <MDBCol center size="1" className="text-center">
                 <MDBIcon fas size="lg" icon="user" />
               </MDBCol>
               <MDBCol size="10">
@@ -63,7 +92,7 @@ export function ContactForm(props) {
             </MDBRow>
             {/* Email */}
             <MDBRow center className={styles.formRow}>
-              <MDBCol center size="2" className="text-center">
+              <MDBCol center size="1" className="text-center">
                 <MDBIcon fas size="lg" icon="envelope" />
               </MDBCol>
               <MDBCol size="10">
@@ -83,7 +112,7 @@ export function ContactForm(props) {
             </MDBRow>
             {/* Subject  */}
             <MDBRow center className={styles.formRow}>
-              <MDBCol center size="2" className="text-center">
+              <MDBCol center size="1" className="text-center">
                 <MDBIcon fas size="lg" icon="tag" />
               </MDBCol>
               <MDBCol size="10">
@@ -96,8 +125,8 @@ export function ContactForm(props) {
               </MDBCol>
             </MDBRow>
             {/* Message */}
-            <MDBRow end className={styles.formRow}>
-              <MDBCol size="10">
+            <MDBRow center className={styles.formRow}>
+              <MDBCol size="11">
                 <MDBInput
                   type="text"
                   id="message"
@@ -114,7 +143,7 @@ export function ContactForm(props) {
               </MDBCol>
             </MDBRow>
             {/* Button */}
-            <MDBRow start className="mx-1">
+            <MDBRow start className="mx-1 px-1">
               <MDBCol size="2">
                 <MDBBtn color="dark" type="submit" disabled={state.submitting}>
                   Send
@@ -124,7 +153,14 @@ export function ContactForm(props) {
           </form>
         </MDBCol>
       </MDBRow>
-    </MDBContainer>
+      <MDBRow className="mx-3 mt-2">
+        <MDBCol size="12">
+          <MDBTypography tag="p" className="text-muted">
+            I'll respond to your message within 2 business days.
+          </MDBTypography>
+        </MDBCol>
+      </MDBRow>
+    </>
   );
 }
 
