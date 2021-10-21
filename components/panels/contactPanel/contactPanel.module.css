@@ -1,0 +1,15 @@
+.contactPanel {
+  background-color: #262626;
+  padding-top: 100px;
+}
+
+.formWrapper {
+  border: #000000;
+  border-style: solid;
+  border-width: 0.15rem;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+  padding: 0.15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

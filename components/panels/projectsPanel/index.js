@@ -18,7 +18,7 @@ import {
 //Project Data
 import { projects } from "../../../data";
 
-export default function ProjectsPanel(props) {
+export function ProjectsPanel(props) {
   const [allProjects, setAllProjects] = useState(projects);
   const [tabActive, setTabActive] = useState("tab1");
 

@@ -6,3 +6,4 @@ export * from "./fullscreenVideo";
 export * from "./mobileBanner";
 export * from "./projectCard";
 export * from "./imageCarousel";
+export * from "./contactForm";
