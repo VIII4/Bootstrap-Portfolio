@@ -17,8 +17,8 @@ export function ContactPanel({ props }) {
       <MDBRow center>
         <MDBCol size="12" md="8" lg="6" xl="4" className="text-center">
           <MDBTypography tag="h5" colorText="light" className="">
-            Interested in Collaborating? Want to discuss work and/or partnership
-            oppurtunities?
+            Interested in collaborating? Want to discuss work and/or partnership
+            opportunities?
           </MDBTypography>
         </MDBCol>
       </MDBRow>
