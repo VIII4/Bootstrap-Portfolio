@@ -33,7 +33,7 @@ export default function ParticlesRender({ _params }) {
       },
       particles: {
         number: {
-          value: 50,
+          value: 100,
           density: {
             enable: true,
             value_area: 800,
@@ -78,7 +78,7 @@ export default function ParticlesRender({ _params }) {
         },
         opacity: {
           value: 0.1,
-          random: false,
+          random: true,
           anim: {
             enable: false,
             speed: 1,
@@ -105,7 +105,7 @@ export default function ParticlesRender({ _params }) {
         },
         move: {
           enable: true,
-          speed: 1,
+          speed: 1.5,
           direction: "top",
           random: true,
           straight: false,
@@ -126,7 +126,7 @@ export default function ParticlesRender({ _params }) {
             mode: "repulse",
           },
           onclick: {
-            enable: true,
+            enable: false,
             mode: "push",
           },
           resize: true,
@@ -146,7 +146,7 @@ export default function ParticlesRender({ _params }) {
             speed: 10,
           },
           repulse: {
-            distance: 150,
+            distance: 75,
           },
           push: {
             particles_nb: 3,
@@ -171,6 +171,7 @@ export default function ParticlesRender({ _params }) {
     /* params settings */
     if (params) {
       console.log(params);
+
       Object.deepExtend(pJS, params);
     }
 
@@ -613,7 +614,7 @@ export default function ParticlesRender({ _params }) {
           p.y += p.vy * ms;
         }
 
-        if (p.img.animated) {
+        if (p.img && p.img.animated) {
           //Need a global var to check and increment for step, when steps complete update frame
           if (p.img.frameStep === p.img.speed) {
             p.img.frameStep = 0;
@@ -1641,8 +1642,6 @@ export default function ParticlesRender({ _params }) {
   window.pJSDom = [];
 
   window.particlesJS = function (tag_id, params) {
-    //console.log(params);
-
     /* no string id? so it's object params, and set the id with default id */
     if (typeof tag_id != "string") {
       params = tag_id;
@@ -1683,7 +1682,7 @@ export default function ParticlesRender({ _params }) {
     }
   };
 
-  particlesJS(_params._id, _params.data);
+  particlesJS(_params._id);
 
   //#endregion
 

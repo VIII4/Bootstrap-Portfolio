@@ -13,7 +13,7 @@ export default function ParticlesCanvas(props) {
   const params = {
     _id: "particles-js",
     _data: {
-      particles: {
+      _particles: {
         number: {
           value: 50,
           density: {
@@ -98,8 +98,9 @@ export default function ParticlesCanvas(props) {
             rotateY: 1200,
           },
         },
+        array: [],
       },
-      interactivity: {
+      _interactivity: {
         detect_on: "canvas",
         events: {
           onhover: {
@@ -137,8 +138,8 @@ export default function ParticlesCanvas(props) {
           },
         },
       },
-      retina_detect: true,
-      config_demo: {
+      _retina_detect: true,
+      _config_demo: {
         hide_card: false,
         background_color: "#000000",
         background_image: "",
