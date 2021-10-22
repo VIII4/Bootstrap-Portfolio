@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Dynamic from "next/dynamic";
+
 import styles from "./particlesCanvas.module.css";
+import { MDBContainer } from "mdb-react-ui-kit";
 const ParticlesRender = Dynamic(() => import("../particlesRender"), {
   ssr: false,
 });
@@ -33,7 +35,7 @@ export default function ParticlesCanvas(props) {
           },
           image: [
             {
-              src: "images/particles/bubbleSheetA.png",
+              src: "/images/particles/bubbleSheetA.png",
               width: 100,
               height: 100,
               anim: {
@@ -44,7 +46,7 @@ export default function ParticlesCanvas(props) {
               },
             },
             {
-              src: "images/particles/bubbleSheetC.png",
+              src: "/images/particles/bubbleSheetC.png",
               width: 100,
               height: 100,
               anim: {
@@ -148,8 +150,8 @@ export default function ParticlesCanvas(props) {
   };
 
   return (
-    <div id="particles-js" className={styles.particlesJS}>
+    <MDBContainer fluid id="particles-js" className={styles.particlesJs}>
       <ParticlesRender _params={params} />
-    </div>
+    </MDBContainer>
   );
 }

@@ -35,69 +35,87 @@ export default function ParticlesRender({ _params }) {
         },
         particles: {
           number: {
-            value: 400,
+            value: 50,
             density: {
               enable: true,
               value_area: 800,
             },
           },
           color: {
-            value: "#fff",
+            value: "#ffffff",
           },
           shape: {
-            type: "circle",
+            type: "image",
             stroke: {
               width: 0,
-              color: "#ff0000",
+              color: "#000000",
             },
             polygon: {
               nb_sides: 5,
             },
-            image: {
-              src: "",
-              width: 100,
-              height: 100,
-            },
+            image: [
+              {
+                src: "/images/particles/bubbleSheetA.png",
+                width: 100,
+                height: 100,
+                anim: {
+                  enable: true,
+                  speed: 6,
+                  frameWidth: 64,
+                  totalFrames: 16,
+                },
+              },
+              {
+                src: "/images/particles/bubbleSheetC.png",
+                width: 100,
+                height: 100,
+                anim: {
+                  enable: true,
+                  speed: 10,
+                  frameWidth: 64,
+                  totalFrames: 12,
+                },
+              },
+            ],
           },
           opacity: {
-            value: 1,
+            value: 0.1,
             random: false,
             anim: {
               enable: false,
-              speed: 2,
-              opacity_min: 0,
+              speed: 1,
+              opacity_min: 0.1,
               sync: false,
             },
           },
           size: {
-            value: 20,
-            random: false,
+            value: 28,
+            random: true,
             anim: {
               enable: false,
-              speed: 20,
-              size_min: 0,
+              speed: 40,
+              size_min: 0.1,
               sync: false,
             },
           },
           line_linked: {
-            enable: true,
-            distance: 100,
-            color: "#fff",
-            opacity: 1,
+            enable: false,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
             width: 1,
           },
           move: {
             enable: true,
-            speed: 2,
-            direction: "none",
-            random: false,
+            speed: 1,
+            direction: "top",
+            random: true,
             straight: false,
             out_mode: "out",
-            bounce: false,
             attract: {
               enable: false,
-              rotateX: 3000,
-              rotateY: 3000,
+              rotateX: 600,
+              rotateY: 1200,
             },
           },
           array: [],
@@ -107,7 +125,7 @@ export default function ParticlesRender({ _params }) {
           events: {
             onhover: {
               enable: true,
-              mode: "grab",
+              mode: "repulse",
             },
             onclick: {
               enable: true,
@@ -117,22 +135,23 @@ export default function ParticlesRender({ _params }) {
           },
           modes: {
             grab: {
-              distance: 100,
+              distance: 400,
               line_linked: {
                 opacity: 1,
               },
             },
             bubble: {
-              distance: 200,
-              size: 80,
-              duration: 0.4,
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 10,
             },
             repulse: {
-              distance: 200,
-              duration: 0.4,
+              distance: 150,
             },
             push: {
-              particles_nb: 4,
+              particles_nb: 3,
             },
             remove: {
               particles_nb: 2,
@@ -140,7 +159,7 @@ export default function ParticlesRender({ _params }) {
           },
           mouse: {},
         },
-        retina_detect: false,
+        retina_detect: true,
         fn: {
           interact: {},
           modes: {},
@@ -153,6 +172,7 @@ export default function ParticlesRender({ _params }) {
 
       /* params settings */
       if (params) {
+        console.log(params);
         Object.deepExtend(pJS, params);
       }
 
@@ -597,21 +617,20 @@ export default function ParticlesRender({ _params }) {
             p.y += p.vy * ms;
           }
 
-          if (p.img != null) {
-            if (p.img.animated) {
-              //Need a global var to check and increment for step, when steps complete update frame
-              if (p.img.frameStep === p.img.speed) {
-                p.img.frameStep = 0;
-                if (p.img.currentFrame < p.img.totalFrames) {
-                  p.img.currentFrame++;
-                } else {
-                  p.img.currentFrame = 0;
-                }
-              } else {
-                p.img.frameStep++;
-              }
-            }
-          }
+          console.log(p);
+          // if (p.img.animated) {
+          //   //Need a global var to check and increment for step, when steps complete update frame
+          //   if (p.img.frameStep === p.img.speed) {
+          //     p.img.frameStep = 0;
+          //     if (p.img.currentFrame < p.img.totalFrames) {
+          //       p.img.currentFrame++;
+          //     } else {
+          //       p.img.currentFrame = 0;
+          //     }
+          //   } else {
+          //     p.img.frameStep++;
+          //   }
+          // }
 
           // Change parameters of Image
 
