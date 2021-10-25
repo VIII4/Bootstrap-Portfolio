@@ -16,12 +16,13 @@ body {
 
 /* Navbar Styling */
 
-.top-nav-collapse {
-  background-color: black !important;
-}
-
 .navbar:not(.top-nav-collapse) {
   background: transparent !important;
+}
+
+.top-nav-collapse {
+  background-color: black !important;
+  transition: 0.3s ease-in;
 }
 
 @media (max-width: 991px) {
