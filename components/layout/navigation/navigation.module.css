@@ -1,11 +1,3 @@
-.top-nav-collapse {
-  background-color: black !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
     background-color: black !important;

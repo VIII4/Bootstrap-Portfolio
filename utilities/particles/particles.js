@@ -160,8 +160,6 @@ var pJS = function (tag_id, params) {
 
   /* params settings */
   if (params) {
-    console.log(params);
-
     Object.deepExtend(pJS, params);
   }
 

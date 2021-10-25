@@ -30,7 +30,7 @@ export function FullScreenIntro(props) {
   const getOpenState = (e) => setShowModal(e);
 
   return (
-    <div className={`${styles.view}`}>
+    <div id="fullscreen-intro" className={`${styles.view}`}>
       <FullscreenVideo />
       <FullscreenOverlay>
         <ParticlesCanvas />
