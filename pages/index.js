@@ -1,13 +1,10 @@
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import React, { useState, useEffect } from "react";
 
 import Layout from "../components/layout";
-
-import MobileBanner from "../components/elements/mobileBanner";
+import { IsMobileCheck } from "../utilities/app";
 
 import {
   AboutMePanel,
-  FullScreenIntro,
   MySkillsPanel,
   ProjectsPanel,
   ContactPanel,
@@ -15,9 +12,33 @@ import {
 } from "../components/panels";
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const onResize = () => {
+    setIsMobile(IsMobileCheck);
+  };
+
+  useEffect(() => {
+    setIsMobile(IsMobileCheck);
+
+    const resize = () => {
+      onResize();
+    };
+
+    if (window) {
+      window.addEventListener("resize", resize);
+    }
+
+    return () => {
+      if (window) {
+        window.removeEventListener("resize", resize);
+      }
+    };
+  });
+
   return (
     <Layout>
-      <LandingPanel />
+      <LandingPanel isMobile={isMobile} />
       <AboutMePanel />
       <MySkillsPanel />
       <ProjectsPanel />
