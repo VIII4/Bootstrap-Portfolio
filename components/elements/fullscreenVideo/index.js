@@ -5,7 +5,7 @@ export default function FullScreenVideo(props) {
   return (
     <video
       className={`${styles.videoIntro}`}
-      poster="/images/webP_images/underwaterBGStill.jpg"
+      poster="/images/webP_images/underwaterBGStill.webp"
       autoPlay
       muted
       loop
