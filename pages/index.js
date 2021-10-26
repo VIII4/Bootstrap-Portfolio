@@ -11,13 +11,13 @@ import {
   MySkillsPanel,
   ProjectsPanel,
   ContactPanel,
+  LandingPanel,
 } from "../components/panels";
 
 export default function Home() {
   return (
     <Layout>
-      <FullScreenIntro />
-      <MobileBanner />
+      <LandingPanel />
       <AboutMePanel />
       <MySkillsPanel />
       <ProjectsPanel />

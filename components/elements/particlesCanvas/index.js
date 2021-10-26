@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Dynamic from "next/dynamic";
 
 import styles from "./particlesCanvas.module.css";
+import ParticlesJS from "../../../utilities/particles/particles";
+// /import ParticlesRender from "../particlesRender";
 
-const ParticlesRender = Dynamic(() => import("../particlesRender"), {
-  ssr: false,
-});
+// const ParticlesRender = Dynamic(() => import("../particlesRender"), {
+//   ssr: true,
+// });
 
 export default function ParticlesCanvas(props) {
+  // ID attr to assign to canvas and reference to draw particles
   const canvasId = "particles-js";
-
+  // Particle Parameters
   const params = {
     _particles: {
       number: {
@@ -126,9 +129,9 @@ export default function ParticlesCanvas(props) {
     },
   };
 
-  return (
-    <div id={canvasId} className={styles.particlesJs}>
-      <ParticlesRender canvasId={canvasId} _params={params} />
-    </div>
-  );
+  useEffect(() => {
+    ParticlesJS(canvasId, params);
+  });
+
+  return <div id={canvasId} className={styles.particlesJs}></div>;
 }
