@@ -4,7 +4,7 @@ export const ScrollTo = (elementId, navbarId) => {
   let element = document.getElementById(elementId);
   let navbar = document.getElementById(navbarId);
   // Get target position by subtracting element scroll position from fixed navbar height
-  let targetPos = element.scrollHeight - navbar.scrollHeight;
+  let targetPos = element.scrollHeight;
 
   if (typeof window !== "undefined") {
     //Scroll to position of element - height of
