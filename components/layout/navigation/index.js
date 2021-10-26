@@ -13,6 +13,8 @@ import {
 import Link from "next/link";
 import styles from "./navigation.module.css";
 
+import { ScrollTo } from "../../../utilities/app";
+
 export default function Navigation() {
   const [showNav, setShowNav] = useState(false);
   //const [isSolid, setIsSolid] = useState(false);
@@ -39,6 +41,14 @@ export default function Navigation() {
 
   const screenSizeCheck = (width) => {
     return width > "768" ? false : true;
+  };
+
+  const handleNavClick = (e) => {
+    e.preventDefault();
+
+    // Get Target element ID from Data attr
+    let elementId = e.target.getAttribute("data-scroll");
+    ScrollTo(elementId, "scroll-nav");
   };
 
   // TO DO: ADD ON CLICK SCROLL TO HANDLERS
@@ -117,19 +127,40 @@ export default function Navigation() {
           <MDBCollapse navbar show={showNav}>
             <MDBNavbarNav>
               <MDBNavbarItem>
-                <Link active aria-current="page" href="#">
-                  <a className="nav-link">About</a>
-                </Link>
+                <MDBNavbarLink
+                  active
+                  className="nav-link"
+                  data-scroll="about-content"
+                  onClick={handleNavClick}
+                  aria-current="page"
+                  href="#"
+                >
+                  About
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <Link active aria-current="page" href="#">
-                  <a className="nav-link">Portfolio</a>
-                </Link>
+                <MDBNavbarLink
+                  active
+                  className="nav-link"
+                  data-scroll="portfolio-content"
+                  onClick={handleNavClick}
+                  aria-current="page"
+                  href="#"
+                >
+                  Portfolio
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <Link active aria-current="page" href="#">
-                  <a className="nav-link">Contact</a>
-                </Link>
+                <MDBNavbarLink
+                  active
+                  className="nav-link"
+                  data-scroll="contact-content"
+                  onClick={handleNavClick}
+                  aria-current="page"
+                  href="#"
+                >
+                  Contact
+                </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

@@ -76,7 +76,7 @@ export default function EmblaCarousel({ light, imgSrc }) {
                   height={400}
                   width={600}
                   className="rounded-lg"
-                  alt="cover image"
+                  alt="project image"
                   placeholder="blur"
                   blurDataURL={imgSrc}
                 />

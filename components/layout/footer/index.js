@@ -26,7 +26,7 @@ export default function Footer() {
           <MDBIcon color="light" size="2x" fab icon="stack-overflow" />
         </a>
 
-        <a href="" className="p-1 mx-2">
+        <a href="https://codepen.io/viii4" className="p-1 mx-2">
           <MDBIcon color="light" size="2x" fab icon="codepen" />
         </a>
       </MDBContainer>
