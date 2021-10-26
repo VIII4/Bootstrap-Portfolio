@@ -49,7 +49,7 @@ export const projects = [
       active: false,
       link: "",
     },
-    imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
+    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.png", subImgs: [] },
     bullets: [],
   },
   // BOOKLA
@@ -68,7 +68,7 @@ export const projects = [
       active: false,
       link: "",
     },
-    imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
+    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.png", subImgs: [] },
     bullets: [],
   },
   // Real Estate VR
@@ -87,7 +87,7 @@ export const projects = [
   //     active: false,
   //     link: "",
   //   },
-  //   imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
+  //   imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.png", subImgs: [] },
   //   bullets: [],
   // },
   // Med Sim
@@ -106,7 +106,7 @@ export const projects = [
   //     active: false,
   //     link: "",
   //   },
-  //   imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
+  //   imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.png", subImgs: [] },
   //   bullets: [],
   // },
 
@@ -126,7 +126,7 @@ export const projects = [
       active: true,
       link: "https://care-n.herokuapp.com/",
     },
-    imgUrl: { hero: "/images/app-screens/caren-main_b.png", subImgs: [] },
+    imgUrl: { hero: "/images/webP_images/caren-main_b.png", subImgs: [] },
     bullets: [
       "Created 80% of App React components",
       "Implemented React Google Maps API",
@@ -153,7 +153,7 @@ export const projects = [
       active: false,
       link: "",
     },
-    imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
+    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.png", subImgs: [] },
     bullets: [],
   },
   // TREK
@@ -173,7 +173,7 @@ export const projects = [
       active: true,
       link: "https://benjamintownsend02.github.io/TrekProject/",
     },
-    imgUrl: { hero: "/images/app-screens/trek-main.png", subImgs: [] },
+    imgUrl: { hero: "/images/webP_images/trek-main.png", subImgs: [] },
     bullets: [
       "Designed layout, typography, and logo element for cohesive sleek look",
       "Lead front end team in developing webapp html and css",
@@ -194,7 +194,7 @@ export const projects = [
       link: "https://github.com/VIII4/SeniorPets",
     },
     deployed: { active: true, link: "https://seniorpets22.herokuapp.com/" },
-    imgUrl: { hero: "/images/app-screens/seniorPets-main.png", subImgs: [] },
+    imgUrl: { hero: "/images/webP_images/seniorPets-main.png", subImgs: [] },
     bullets: [
       "100% designed webapp layout and user interface",
       "developed dynamic HTML using the Handlebars.js",
@@ -219,7 +219,7 @@ export const projects = [
     },
     repoLink: "",
     deployed: { active: false, link: "" },
-    imgUrl: { hero: "/images/PhotoPlaceHolder.png", subImgs: [] },
+    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.png", subImgs: [] },
     bullets: [],
   },
   // LOVEBUG
@@ -235,7 +235,7 @@ export const projects = [
       link: "https://github.com/VIII4/LoveBug",
     },
     deployed: { active: true, link: "https://lovebug-app.herokuapp.com/" },
-    imgUrl: { hero: "/images/app-screens/loveBug-main.png", subImgs: [] },
+    imgUrl: { hero: "/images/webP_images/loveBug-main.png", subImgs: [] },
     bullets: [
       "Designed webapp HTML layout and user interface",
       "Utilized bootstrap framework along with custom CSS",
@@ -259,7 +259,7 @@ export const projects = [
       active: true,
       link: "https://googlebooksmernapp.herokuapp.com/",
     },
-    imgUrl: { hero: "/images/app-screens/googleBooks-main.png", subImgs: [] },
+    imgUrl: { hero: "/images/webP_images/googleBooks-main.png", subImgs: [] },
     bullets: [
       "React Single-Page Application",
       "Implement React Router for conditional rendering of components",

@@ -26,7 +26,7 @@ export default function ParticlesCanvas(props) {
         type: "image",
         image: [
           {
-            src: "/images/particles/bubbleSheetA.png",
+            src: "/images/particles/bubbleSheetA.webp",
             width: 100,
             height: 100,
             anim: {
@@ -37,7 +37,7 @@ export default function ParticlesCanvas(props) {
             },
           },
           {
-            src: "/images/particles/bubbleSheetC.png",
+            src: "/images/particles/bubbleSheetC.webp",
             width: 100,
             height: 100,
             anim: {
