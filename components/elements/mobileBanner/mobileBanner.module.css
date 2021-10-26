@@ -15,23 +15,23 @@
   }
 } */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .mobileBanner {
     display: none;
   }
-}
+} */
 @media (orientation: landscape) and (max-height: 450px) {
   .mobileBanner {
     height: 60vh;
-    display: flex;
+    /* display: flex; */
   }
 }
 
-@media (orientation: landscape) and (min-width: 1024px) {
+/* @media (orientation: landscape) and (min-width: 1024px) {
   .mobileBanner {
     display: none;
   }
-}
+} */
 
 .bannerText {
   letter-spacing: 0.45rem;
