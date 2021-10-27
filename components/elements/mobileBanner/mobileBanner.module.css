@@ -5,8 +5,19 @@
   height: 275px;
   align-items: flex-end;
   justify-content: center;
-  display: flex;
 }
+
+@media (min-width: 680px) {
+  .mobileBanner {
+    display: none;
+  }
+}
+
+/* @media only screen and (min-device-width: 915px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .mobileBanner {
+    display: none;
+  }
+} */
 
 /* @media (max-width: 320px) {
   .mobileBanner {
@@ -25,7 +36,7 @@
     margin-top: 50px;
     padding-top: 2rem;
     height: 200px;
-    /* display: flex; */
+    display: flex;
   }
 }
 
