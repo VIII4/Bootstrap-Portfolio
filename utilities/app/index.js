@@ -43,10 +43,11 @@ export const CheckInView = (element, callback, options) => {
 export const IsMobileCheck = () => {
   if (typeof window !== "undefined") {
     const mql = window.matchMedia("(orientation: portrait)");
+    const width =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
 
-    return window.screen.width <= 680 ||
-      (!mql.matches && window.screen.width <= 915)
-      ? true
-      : false;
+    return width <= 680 || (!mql.matches && width <= 915) ? true : false;
   }
 };
