@@ -1,3 +1,37 @@
+/*
+
+  Figma
+  Inkscape
+  Sketch
+  Adobe Photoshop
+    
+
+  React
+  Next.js
+  Node.js
+  WebXR
+  Unity3D
+  Blender
+  MongoDB
+  Babylon.js
+  Three.js
+  A-frame
+  Google APIs
+  Figma
+  Inkscape
+  Sketch
+  Adobe Photoshop
+  Typescript
+  Javascript
+  C#
+  Html
+  webGL
+
+  Search Engine Optimization (SEO)
+  Content Management Systems (CMS)
+
+*/
+
 export const skillSet = {
   designer: {
     skills: ["Web", "Apps", "Video Games", "Simulation", "UI/UX"],
@@ -16,6 +50,7 @@ export const skillSet = {
       "Babylon.js",
       "Three.js",
       "A-frame",
+      "Bootstrap",
       "Google APIs",
     ],
   },
@@ -51,6 +86,17 @@ export const projects = [
     },
     imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
     bullets: [],
+    tech: [
+      "Javascript",
+      "React",
+      "Next.js",
+      "Vercel",
+      "Babylon.js",
+      "Blender",
+      "Figma",
+      "SEO",
+      "MDBootstrap",
+    ],
   },
   // BOOKLA
   {
@@ -70,6 +116,15 @@ export const projects = [
     },
     imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
     bullets: [],
+    tech: [
+      "Javascript",
+      "React",
+      "Next.js",
+      "Vercel",
+      "Figma",
+      "SEO",
+      "MDBootstrap",
+    ],
   },
   // Real Estate VR
   // {
@@ -89,6 +144,7 @@ export const projects = [
   //   },
   //   imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
   //   bullets: [],
+  //   tech:[]
   // },
   // Med Sim
   // {
@@ -108,6 +164,7 @@ export const projects = [
   //   },
   //   imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
   //   bullets: [],
+  //    tech:[]
   // },
 
   // CARE'N
@@ -136,6 +193,18 @@ export const projects = [
       "Image frontend uploading, server hosting/storage request to cloud",
       "Review and manage project and task",
     ],
+    tech: [
+      "Javascript",
+      "React",
+      "@react-google-maps",
+      "Google Maps API",
+      "Google Civics API",
+      "MongoDB",
+      "Heroku",
+      "Cloudinary",
+      "SEO",
+      "MDBootstrap",
+    ],
   },
   // BOTTLED WATERMARK
   {
@@ -155,6 +224,7 @@ export const projects = [
     },
     imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
     bullets: [],
+    tech: [],
   },
   // TREK
   {
@@ -180,6 +250,7 @@ export const projects = [
       "implented jQuery logic to handle and render dynamic data",
       "assisted with client-side logic to fetch API request",
     ],
+    tech: ["bootstrap", "javascript", "Html5", "Firebase"],
   },
   // SENIOR PETS
   {
@@ -204,6 +275,7 @@ export const projects = [
       "assisted with sequelize/mysql Schema and controller on backend server",
       "heavily assisted with troubleshooting of team issues and bugs",
     ],
+    tech: ["Bootstrap", "MySQL", "Handlebars"],
   },
   // BECAUSE ZOMBIES
   {
@@ -221,6 +293,7 @@ export const projects = [
     deployed: { active: false, link: "" },
     imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
     bullets: [],
+    tech: [],
   },
   // LOVEBUG
   {
@@ -242,6 +315,7 @@ export const projects = [
       "Developed client-side logic to fetch server side db-less data",
       "Configured express server routing to serve static files and update data",
     ],
+    tech: ["Bootstrap", "MySQL", "express.js", "node.js"],
   },
   // Google Books
   {
@@ -268,5 +342,6 @@ export const projects = [
       "Created and configured Moongoose/MongoDB Schema and controller on backend server",
       "Configure and deployed fullstack MERN application",
     ],
+    tech: ["html", "bootstrap", "javascript", "React", "node.js", "Heroku"],
   },
 ];

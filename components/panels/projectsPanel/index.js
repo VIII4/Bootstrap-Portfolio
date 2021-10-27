@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import Dynamic from "next/dynamic";
 import styles from "./projectsPanel.module.css";
 
 // Elements
 import { ProjectCard } from "../../elements/projectCard";
 import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
+const CustomModal = Dynamic(() => import("../../elements/customModal"), {
+  ssr: false,
+});
 
 //Project Data
 import { projects } from "../../../data";
@@ -11,6 +15,14 @@ import { projects } from "../../../data";
 export function ProjectsPanel(props) {
   const [allProjects, setAllProjects] = useState(projects);
   const [tabActive, setTabActive] = useState("tab1");
+  const [showModal, setShowModal] = useState(false);
+
+  // TO DO: HANDLE MODAL
+  const handleContactClick = () => {};
+
+  //Method
+
+  const getOpenState = (e) => setShowModal(e);
 
   //Fliter Tab Handler
   const handleTabClick = (e, value) => {
@@ -38,6 +50,10 @@ export function ProjectsPanel(props) {
     // TESTING SLIDE IN ANIMATION
     // let card = document.querySelector(`[data-project=${id}]`);
     // card.classList.add("slideIn");
+    setShowModal(!showModal);
+  };
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -146,6 +162,13 @@ export function ProjectsPanel(props) {
           })}
         </MDBContainer>
       </MDBContainer>
+      <CustomModal
+        showModal={showModal}
+        closeModal={closeModal}
+        getOpenState={getOpenState}
+      >
+        <div>Testing....</div>
+      </CustomModal>
     </>
     // Details Modal //
   );
