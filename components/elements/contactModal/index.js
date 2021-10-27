@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { ContactForm } from "..";
 import {
@@ -6,13 +6,10 @@ import {
   MDBModal,
   MDBModalDialog,
   MDBModalContent,
-  MDBModalHeader,
-  MDBModalTitle,
   MDBModalBody,
   MDBModalFooter,
-  MDBTypography,
 } from "mdb-react-ui-kit";
-import styles from "./contactModal.module.css";
+//import styles from "./contactModal.module.css";
 
 export default function ContactModal({ showModal, closeModal, getOpenState }) {
   return (

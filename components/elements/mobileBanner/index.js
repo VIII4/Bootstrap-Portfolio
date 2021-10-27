@@ -1,11 +1,5 @@
-import {
-  MDBCol,
-  MDBContainer,
-  MDBRow,
-  MDBTypography,
-  MDBIcon,
-} from "mdb-react-ui-kit";
-import React, { useState } from "react";
+import { MDBCol, MDBRow, MDBTypography, MDBIcon } from "mdb-react-ui-kit";
+import React from "react";
 import styles from "./mobileBanner.module.css";
 
 export default function MobileBanner(props) {
@@ -32,18 +26,22 @@ export default function MobileBanner(props) {
           <MDBCol>
             <a href="https://github.com/VIII4" className=" mx-3">
               <MDBIcon color="light" size="2x" fab icon="github" />
+              <span className="visually-hidden">Git Hub</span>
             </a>
             <a href="https://www.linkedin.com/in/iyanlaylor" className="mx-3">
               <MDBIcon color="light" size="2x" fab icon="linkedin" />
+              <span className="visually-hidden">Linkedin</span>
             </a>
             <a
               href="https://stackoverflow.com/users/12654186/"
               className=" mx-3"
             >
               <MDBIcon color="light" size="2x" fab icon="stack-overflow" />
+              <span className="visually-hidden">Stack Overflow</span>
             </a>
             <a href="https://codepen.io/viii4" className=" mx-3">
               <MDBIcon color="light" size="2x" fab icon="codepen" />
+              <span className="visually-hidden">Code Pen</span>
             </a>
           </MDBCol>
         </MDBRow>

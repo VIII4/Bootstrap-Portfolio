@@ -1,5 +1,5 @@
 // Modules
-import React, { useState } from "react";
+import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 // Styles
@@ -7,15 +7,10 @@ import styles from "./contactForm.module.css";
 
 // Elements
 import {
-  MDBContainer,
   MDBCol,
   MDBRow,
   MDBTypography,
   MDBInput,
-  MDBInputGroup,
-  MDBInputGroupElement,
-  MDBInputGroupText,
-  MDBValidation,
   MDBBtn,
   MDBIcon,
 } from "mdb-react-ui-kit";

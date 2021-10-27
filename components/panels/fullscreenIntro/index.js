@@ -3,7 +3,7 @@ import Dynamic from "next/dynamic";
 import styles from "./fullscreenIntro.module.css";
 
 // Elements
-import { MDBContainer } from "mdb-react-ui-kit";
+
 import FullscreenVideo from "../../elements/fullscreenVideo";
 import FullscreenOverlay from "../../elements/fullscreenOverlay";
 import FullscreenDisplayText from "../../elements/fullscreenDisplayText";

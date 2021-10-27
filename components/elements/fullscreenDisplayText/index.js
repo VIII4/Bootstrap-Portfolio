@@ -1,5 +1,5 @@
-import { MDBContainer, MDBTypography } from "mdb-react-ui-kit";
-import React, { useState } from "react";
+import React from "react";
+import { MDBTypography } from "mdb-react-ui-kit";
 import styles from "./fullscreenDisplayText.module.css";
 
 export default function fullscreenDisplayText(props) {
