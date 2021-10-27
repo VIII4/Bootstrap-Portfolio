@@ -1,8 +1,8 @@
 .mobileBanner {
-  margin-top: 5vh;
+  margin-top: 30px;
   margin-left: 0;
   margin-right: 0;
-  height: 30vh;
+  height: 275px;
   align-items: flex-end;
   justify-content: center;
   display: flex;
@@ -22,7 +22,9 @@
 } */
 @media (orientation: landscape) and (max-height: 450px) {
   .mobileBanner {
-    height: 60vh;
+    margin-top: 50px;
+    padding-top: 2rem;
+    height: 200px;
     /* display: flex; */
   }
 }

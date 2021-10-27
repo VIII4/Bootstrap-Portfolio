@@ -50,6 +50,7 @@ export default function ButtonBlock({
             href={repo.active ? repo.link : "javascript:;"}
           >
             <MDBIcon fab icon="github" size="2x"></MDBIcon>
+            <span className="visually-hidden">Repository</span>
           </MDBBtn>
         ) : (
           <MDBTooltip
@@ -65,8 +66,6 @@ export default function ButtonBlock({
           </MDBTooltip>
         )}
       </MDBBtnGroup>
-
-      <div></div>
     </>
   );
 }

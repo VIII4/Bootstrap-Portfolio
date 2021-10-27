@@ -1,6 +1,7 @@
 import { MDBContainer, MDBRow, MDBCol, MDBTypography } from "mdb-react-ui-kit";
 import React from "react";
 import styles from "./aboutMePanel.module.css";
+import Image from "next/image";
 
 export function AboutMePanel() {
   //
@@ -29,11 +30,14 @@ export function AboutMePanel() {
           </MDBRow>
           <MDBRow center className={styles.imgWrapper}>
             <MDBCol center size="8" md="6" lg="4" xl="3">
-              <img
+              <Image
+                width={570}
+                height={755}
                 src="/images/webP_images/portrait.webp"
-                className="img-fluid shadow-4-strong"
+                className="shadow-4-strong"
                 alt="Portrait"
               />
+              {/* <img src="/images/webP_images/portrait.webp" alt="Portrait" /> */}
             </MDBCol>
           </MDBRow>
           <MDBRow center className="text-center p-4 mb-4">

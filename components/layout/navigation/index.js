@@ -12,7 +12,7 @@ import {
 } from "mdb-react-ui-kit";
 //import styles from "./navigation.module.css";
 
-import { ScrollTo } from "../../../utilities/app";
+import { ScrollTo, IsMobileCheck } from "../../../utilities/app";
 
 export default function Navigation() {
   const [showNav, setShowNav] = useState(false);
@@ -38,10 +38,6 @@ export default function Navigation() {
     }
   };
 
-  const screenSizeCheck = (width) => {
-    return width > "768" ? false : true;
-  };
-
   const handleNavClick = (e) => {
     e.preventDefault();
 
@@ -50,55 +46,44 @@ export default function Navigation() {
     ScrollTo(elementId, "scroll-nav");
   };
 
-  // TO DO: ADD ON CLICK SCROLL TO HANDLERS
-  // Get Document element and bottom of full screen
+  /*
+    ERROR: when screen resizes loses reference to element 
+
+    Fix: 
+  */
 
   useEffect(() => {
     //Get Screen width and check if width is mobile
-    let isMobile = screenSizeCheck(
-      window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth
-    );
-
+    let isMobile = IsMobileCheck();
     // Get "fullscreen-intro" element
     let fsIntro = document.getElementById("fullscreen-intro");
     // Get Navbar element
     let navBar = document.getElementById("scroll-nav");
 
+    const onScroll = () => {
+      if (isMobile) {
+        return;
+      }
+      if (fsIntro) scrollCheck(fsIntro, navBar);
+    };
+
+    const onResize = () => {
+      isMobile = IsMobileCheck();
+      // Get "fullscreen-intro" element
+      fsIntro = document.getElementById("fullscreen-intro");
+      // Get Navbar element
+      navBar = document.getElementById("scroll-nav");
+    };
+
     if (window) {
-      window.addEventListener("scroll", () => {
-        if (isMobile) {
-          return;
-        }
-        scrollCheck(fsIntro, navBar);
-      });
-      window.addEventListener("resize", () => {
-        //
-        isMobile = screenSizeCheck(
-          window.innerWidth ||
-            document.documentElement.clientWidth ||
-            document.body.clientWidth
-        );
-      });
+      window.addEventListener("scroll", onScroll);
+      window.addEventListener("resize", onResize);
     }
 
     return () => {
       if (window) {
-        window.removeEventListener("scroll", () => {
-          if (isMobile) {
-            return;
-          }
-          scrollCheck(fsIntro, navBar);
-        });
-        window.addEventListener("resize", () => {
-          //
-          isMobile = screenSizeCheck(
-            window.innerWidth ||
-              document.documentElement.clientWidth ||
-              document.body.clientWidth
-          );
-        });
+        window.removeEventListener("scroll", onScroll);
+        window.addEventListener("resize", onResize);
       }
     };
   });
