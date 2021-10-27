@@ -5,5 +5,5 @@ import { FullScreenIntro } from "..";
 import MobileBanner from "../../elements/mobileBanner";
 
 export function LandingPanel({ isMobile }) {
-  return <>{isMobile ? <MobileBanner /> : <FullScreenIntro />}</>;
+  return <>{isMobile === true ? <MobileBanner /> : <FullScreenIntro />}</>;
 }

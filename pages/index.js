@@ -12,7 +12,7 @@ import {
 } from "../components/panels";
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(null);
 
   const onResize = () => {
     setIsMobile(IsMobileCheck);
