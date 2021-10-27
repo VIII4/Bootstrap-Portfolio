@@ -1,0 +1,19 @@
+/* .mobileBanner {
+} */
+
+@media (min-width: 680px) and (orientation: portrait) {
+  .mobileBanner {
+    display: none;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .mobileBanner {
+    display: none;
+  }
+}
+
+.fullScreenIntro{
+
+}
+*/

@@ -7,13 +7,8 @@ import MobileBanner from "../../elements/mobileBanner";
 export function LandingPanel({ isMobile }) {
   return (
     <>
-      {isMobile === true ? (
-        <MobileBanner />
-      ) : isMobile === false ? (
-        <FullScreenIntro />
-      ) : (
-        <></>
-      )}
+      <MobileBanner />
+      <FullScreenIntro />
     </>
   );
 }
