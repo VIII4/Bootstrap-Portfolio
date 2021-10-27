@@ -45,7 +45,7 @@ export const IsMobileCheck = () => {
     const mql = window.matchMedia("(orientation: portrait)");
 
     return window.screen.width <= 680 ||
-      (!mql.matches && window.screen.width <= 812)
+      (!mql.matches && window.screen.width <= 883)
       ? true
       : false;
   }
