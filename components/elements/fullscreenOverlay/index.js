@@ -1,6 +1,5 @@
-import { MDBContainer } from "mdb-react-ui-kit";
 import React, { useState } from "react";
-import styles from "./fullscreenOverlay.module.css";
+//import styles from "./fullscreenOverlay.module.css";
 
 // Elements
 

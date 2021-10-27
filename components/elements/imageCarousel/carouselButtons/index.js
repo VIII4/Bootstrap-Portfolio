@@ -1,12 +1,4 @@
-import React, { useState } from "react";
-import {
-  MDBRow,
-  MDBCol,
-  MDBContainer,
-  MDBBtn,
-  MDBBtnGroup,
-} from "mdb-react-ui-kit";
-
+import React from "react";
 import styles from "./carouselButtons.module.css";
 
 export const DotButton = ({ light, selected, onClick }) => {
@@ -16,7 +8,9 @@ export const DotButton = ({ light, selected, onClick }) => {
         selected ? styles.selected : ""
       }`}
       onClick={onClick}
-    ></button>
+    >
+      <span className="visually-hidden">Carousel Image Selector</span>
+    </button>
   );
 };
 

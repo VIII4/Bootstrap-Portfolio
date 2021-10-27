@@ -1,13 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
-import {
-  MDBRow,
-  MDBCol,
-  MDBContainer,
-  MDBBtn,
-  MDBBtnGroup,
-} from "mdb-react-ui-kit";
+import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 import styles from "./imageCarousel.module.css";
 

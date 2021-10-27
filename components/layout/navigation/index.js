@@ -10,8 +10,7 @@ import {
   MDBCollapse,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import Link from "next/link";
-import styles from "./navigation.module.css";
+//import styles from "./navigation.module.css";
 
 import { ScrollTo } from "../../../utilities/app";
 

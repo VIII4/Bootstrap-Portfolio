@@ -4,30 +4,9 @@ import styles from "./projectCard.module.css";
 
 // Blocks
 import ButtonBlock from "./buttonBlock";
-import ImageBlock from "./imageBlock";
 
 //Elements
 import ImageCarousel from "../imageCarousel";
-
-/*
-BREAK DOWN
-
-
-    CARD
-        Project Title Block *
-        Project Desc Block *
-        Button Block *
-            Details Button *
-            Deployed Button *
-            Github Button *
-        Visual Display Block
-            Media frame
-                Image
-
-
-
-
-*/
 
 export function ProjectCard({
   light,

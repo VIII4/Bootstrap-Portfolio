@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { MDBRow, MDBCol, MDBContainer } from "mdb-react-ui-kit";
-import styles from "./imageBlock.module.css";
+//import styles from "./imageBlock.module.css";
 
 /**
  * @name ImageBlock

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import styles from "./bioPanel.module.css";
+import React from "react";
+//import styles from "./bioPanel.module.css";
 
 export function BioPanel({ children }) {
   return (

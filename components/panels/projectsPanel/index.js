@@ -3,17 +3,7 @@ import styles from "./projectsPanel.module.css";
 
 // Elements
 import { ProjectCard } from "../../elements/projectCard";
-import {
-  MDBCol,
-  MDBContainer,
-  MDBRow,
-  MDBTypography,
-  MDBTabs,
-  MDBTabsItem,
-  MDBTabsLink,
-  MDBTabsContent,
-  MDBTabsPane,
-} from "mdb-react-ui-kit";
+import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
 
 //Project Data
 import { projects } from "../../../data";

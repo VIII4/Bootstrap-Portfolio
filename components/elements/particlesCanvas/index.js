@@ -1,13 +1,7 @@
 import React, { useEffect } from "react";
-import Dynamic from "next/dynamic";
 
 import styles from "./particlesCanvas.module.css";
 import ParticlesJS from "../../../utilities/particles/particles";
-// /import ParticlesRender from "../particlesRender";
-
-// const ParticlesRender = Dynamic(() => import("../particlesRender"), {
-//   ssr: true,
-// });
 
 export default function ParticlesCanvas(props) {
   // ID attr to assign to canvas and reference to draw particles

@@ -1,5 +1,5 @@
-import { MDBContainer, MDBTypography, MDBIcon } from "mdb-react-ui-kit";
-import React, { useState } from "react";
+import { MDBIcon } from "mdb-react-ui-kit";
+import React from "react";
 import styles from "./fullscreenIconCanvas.module.css";
 
 export default function FullscreenIconCanvas({ handleContactClick }) {
@@ -17,6 +17,7 @@ export default function FullscreenIconCanvas({ handleContactClick }) {
                 icon="github"
                 className={styles.socialListIcon}
               />
+              <span className="visually-hidden">Git Hub</span>
             </a>
           </li>
           <li className={styles.socialListItem}>
@@ -27,6 +28,7 @@ export default function FullscreenIconCanvas({ handleContactClick }) {
                 icon="linkedin"
                 className={styles.socialListIcon}
               />
+              <span className="visually-hidden">Linkedin</span>
             </a>
           </li>
           <li className={styles.socialListItem}>
@@ -37,6 +39,7 @@ export default function FullscreenIconCanvas({ handleContactClick }) {
                 icon="stack-overflow"
                 className={styles.socialListIcon}
               />
+              <span className="visually-hidden">Stack Overflow</span>
             </a>
           </li>
           <li className={styles.socialListItem}>
@@ -48,6 +51,7 @@ export default function FullscreenIconCanvas({ handleContactClick }) {
                 className={styles.socialListIcon}
               />
             </a>
+            <span className="visually-hidden">Code Pen</span>
           </li>
         </ul>
       </div>
