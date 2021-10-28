@@ -63,7 +63,7 @@ export function DetailCard({ selectedProject }) {
                 {selectedProject.bullets && (
                   <ui>
                     {selectedProject.bullets.map((t) => {
-                      return <li>{t}</li>;
+                      return <li key="{t}">{t}</li>;
                     })}
                   </ui>
                 )}
