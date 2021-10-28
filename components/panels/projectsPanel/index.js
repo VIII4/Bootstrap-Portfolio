@@ -3,7 +3,7 @@ import Dynamic from "next/dynamic";
 import styles from "./projectsPanel.module.css";
 
 // Elements
-import { ProjectCard } from "../../elements/projectCard";
+import { ProjectCard, DetailCard } from "../../elements";
 import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
 const CustomModal = Dynamic(() => import("../../elements/customModal"), {
   ssr: false,
@@ -14,13 +14,9 @@ import { projects } from "../../../data";
 
 export function ProjectsPanel(props) {
   const [allProjects, setAllProjects] = useState(projects);
+  const [selectedProject, setSelectedProject] = useState(null);
   const [tabActive, setTabActive] = useState("tab1");
   const [showModal, setShowModal] = useState(false);
-
-  // TO DO: HANDLE MODAL
-  const handleContactClick = () => {};
-
-  //Method
 
   const getOpenState = (e) => setShowModal(e);
 
@@ -50,10 +46,16 @@ export function ProjectsPanel(props) {
     // TESTING SLIDE IN ANIMATION
     // let card = document.querySelector(`[data-project=${id}]`);
     // card.classList.add("slideIn");
+    console.log(id);
+    let project = allProjects.find((p) => {
+      return p.id === id;
+    });
+    setSelectedProject(project);
     setShowModal(!showModal);
   };
   const closeModal = () => {
     setShowModal(false);
+    //setSelectedProject(null);
   };
 
   return (
@@ -122,7 +124,9 @@ export function ProjectsPanel(props) {
                 repo={project.repo}
                 type={project.type}
                 tags={project.tags}
-                handleDetailClick={handleDetailClick}
+                handleDetailClick={() => {
+                  handleDetailClick(project.id);
+                }}
               />
             );
           }
@@ -155,7 +159,9 @@ export function ProjectsPanel(props) {
                   repo={project.repo}
                   type={project.type}
                   tags={project.tags}
-                  handleDetailClick={handleDetailClick}
+                  handleDetailClick={() => {
+                    handleDetailClick(project.id);
+                  }}
                 />
               );
             }
@@ -167,7 +173,7 @@ export function ProjectsPanel(props) {
         closeModal={closeModal}
         getOpenState={getOpenState}
       >
-        <div>Testing....</div>
+        <DetailCard selectedProject={selectedProject} />
       </CustomModal>
     </>
     // Details Modal //
