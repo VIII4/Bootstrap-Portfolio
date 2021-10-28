@@ -8,3 +8,4 @@ export * from "./projectCard";
 export * from "./imageCarousel";
 export * from "./contactForm";
 export * from "./particlesCanvas";
+export * from "./detailCard"
