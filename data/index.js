@@ -184,6 +184,7 @@ export const projects = [
       link: "https://care-n.herokuapp.com/",
     },
     imgUrl: { hero: "/images/webP_images/caren-main_b.webp", subImgs: [] },
+    duration: "5 months",
     bullets: [
       "Created 80% of App React components",
       "Implemented React Google Maps API",
@@ -250,7 +251,7 @@ export const projects = [
       "implented jQuery logic to handle and render dynamic data",
       "assisted with client-side logic to fetch API request",
     ],
-    tech: ["bootstrap", "javascript", "Html5", "Firebase"],
+    tech: ["Bootstrap", "javascript", "HTML5", "Firebase", "Moment.js"],
   },
   // SENIOR PETS
   {
