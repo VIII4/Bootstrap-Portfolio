@@ -54,6 +54,15 @@
 }
 
 .skillsCardDark {
-  background-color: #262626;
+  /* background-color: #262626; */
+  background: rgb(38, 38, 38);
+  background: linear-gradient(
+    90deg,
+    rgba(38, 38, 38, 1) 2.5%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(38, 38, 38, 1) 98.5%
+  );
+  background-size: fill;
   color: #fbfbfb;
 }
