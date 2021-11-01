@@ -19,6 +19,7 @@ export default function SkillsBlock({
   toolsList,
   langList,
 }) {
+  // Animate
   return (
     <MDBContainer className={`${styles.panelWrapper}`}>
       {/* ICON */}
@@ -28,7 +29,12 @@ export default function SkillsBlock({
         </MDBCol>
       </MDBRow>
       {/* Header */}
-      <MDBRow center className={`${styles.skillsHeader} `}>
+      <MDBRow
+        center
+        id={`${title.toLowerCase()}`}
+        className={`${styles.skillsHeader} skillTitle`}
+        data-triggered="false"
+      >
         <MDBCol className="text-center ">
           <MDBTypography
             tag="h3"
@@ -47,7 +53,12 @@ export default function SkillsBlock({
           </MDBTypography>
         </MDBCol>
       </MDBRow>
-      <MDBRow center className="my-2 ">
+      {/* Skills List */}
+      <MDBRow
+        center
+        className={`${styles.skillsPanel} my-2 triggerAnimation`}
+        data-listTitle={title.toLowerCase()}
+      >
         <MDBCol
           size="12"
           md="8"
@@ -72,7 +83,12 @@ export default function SkillsBlock({
           </MDBTypography>
         </MDBCol>
       </MDBRow>
-      <MDBRow center className={styles.toolsPanel}>
+      {/* Tools List */}
+      <MDBRow
+        center
+        className={`${styles.toolsPanel} triggerAnimation`}
+        data-listTitle={title.toLowerCase()}
+      >
         <MDBCol
           size="12"
           md="8"
