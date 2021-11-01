@@ -12,11 +12,6 @@ import { skillSet } from "../../../data";
 export function MySkillsPanel() {
   const { designer, developer, entrep, languages } = skillSet;
 
-  //When Skillblock title is in screen, animate list with delay
-  // get list of skill block titles
-
-  // setTimeout(function () {}, 200 * increment);
-
   return (
     <MDBContainer fluid className="mt-5">
       <MDBRow className="">

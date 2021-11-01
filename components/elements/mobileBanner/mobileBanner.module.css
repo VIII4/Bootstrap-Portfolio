@@ -1,8 +1,5 @@
 .mobileBanner {
-  margin-top: 30px;
-  margin-left: 0;
-  margin-right: 0;
-  height: 275px;
+  height: 285px;
   align-items: flex-end;
   justify-content: center;
   background: rgb(38, 38, 38);
@@ -11,6 +8,12 @@
     rgba(38, 38, 38, 1) 0%,
     rgba(9, 9, 9, 1) 100%
   );
+}
+
+@media (max-width: 320px) {
+  .mobileBanner {
+    height: 320px;
+  }
 }
 
 @media (min-width: 680px) {

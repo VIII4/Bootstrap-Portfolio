@@ -64,7 +64,7 @@ export default function Navigation() {
 
         // ANIMATE LIST HERE
         list.forEach((element, i) => {
-          AnimateCSS(element, "animate__fadeInUp", 450 * (i + 1));
+          AnimateCSS(element, "animate__fadeInUp", 400 * (i + 1));
         });
 
         // SET IS TRIGGERED
