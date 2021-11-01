@@ -12,7 +12,12 @@ import {
 } from "mdb-react-ui-kit";
 //import styles from "./navigation.module.css";
 
-import { ScrollTo, IsMobileCheck } from "../../../utilities/app";
+import {
+  ScrollTo,
+  IsMobileCheck,
+  CheckInView,
+  AnimateCSS,
+} from "../../../utilities/app";
 
 export default function Navigation() {
   const [showNav, setShowNav] = useState(false);
@@ -38,6 +43,36 @@ export default function Navigation() {
     }
   };
 
+  const animateInView = (trigger) => {
+    // for each trigger elemenet check if its in view
+    for (let i = 0; i < trigger.length; i++) {
+      let options = {
+        fullVisibility: true,
+        infinite: false,
+      };
+
+      CheckInView(trigger[i], options, () => {
+        // Check if triggered
+        if (trigger[i].dataset.triggered === "true") {
+          return;
+        }
+
+        // Get all elements with data-to be triggered
+        let list = document.querySelectorAll(
+          `[data-listTitle='${trigger[i].id}']`
+        );
+
+        // ANIMATE LIST HERE
+        list.forEach((element, i) => {
+          AnimateCSS(element, "animate__fadeInUp", 450 * (i + 1));
+        });
+
+        // SET IS TRIGGERED
+        trigger[i].dataset.triggered = "true";
+      });
+    }
+  };
+
   const handleNavClick = (e) => {
     e.preventDefault();
 
@@ -46,25 +81,32 @@ export default function Navigation() {
     ScrollTo(elementId, "scroll-nav");
   };
 
-  /*
-    ERROR: when screen resizes loses reference to element 
-
-    Fix: 
-  */
-
   useEffect(() => {
     //Get Screen width and check if width is mobile
     let isMobile = IsMobileCheck();
+
+    //// For Nav bar transition /////
     // Get "fullscreen-intro" element
     let fsIntro = document.getElementById("fullscreen-intro");
     // Get Navbar element
     let navBar = document.getElementById("scroll-nav");
-
-    const onScroll = () => {
+    //
+    let navTransition = () => {
       if (isMobile) {
         return;
       }
       if (fsIntro) scrollCheck(fsIntro, navBar);
+    };
+
+    //// For Skills Animation ////
+    // Get skills titles
+    let skillsTitles = document.getElementsByClassName("skillTitle");
+
+    //
+
+    const onScroll = () => {
+      navTransition();
+      animateInView(skillsTitles);
     };
 
     const onResize = () => {

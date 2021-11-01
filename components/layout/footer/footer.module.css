@@ -10,3 +10,7 @@
 .nextLogo {
   transform: scale(25%);
 }
+
+.test {
+  background-color: rgba(0, 0, 0, 1);
+}

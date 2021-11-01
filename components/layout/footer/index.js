@@ -1,14 +1,14 @@
 import React from "react";
 import { MDBIcon, MDBFooter, MDBContainer } from "mdb-react-ui-kit";
-//import styles from "./footer.module.css";
+import styles from "./footer.module.css";
 
 export default function Footer() {
   return (
     <MDBFooter
       tag="footer"
-      bgColor="dark"
+      // bgColor="dark"
       color="light"
-      className="text-center p-5"
+      className={`${styles.test} text-center p-5`}
     >
       <MDBContainer fluid className="p-2 my-2">
         <a href="https://github.com/VIII4" className="p-1 mx-2">

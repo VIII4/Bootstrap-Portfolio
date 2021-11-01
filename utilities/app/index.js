@@ -16,7 +16,7 @@ export const ScrollTo = (elementId, navbarId) => {
 };
 
 //Call to if element is in view
-export const CheckInView = (element, callback, options) => {
+export const CheckInView = (element, options, callback) => {
   let position = element.getBoundingClientRect();
   const { fullVisibility, infinite } = options;
 
@@ -33,9 +33,6 @@ export const CheckInView = (element, callback, options) => {
         return;
       }
     }
-    // checking whether fully visible
-
-    // checking for partial visibility
   }
 };
 
@@ -49,5 +46,15 @@ export const IsMobileCheck = () => {
       document.body.clientWidth;
 
     return width <= 680 || (!mql.matches && width <= 915) ? true : false;
+  }
+};
+
+export const AnimateCSS = (element, animation, delay) => {
+  if (delay) {
+    setTimeout(function () {
+      element.classList.add("animated", "animate__animated", animation);
+    }, delay);
+  } else {
+    element.classList.add("animated", "animate__animated", animation);
   }
 };
