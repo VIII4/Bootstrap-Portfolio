@@ -1,33 +1,23 @@
-.skillsBackground {
-  padding: 2rem;
-  background-color: black;
-  z-index: 0;
-  margin-bottom: 2rem;
+.backgroundImg {
+  /* background: url("/images/webP_images/alcohol-ink-art.webp"); */
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(29, 29, 29) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.skillsHeader {
-  padding: 0.5rem;
-}
-
-.skillsWrapper {
-}
-
-/* TO DO: responsiveness for desktop */
-
-.iconWrapper {
-  border: 3px solid black;
-  border-radius: 8px;
-  padding: 0.5rem;
-  text-align: center;
-  background-color: #fbfbfb;
-  width: 95px;
-}
-
-.panelWrapper {
-  position: relative;
-  top: -35px;
-}
-
-.introText {
-  color: rgb(143, 143, 143);
-}
+/* @media (max-width: 680px) {
+  .backgroundImg {
+    background-image: radial-gradient(
+      circle 1244px at 52.3% 51.7%,
+      rgba(0, 0, 0, 1) 9.2%,
+      rgba(31, 31, 31, 1) 29.8%,
+      rgba(190, 190, 190, 1) 76.8%
+    );
+    
+  }
+} */

@@ -1,5 +1,5 @@
 import { MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdb-react-ui-kit";
-import React, { useState } from "react";
+import React from "react";
 
 import styles from "./mySkillsPanel.module.css";
 
@@ -12,13 +12,11 @@ import { skillSet } from "../../../data";
 export function MySkillsPanel() {
   const { designer, developer, entrep, languages } = skillSet;
 
-  const screensize = false;
-
   return (
     <MDBContainer fluid className="mt-5">
       <MDBRow className="">
         {/* Design */}
-        <MDBCol size="12" className="bg-dark">
+        <MDBCol size="12" className={styles.backgroundImg}>
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="pencil-ruler" />}
             title="Designer"
@@ -31,17 +29,17 @@ export function MySkillsPanel() {
         <MDBCol size="12">
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="code" />}
-            title="Developer"
             dark={true}
-            skillsHeader="What I Develop"
+            title="Developer"
             subHeader="I write efficient and elegant, pragmatic solutions for complex problems"
+            skillsHeader="What I Develop"
             skillsList={developer.skills}
             toolsList={developer.tools}
             langList={languages}
           />
         </MDBCol>
         {/* Entreprenuer */}
-        <MDBCol size="12" className="bg-dark">
+        <MDBCol size="12" className={styles.backgroundImg}>
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="user-tie" />}
             title="Entrepreneur"

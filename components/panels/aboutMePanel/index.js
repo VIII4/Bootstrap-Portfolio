@@ -6,7 +6,7 @@ import Image from "next/image";
 export function AboutMePanel() {
   //
   return (
-    <MDBContainer id="about-me-panel" fluid className="p-4 mt-4 ">
+    <MDBContainer id="about-content" fluid className="p-4 mt-4 ">
       {/* White BG  */}
       <MDBRow center className={` mt-4 p-3`}>
         <MDBCol
@@ -29,7 +29,7 @@ export function AboutMePanel() {
             </MDBCol>
           </MDBRow>
           <MDBRow center className={styles.imgWrapper}>
-            <MDBCol center size="8" md="6" lg="4" xl="3">
+            <MDBCol center id="about-image" size="8" md="6" lg="4" xl="3">
               <Image
                 width={570}
                 height={755}

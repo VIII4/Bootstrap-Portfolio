@@ -38,6 +38,14 @@ body {
   color: azure !important;
 }
 
+.triggerAnimation {
+  visibility: hidden;
+}
+
+.animated {
+  visibility: visible;
+}
+
 /* ANIMATIONS */
 .slideAnimation {
   transform: translateX(-50px);

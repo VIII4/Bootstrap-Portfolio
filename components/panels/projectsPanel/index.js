@@ -74,7 +74,8 @@ export function ProjectsPanel(props) {
             </MDBTypography>
           </MDBCol>
         </MDBRow>
-        <MDBRow center className="p-2">
+        {/* TO DO: Add functionality to filter */}
+        {/* <MDBRow center className="p-2">
           <MDBCol center size="12" md="10" lg="6" xl="4" className="p-0">
             <ul id="filterTabs" className="nav nav-pills nav-justified mx-auto">
               <li className="nav-item">
@@ -110,7 +111,7 @@ export function ProjectsPanel(props) {
               </li>
             </ul>
           </MDBCol>
-        </MDBRow>
+        </MDBRow> */}
         {allProjects.map((project) => {
           if (project.deployed.active) {
             return (

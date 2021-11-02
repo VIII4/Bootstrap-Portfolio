@@ -13,7 +13,7 @@ import { ContactForm } from "../../elements";
 
 export function ContactPanel({ props }) {
   return (
-    <MDBContainer fluid className={styles.contactPanel}>
+    <MDBContainer id="contact-content" fluid className={styles.contactPanel}>
       <MDBRow center>
         <MDBCol size="12" md="8" lg="6" xl="4" className="text-center">
           <MDBTypography tag="h5" colorText="light" className="">

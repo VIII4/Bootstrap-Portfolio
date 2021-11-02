@@ -19,7 +19,7 @@ export function ProjectCard({
   imgSrc,
 }) {
   return (
-    <MDBContainer fluid id={id} className={styles.projectCard}>
+    <MDBContainer fluid id={id} className={`${styles.projectCard}`}>
       <MDBRow center>
         <MDBCol size="12" md="8" lg="4" xl="3" className="my-3 my-lg-1 mx-lg-2">
           {/* Images 
