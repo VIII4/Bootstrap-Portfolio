@@ -68,6 +68,34 @@ export const skillSet = {
 };
 
 export const projects = [
+  /*
+  title: "",
+    desc: "",
+    id: "",
+    role: "",
+    type: "hybrid",
+    tags: [],
+    repo: {
+      active: false,
+      link: "",
+    },
+    deployed: {
+      active: false,
+      link: "",
+    },
+    imgUrl: { hero: "", subImgs: [] },
+    bullets: [],
+    tech: [
+      "Javascript",
+      "React",
+      "Next.js",
+      "Vercel",
+      "Figma",
+      "SEO",
+      "MDBootstrap",
+    ],
+  */
+
   // IXPORT TECHNOLOGIES
   {
     title: "Ixport Technologies",
@@ -93,6 +121,7 @@ export const projects = [
       "Vercel",
       "Babylon.js",
       "Blender",
+      "Unity",
       "Figma",
       "SEO",
       "MDBootstrap",
@@ -101,9 +130,9 @@ export const projects = [
   // BOOKLA
   {
     title: "Bookla",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
+    desc: "A platform that is about making a shared library of books for the people in cities over the globe. Reaching a higher level of consciousness, throughout reading materials shared between members of society",
     id: "bookla",
-    role: "Full Stack Developer",
+    role: "Frontend Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
     repo: {
