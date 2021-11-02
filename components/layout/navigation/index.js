@@ -26,15 +26,13 @@ export default function Navigation() {
   let isSolid = false;
 
   const scrollCheck = (element, navBar) => {
-    //console.log(window.scrollY, element.scrollHeight, navBar.scrollHeight);
     if (!isSolid) {
-      if (window.scrollY >= element.scrollHeight - navBar.scrollHeight) {
+      if (window.scrollY >= element.scrollHeight / 3) {
         isSolid = true;
         navBar.classList.add("top-nav-collapse");
-        //console.log("now Solid");
       }
     } else {
-      if (window.scrollY < element.scrollHeight - navBar.scrollHeight) {
+      if (window.scrollY < element.scrollHeight / 3) {
         //
         isSolid = false;
         navBar.classList.remove("top-nav-collapse");
