@@ -10,7 +10,7 @@ export default function ParticlesCanvas(props) {
   const params = {
     _particles: {
       number: {
-        value: 100,
+        value: 250,
         density: {
           enable: true,
           value_area: 800,
