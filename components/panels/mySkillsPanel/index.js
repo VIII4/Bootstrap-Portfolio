@@ -43,8 +43,8 @@ export function MySkillsPanel() {
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="user-tie" />}
             title="Entrepreneur"
-            skillsHeader="What I..."
-            subHeader="Innovate..."
+            skillsHeader="What I Undertake"
+            subHeader="I establish innovative business needs while cultivating and mentoring talent around me. "
             skillsList={entrep.skills}
             toolsList={entrep.tools}
           />

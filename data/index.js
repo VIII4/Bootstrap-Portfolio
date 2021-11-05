@@ -55,13 +55,22 @@ export const skillSet = {
     ],
   },
   entrep: {
-    skills: ["Founder", "Freelance", "Consulting", "Training"],
+    skills: [
+      "Founder",
+      "Freelance",
+      "Consulting",
+      "Training",
+      "Mentorship",
+      "Community Outreach",
+    ],
     tools: [
-      "Communication",
-      "Leadership",
-      "Problem-solving",
-      "Time Management",
+      "Insight",
+      "Forward Thinking",
+      "Diligence",
+      "Meticulousness",
+      "Passion",
       "Teamwork",
+      "Determination",
     ],
   },
   languages: ["Typescript", "Javascript", "C#", "Html"],
@@ -175,26 +184,26 @@ export const projects = [
   //   bullets: [],
   //   tech:[]
   // },
-  // Med Sim
-  // {
-  //   title: "Med Sim VR",
-  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
-  //   id: "medsim",
-  //   role: "Full Stack Developer",
-  //   type: "hybrid",
-  //   tags: ["html", "bootstrap", "javascript"],
-  //   repo: {
-  //     active: false,
-  //     link: "",
-  //   },
-  //   deployed: {
-  //     active: false,
-  //     link: "",
-  //   },
-  //   imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
-  //   bullets: [],
-  //    tech:[]
-  // },
+  // Med Sim Proof of Concept
+  {
+    title: "Med Sim VR",
+    desc: "Proof of Concept, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
+    id: "medsim",
+    role: "Full Stack Developer",
+    type: "hybrid",
+    tags: ["html", "bootstrap", "javascript"],
+    repo: {
+      active: false,
+      link: "",
+    },
+    deployed: {
+      active: false,
+      link: "",
+    },
+    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
+    bullets: [],
+    tech: [],
+  },
 
   // CARE'N
   {
@@ -237,25 +246,25 @@ export const projects = [
     ],
   },
   // BOTTLED WATERMARK
-  {
-    title: "Bottled Watermark",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
-    id: "bottledW",
-    role: "Full Stack Developer",
-    type: "mobile",
-    tags: ["html", "bootstrap", "javascript"],
-    repo: {
-      active: false,
-      link: "",
-    },
-    deployed: {
-      active: false,
-      link: "",
-    },
-    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
-    bullets: [],
-    tech: [],
-  },
+  // {
+  //   title: "Bottled Watermark",
+  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
+  //   id: "bottledW",
+  //   role: "Full Stack Developer",
+  //   type: "mobile",
+  //   tags: ["html", "bootstrap", "javascript"],
+  //   repo: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   deployed: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
+  //   bullets: [],
+  //   tech: [],
+  // },
   // TREK
   {
     title: "Trek",
