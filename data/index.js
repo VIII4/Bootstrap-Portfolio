@@ -404,7 +404,7 @@ export const projects = [
       active: true,
       link: "http://andthewhole9.com/",
     },
-    imgs: ["/images/projectImages/Portfolio_WHole9_1.webp"],
+    imgs: ["/images/projectImages/Portfolio_Whole9_1.webp"],
     bullets: [],
     tech: ["PhotoShop", "Inkscape", "Html", "CSS", "Figma", "MDBootstrap"],
   },
