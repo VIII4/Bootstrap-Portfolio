@@ -165,26 +165,7 @@ export const projects = [
       "MDBootstrap",
     ],
   },
-  // Real Estate VR
-  // {
-  //   title: "Realtor App",
-  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
-  //   id: "realtor",
-  //   role: "Full Stack Developer",
-  //   type: "hybrid",
-  //   tags: ["html", "bootstrap", "javascript"],
-  //   repo: {
-  //     active: false,
-  //     link: "",
-  //   },
-  //   deployed: {
-  //     active: false,
-  //     link: "",
-  //   },
-  //   imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
-  //   bullets: [],
-  //   tech:[]
-  // },
+
   // Med Sim Proof of Concept
   {
     title: "Med Sim VR",
@@ -252,6 +233,7 @@ export const projects = [
       "MDBootstrap",
     ],
   },
+
   // BOTTLED WATERMARK
   // {
   //   title: "Bottled Watermark",
@@ -272,6 +254,7 @@ export const projects = [
   //   bullets: [],
   //   tech: [],
   // },
+
   // TREK
   {
     title: "Trek",
@@ -302,6 +285,7 @@ export const projects = [
     ],
     tech: ["Bootstrap", "javascript", "HTML5", "Firebase", "Moment.js"],
   },
+
   // SENIOR PETS
   {
     title: "Senior Pets",
@@ -331,12 +315,13 @@ export const projects = [
     ],
     tech: ["Bootstrap", "MySQL", "Handlebars"],
   },
+
   // BECAUSE ZOMBIES
   {
     title: "Because Zombies!",
     desc: "",
     id: "becauseZombies",
-    role: "Full Stack Developer",
+    role: "Game Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "javascript"],
     repo: {
@@ -347,7 +332,7 @@ export const projects = [
     deployed: { active: false, link: "" },
     imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
     bullets: [],
-    tech: [],
+    tech: ["Unity", "C#", "Blender", "Photoshop"],
   },
   // LOVEBUG
   {
@@ -392,7 +377,7 @@ export const projects = [
       active: true,
       link: "https://googlebooksmernapp.herokuapp.com/",
     },
-    imgs: ["/images/webP_images/googleBooks-main.webp"],
+    imgs: ["/images/projectImages/Portfolio_GoogleBooks_1.webp"],
     bullets: [
       "React Single-Page Application",
       "Implement React Router for conditional rendering of components",

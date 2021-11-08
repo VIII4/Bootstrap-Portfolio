@@ -65,9 +65,9 @@ export default function EmblaCarousel({ light, imgs }) {
           <div className={styles.emblaContainer}>
             {/* TO DO: MAP NEW SLIDE FOR EACH IMAGE */}
             {imgs &&
-              imgs.map((img) => {
+              imgs.map((img, index) => {
                 return (
-                  <div className={styles.emblaSlide}>
+                  <div className={styles.emblaSlide} key={index}>
                     <Image
                       src={img}
                       height={1080}
@@ -80,46 +80,6 @@ export default function EmblaCarousel({ light, imgs }) {
                   </div>
                 );
               })}
-
-            {/* <div className={styles.emblaSlide}>
-              {imgSrc && (
-                <Image
-                  src={imgSrc}
-                  height={400}
-                  width={600}
-                  className="rounded-lg"
-                  alt="project image"
-                  placeholder="blur"
-                  blurDataURL={imgSrc}
-                />
-              )}
-            </div>
-            <div className={styles.emblaSlide}>
-              {imgSrc && (
-                <Image
-                  src={imgSrc}
-                  height={400}
-                  width={600}
-                  className="rounded-lg"
-                  alt="cover image"
-                  placeholder="blur"
-                  blurDataURL={imgSrc}
-                />
-              )}
-            </div>
-            <div className={styles.emblaSlide}>
-              {imgSrc && (
-                <Image
-                  src={imgSrc}
-                  height={400}
-                  width={600}
-                  className="rounded-lg"
-                  alt="cover image"
-                  placeholder="blur"
-                  blurDataURL={imgSrc}
-                />
-              )}
-            </div> */}
           </div>
         </div>
         <div className={styles.emblaButtons}>
