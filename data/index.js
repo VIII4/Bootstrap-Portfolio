@@ -92,7 +92,7 @@ export const projects = [
       active: false,
       link: "",
     },
-    imgUrl: { hero: "", subImgs: [] },
+    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
     bullets: [],
     tech: [
       "Javascript",
@@ -121,7 +121,8 @@ export const projects = [
       active: false,
       link: "",
     },
-    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
+    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
+
     bullets: [],
     tech: [
       "Javascript",
@@ -152,7 +153,7 @@ export const projects = [
       active: false,
       link: "",
     },
-    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
+    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
     bullets: [],
     tech: [
       "Javascript",
@@ -164,26 +165,7 @@ export const projects = [
       "MDBootstrap",
     ],
   },
-  // Real Estate VR
-  // {
-  //   title: "Realtor App",
-  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
-  //   id: "realtor",
-  //   role: "Full Stack Developer",
-  //   type: "hybrid",
-  //   tags: ["html", "bootstrap", "javascript"],
-  //   repo: {
-  //     active: false,
-  //     link: "",
-  //   },
-  //   deployed: {
-  //     active: false,
-  //     link: "",
-  //   },
-  //   imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
-  //   bullets: [],
-  //   tech:[]
-  // },
+
   // Med Sim Proof of Concept
   {
     title: "Med Sim VR",
@@ -200,7 +182,7 @@ export const projects = [
       active: false,
       link: "",
     },
-    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
+    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
     bullets: [],
     tech: [],
   },
@@ -221,7 +203,13 @@ export const projects = [
       active: true,
       link: "https://care-n.herokuapp.com/",
     },
-    imgUrl: { hero: "/images/webP_images/caren-main_b.webp", subImgs: [] },
+    imgs: [
+      "/images/projectImages/Portfolio_Caren_7.webp",
+      "/images/projectImages/Portfolio_Caren_5.webp",
+      "/images/projectImages/Portfolio_Caren_6.webp",
+      "/images/projectImages/Portfolio_Caren_2.webp",
+      "/images/projectImages/Portfolio_Caren_1.webp",
+    ],
     duration: "5 months",
     bullets: [
       "Created 80% of App React components",
@@ -245,6 +233,7 @@ export const projects = [
       "MDBootstrap",
     ],
   },
+
   // BOTTLED WATERMARK
   // {
   //   title: "Bottled Watermark",
@@ -265,6 +254,7 @@ export const projects = [
   //   bullets: [],
   //   tech: [],
   // },
+
   // TREK
   {
     title: "Trek",
@@ -282,7 +272,11 @@ export const projects = [
       active: true,
       link: "https://benjamintownsend02.github.io/TrekProject/",
     },
-    imgUrl: { hero: "/images/webP_images/trek-main.webp", subImgs: [] },
+    imgs: [
+      "/images/projectImages/Portfolio_Trek_1.webp",
+      "/images/projectImages/Portfolio_Trek_2.webp",
+      "/images/projectImages/Portfolio_Trek_3.webp",
+    ],
     bullets: [
       "Designed layout, typography, and logo element for cohesive sleek look",
       "Lead front end team in developing webapp html and css",
@@ -291,6 +285,7 @@ export const projects = [
     ],
     tech: ["Bootstrap", "javascript", "HTML5", "Firebase", "Moment.js"],
   },
+
   // SENIOR PETS
   {
     title: "Senior Pets",
@@ -304,7 +299,11 @@ export const projects = [
       link: "https://github.com/VIII4/SeniorPets",
     },
     deployed: { active: true, link: "https://seniorpets22.herokuapp.com/" },
-    imgUrl: { hero: "/images/webP_images/seniorPets-main.webp", subImgs: [] },
+    imgs: [
+      "/images/projectImages/Portfolio_SeniorPets_1.webp",
+      "/images/projectImages/Portfolio_SeniorPets_2.webp",
+      "/images/projectImages/Portfolio_SeniorPets_3.webp",
+    ],
     bullets: [
       "100% designed webapp layout and user interface",
       "developed dynamic HTML using the Handlebars.js",
@@ -316,12 +315,13 @@ export const projects = [
     ],
     tech: ["Bootstrap", "MySQL", "Handlebars"],
   },
+
   // BECAUSE ZOMBIES
   {
     title: "Because Zombies!",
     desc: "",
     id: "becauseZombies",
-    role: "Full Stack Developer",
+    role: "Game Developer",
     type: "mobile",
     tags: ["html", "bootstrap", "javascript"],
     repo: {
@@ -330,9 +330,9 @@ export const projects = [
     },
     repoLink: "",
     deployed: { active: false, link: "" },
-    imgUrl: { hero: "/images/webP_images/PhotoPlaceHolder.webp", subImgs: [] },
+    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
     bullets: [],
-    tech: [],
+    tech: ["Unity", "C#", "Blender", "Photoshop"],
   },
   // LOVEBUG
   {
@@ -347,7 +347,12 @@ export const projects = [
       link: "https://github.com/VIII4/LoveBug",
     },
     deployed: { active: true, link: "https://lovebug-app.herokuapp.com/" },
-    imgUrl: { hero: "/images/webP_images/loveBug-main.webp", subImgs: [] },
+    imgs: [
+      "/images/projectImages/Portfolio_Lovebug_1.webp",
+      "/images/projectImages/Portfolio_Lovebug_2.webp",
+      "/images/projectImages/Portfolio_Lovebug_3.webp",
+      "/images/projectImages/Portfolio_Lovebug_4.webp",
+    ],
     bullets: [
       "Designed webapp HTML layout and user interface",
       "Utilized bootstrap framework along with custom CSS",
@@ -372,7 +377,7 @@ export const projects = [
       active: true,
       link: "https://googlebooksmernapp.herokuapp.com/",
     },
-    imgUrl: { hero: "/images/webP_images/googleBooks-main.webp", subImgs: [] },
+    imgs: ["/images/projectImages/Portfolio_GoogleBooks_1.webp"],
     bullets: [
       "React Single-Page Application",
       "Implement React Router for conditional rendering of components",
@@ -382,5 +387,25 @@ export const projects = [
       "Configure and deployed fullstack MERN application",
     ],
     tech: ["html", "bootstrap", "javascript", "React", "node.js", "Heroku"],
+  },
+  // And The Whole Nine
+  {
+    title: "And The Whole 9",
+    desc: " 'Coming Soon' branding and landing page ",
+    id: "whole9",
+    role: "",
+    type: "hybrid",
+    tags: [],
+    repo: {
+      active: false,
+      link: "",
+    },
+    deployed: {
+      active: true,
+      link: "http://andthewhole9.com/",
+    },
+    imgs: ["/images/projectImages/Portfolio_WHole9_1.webp"],
+    bullets: [],
+    tech: ["PhotoShop", "Inkscape", "Html", "CSS", "Figma", "MDBootstrap"],
   },
 ];

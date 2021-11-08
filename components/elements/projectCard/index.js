@@ -16,17 +16,17 @@ export function ProjectCard({
   deployed,
   repo,
   handleDetailClick,
-  imgSrc,
+  imgs,
 }) {
   return (
     <MDBContainer fluid id={id} className={`${styles.projectCard}`}>
       <MDBRow center>
-        <MDBCol size="12" md="8" lg="4" xl="3" className="my-3 my-lg-1 mx-lg-2">
+        <MDBCol size="12" md="8" lg="6" xl="4" className="my-3 my-lg-1 mx-lg-2">
           {/* Images 
               TO DO: Send PROPS data to carousel for image slides...
           
           */}
-          <ImageCarousel light={light} imgSrc={imgSrc} />
+          <ImageCarousel light={light} imgs={imgs} />
           {/* <ImageBlock imgSrc={imgSrc} /> */}
         </MDBCol>
       </MDBRow>

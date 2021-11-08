@@ -8,7 +8,7 @@ import styles from "./imageCarousel.module.css";
 // Elements
 import { DotButton } from "./carouselButtons";
 
-export default function EmblaCarousel({ light, imgSrc }) {
+export default function EmblaCarousel({ light, imgs }) {
   const [emblaRef, embla] = useEmblaCarousel({
     align: "start",
     // aligns the first slide to the start
@@ -63,45 +63,23 @@ export default function EmblaCarousel({ light, imgSrc }) {
       <MDBCol>
         <div className={styles.embla} ref={emblaRef}>
           <div className={styles.emblaContainer}>
-            <div className={styles.emblaSlide}>
-              {imgSrc && (
-                <Image
-                  src={imgSrc}
-                  height={400}
-                  width={600}
-                  className="rounded-lg"
-                  alt="project image"
-                  placeholder="blur"
-                  blurDataURL={imgSrc}
-                />
-              )}
-            </div>
-            <div className={styles.emblaSlide}>
-              {imgSrc && (
-                <Image
-                  src={imgSrc}
-                  height={400}
-                  width={600}
-                  className="rounded-lg"
-                  alt="cover image"
-                  placeholder="blur"
-                  blurDataURL={imgSrc}
-                />
-              )}
-            </div>
-            <div className={styles.emblaSlide}>
-              {imgSrc && (
-                <Image
-                  src={imgSrc}
-                  height={400}
-                  width={600}
-                  className="rounded-lg"
-                  alt="cover image"
-                  placeholder="blur"
-                  blurDataURL={imgSrc}
-                />
-              )}
-            </div>
+            {/* TO DO: MAP NEW SLIDE FOR EACH IMAGE */}
+            {imgs &&
+              imgs.map((img, index) => {
+                return (
+                  <div className={styles.emblaSlide} key={index}>
+                    <Image
+                      src={img}
+                      height={1080}
+                      width={1080}
+                      className="rounded-lg"
+                      alt="project image"
+                      placeholder="blur"
+                      blurDataURL={img}
+                    />
+                  </div>
+                );
+              })}
           </div>
         </div>
         <div className={styles.emblaButtons}>
