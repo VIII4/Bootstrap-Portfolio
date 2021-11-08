@@ -16,7 +16,7 @@ export function ProjectCard({
   deployed,
   repo,
   handleDetailClick,
-  imgSrc,
+  imgs,
 }) {
   return (
     <MDBContainer fluid id={id} className={`${styles.projectCard}`}>
@@ -26,7 +26,7 @@ export function ProjectCard({
               TO DO: Send PROPS data to carousel for image slides...
           
           */}
-          <ImageCarousel light={light} imgSrc={imgSrc} />
+          <ImageCarousel light={light} imgs={imgs} />
           {/* <ImageBlock imgSrc={imgSrc} /> */}
         </MDBCol>
       </MDBRow>

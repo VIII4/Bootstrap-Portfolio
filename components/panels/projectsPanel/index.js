@@ -119,7 +119,7 @@ export function ProjectsPanel(props) {
                 key={project.id}
                 title={project.title}
                 id={project.id}
-                imgSrc={project.imgUrl.hero}
+                imgs={project.imgs}
                 desc={project.desc}
                 deployed={project.deployed}
                 repo={project.repo}
@@ -154,7 +154,7 @@ export function ProjectsPanel(props) {
                   key={project.id}
                   title={project.title}
                   id={project.id}
-                  imgSrc={project.imgUrl.hero}
+                  imgs={project.imgs}
                   desc={project.desc}
                   deployed={project.deployed}
                   repo={project.repo}
