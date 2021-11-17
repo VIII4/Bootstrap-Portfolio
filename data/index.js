@@ -139,10 +139,10 @@ export const projects = [
   },
   // BOOKLA
   {
-    title: "Bookla",
+    title: "Bookla (Prototype)",
     desc: "A platform that is about making a shared library of books for the people in cities over the globe. Reaching a higher level of consciousness, throughout reading materials shared between members of society",
     id: "bookla",
-    role: "Frontend Developer",
+    role: "Frontend Developer, UI/UX Designer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
     repo: {
@@ -150,10 +150,15 @@ export const projects = [
       link: "",
     },
     deployed: {
-      active: false,
-      link: "",
+      active: true,
+      link: "https://www.figma.com/proto/YU8sKCwOloXYLmu862o0kX/Bookla-Wireframe?node-id=324%3A2860&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=324%3A2860&show-proto-sidebar=1",
     },
-    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
+    imgs: [
+      "/images/projectImages/Portfolio_Bookla_1.webp",
+      "/images/projectImages/Portfolio_Bookla_2.webp",
+      "/images/projectImages/Portfolio_Bookla_3.webp",
+      "/images/projectImages/Portfolio_Bookla_4.webp",
+    ],
     bullets: [],
     tech: [
       "Javascript",
