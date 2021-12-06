@@ -32,6 +32,13 @@
 
 */
 
+export const projectType = {
+  web: "WEB",
+  webxr: "WEBXR",
+  native: "NATIVE",
+  hybrid: "HYBRID",
+};
+
 export const skillSet = {
   designer: {
     skills: ["Web", "Apps", "Video Games", "Simulation", "UI/UX"],
@@ -108,11 +115,11 @@ export const projects = [
   // IXPORT TECHNOLOGIES
   {
     title: "Ixport Technologies",
-    desc: "A server side rendered (Next.js), interactive Company product/services website that utilizes babylon.js framework for a unique immersive experience that can also be personalized with metaverse avatar(ready player me), and highly ooptimized for SEO.",
+    desc: "A server side rendered (Next.js), interactive Company product/services site that utilizes the babylon.js framework for a unique immersive experience that can also be personalized with metaverse avatar(ready player me), and highly ooptimized for SEO.",
     id: "ixport",
     role: "Full Stack Developer",
     type: "hybrid",
-    tags: ["html", "bootstrap", "javascript"],
+    tags: ["Native", "webXR", "web"],
     deployed: {
       active: false,
       link: "",
@@ -122,8 +129,16 @@ export const projects = [
       link: "",
     },
     imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
-
-    bullets: [],
+    bullets: [
+      "...",
+      ,
+      "...",
+      "Dynamic Google Maps Components based on location tracking",
+      "Backend dependent React component creation with state and hooks logic",
+      "All front end routing and communication to backend",
+      "Image frontend uploading, server hosting/storage request to cloud",
+      "Review and manage project and task",
+    ],
     tech: [
       "Javascript",
       "React",
@@ -140,10 +155,10 @@ export const projects = [
   },
   // BOOKLA
   {
-    title: "Bookla (Prototype)",
-    desc: "A platform that is about making a shared library of books for the people in cities over the globe. Reaching a higher level of consciousness, throughout reading materials shared between members of society",
+    title: "Bookla",
+    desc: "UI/UX Design for community sourced library  web platform...",
     id: "bookla",
-    role: "Frontend Developer, UI/UX Designer",
+    role: "UI/UX Designer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
     repo: {
@@ -173,25 +188,25 @@ export const projects = [
   },
 
   // Med Sim Proof of Concept
-  {
-    title: "Med Sim VR",
-    desc: "Proof of Concept, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
-    id: "medsim",
-    role: "Full Stack Developer",
-    type: "hybrid",
-    tags: ["html", "bootstrap", "javascript"],
-    repo: {
-      active: false,
-      link: "",
-    },
-    deployed: {
-      active: false,
-      link: "",
-    },
-    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
-    bullets: [],
-    tech: [],
-  },
+  // {
+  //   title: "Med Sim VR",
+  //   desc: "A Proof-of-Concept WebXR webapp for medical simulation training demo...",
+  //   id: "medsim",
+  //   role: "Full Stack XR Developer",
+  //   type: "hybrid",
+  //   tags: ["html", "bootstrap", "javascript"],
+  //   repo: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   deployed: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
+  //   bullets: [],
+  //   tech: [],
+  // },
 
   // CARE'N
   {
@@ -323,23 +338,23 @@ export const projects = [
   },
 
   // BECAUSE ZOMBIES
-  {
-    title: "Because Zombies!",
-    desc: "",
-    id: "becauseZombies",
-    role: "Game Developer",
-    type: "mobile",
-    tags: ["html", "bootstrap", "javascript"],
-    repo: {
-      active: false,
-      link: "",
-    },
-    repoLink: "",
-    deployed: { active: false, link: "" },
-    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
-    bullets: [],
-    tech: ["Unity", "C#", "Blender", "Photoshop"],
-  },
+  // {
+  //   title: "Because Zombies!",
+  //   desc: "",
+  //   id: "becauseZombies",
+  //   role: "Game Developer",
+  //   type: "mobile",
+  //   tags: ["html", "bootstrap", "javascript"],
+  //   repo: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   repoLink: "",
+  //   deployed: { active: false, link: "" },
+  //   imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
+  //   bullets: [],
+  //   tech: ["Unity", "C#", "Blender", "Photoshop"],
+  // },
   // LOVEBUG
   {
     title: "Lovebug",
