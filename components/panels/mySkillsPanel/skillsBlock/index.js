@@ -99,7 +99,7 @@ export default function SkillsBlock({
           }`}
         >
           <MDBTypography tag="strong" variant="h5">
-            The tools I use:
+            The Tools I Use:
           </MDBTypography>
           <ul className={styles.skillsList}>
             {/* Map Tools list */}

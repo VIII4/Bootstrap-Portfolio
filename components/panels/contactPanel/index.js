@@ -23,7 +23,7 @@ export function ContactPanel({ props }) {
         </MDBCol>
       </MDBRow>
       <MDBRow center>
-        <MDBCol size="12" md="8" lg="6" xl="4">
+        <MDBCol size="11" md="8" lg="6" xl="4">
           <MDBContainer
             id="contact-wrapper"
             fluid

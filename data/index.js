@@ -108,7 +108,7 @@ export const projects = [
   // IXPORT TECHNOLOGIES
   {
     title: "Ixport Technologies",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget faucibus libero, at pulvinar dui. Nam auctor, enim et tincidunt euismod, orci libero blandit purus, quis facilisis dolor lacus nec tellus. In dictum, turpis a gravida pretium, sapien dui tempus nunc, ut volutpat nisl neque vel odio. Praesent ut lectus non ipsum consectetur ornare. Proin consequat efficitur venenatis. Vivamus a elit eget nunc ullamcorper consequat. Donec pulvinar id eros ut tristique. Sed nec ante lectus. Nam a purus pellentesque sem luctus scelerisque nec id diam.",
+    desc: "A server side rendered (Next.js), interactive Company product/services website that utilizes babylon.js framework for a unique immersive experience that can also be personalized with metaverse avatar(ready player me), and highly ooptimized for SEO.",
     id: "ixport",
     role: "Full Stack Developer",
     type: "hybrid",
@@ -135,6 +135,7 @@ export const projects = [
       "Figma",
       "SEO",
       "MDBootstrap",
+      "Ready Player Me",
     ],
   },
   // BOOKLA

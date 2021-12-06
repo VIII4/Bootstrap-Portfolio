@@ -23,7 +23,7 @@ export function AboutMePanel() {
               className="rounded border border-dark border-2 bg-light text-center p-2"
             >
               <MDBTypography tag="h5" className="m-0">
-                Hello, My name is Iyan. I’m a Developer, Designer and an
+                Hello, My name is Iyan. I’m a Developer, Designer and
                 Entrepreneur.
               </MDBTypography>
             </MDBCol>
@@ -42,14 +42,14 @@ export function AboutMePanel() {
           </MDBRow>
           <MDBRow center className="text-center p-4 mb-4">
             <MDBCol size="12" md="10" xl="6">
-              <MDBTypography tag="h6" className="text-dark m-0">
+              <MDBTypography tag="h5" className="text-dark m-0">
                 I love to create, code and learn, what better way to do all
                 three than to be a full stack developer. When I’m not behind the
                 blue lights, I’m cycling with my wife or gaming with my son.
-                Currently I am creating web based VR experiences with the
-                company I founded, ixport Technologies, but always looking for
-                opportunities to grow and/or to collaborate. Please don't
-                hesitate to reach out.
+                Currently I am creating web based XR experiences with the
+                company I founded, Ixport Technologies. I am always looking for
+                opportunities to grow and/or to collaborate, so don't hesitate
+                to reach out.
               </MDBTypography>
             </MDBCol>
           </MDBRow>

@@ -20,7 +20,8 @@ export function MySkillsPanel() {
           <SkillsBlock
             icon={<MDBIcon size="3x" color="dark" fas icon="pencil-ruler" />}
             title="Designer"
-            subHeader="My designs are simple yet intuitive and provide an immersive user experience"
+            subHeader="Simple and Intuitive Designs that Provide an Immersive User Experience"
+            skillsHeader="What I Design"
             skillsList={designer.skills}
             toolsList={designer.tools}
           />
@@ -31,7 +32,7 @@ export function MySkillsPanel() {
             icon={<MDBIcon size="3x" color="dark" fas icon="code" />}
             dark={true}
             title="Developer"
-            subHeader="I write efficient and elegant, pragmatic solutions for complex problems"
+            subHeader="Efficient, Elegant and Pragmatic Solutions for Complex Problems"
             skillsHeader="What I Develop"
             skillsList={developer.skills}
             toolsList={developer.tools}
@@ -44,7 +45,7 @@ export function MySkillsPanel() {
             icon={<MDBIcon size="3x" color="dark" fas icon="user-tie" />}
             title="Entrepreneur"
             skillsHeader="What I Undertake"
-            subHeader="I establish innovative business needs while cultivating and mentoring talent around me. "
+            subHeader="Establish Innovative Business Needs while Cultivating and Mentoring Talent Around Me. "
             skillsList={entrep.skills}
             toolsList={entrep.tools}
           />
