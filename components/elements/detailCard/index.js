@@ -17,7 +17,7 @@ export function DetailCard({ selectedProject }) {
           <MDBRow className="mb-1">
             <MDBCol>
               <MDBTypography tag="strong" variant="h2">
-                Project: {selectedProject.title}
+                {selectedProject.title}
               </MDBTypography>
             </MDBCol>
           </MDBRow>
