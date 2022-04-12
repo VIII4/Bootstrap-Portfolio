@@ -42,7 +42,7 @@ export const projectType = {
 export const skillSet = {
   designer: {
     skills: ["Web", "Apps", "Video Games", "Simulation", "UI/UX"],
-    tools: ["Figma", "Inkscape", "Sketch", "Adobe Photoshop"],
+    tools: ["Figma", "Inkscape", "Sketch", "Adobe Photoshop", "Lotties"],
   },
   developer: {
     skills: ["Front End", "Back End", "Video Game", "Interactive Simulation"],
@@ -153,6 +153,38 @@ export const projects = [
       "Ready Player Me",
     ],
   },
+
+  // Med Sim Proof of Concept
+  {
+    title: "Harlem Pediatrics VR Training App",
+    desc: "A WebXR Demo webapp for medical simulation training demo...",
+    id: "medsim",
+    role: "Full Stack XR Developer",
+    type: "hybrid",
+    tags: ["html", "bootstrap", "javascript"],
+    repo: {
+      active: false,
+      link: "",
+    },
+    deployed: {
+      active: false,
+      link: "https://web-xr-med-sim.vercel.app/dashboard",
+    },
+    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
+    bullets: ["...", "...", "...", "..."],
+    tech: [
+      "React",
+      "Next.js",
+      "Vercel",
+      "Figma",
+      "SEO",
+      "MDBootstrap",
+      "Babylon.js",
+      "Unity",
+      "Blender",
+    ],
+  },
+
   // BOOKLA
   {
     title: "Bookla",
@@ -186,27 +218,6 @@ export const projects = [
       "MDBootstrap",
     ],
   },
-
-  // Med Sim Proof of Concept
-  // {
-  //   title: "Med Sim VR",
-  //   desc: "A Proof-of-Concept WebXR webapp for medical simulation training demo...",
-  //   id: "medsim",
-  //   role: "Full Stack XR Developer",
-  //   type: "hybrid",
-  //   tags: ["html", "bootstrap", "javascript"],
-  //   repo: {
-  //     active: false,
-  //     link: "",
-  //   },
-  //   deployed: {
-  //     active: false,
-  //     link: "",
-  //   },
-  //   imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
-  //   bullets: [],
-  //   tech: [],
-  // },
 
   // CARE'N
   {
