@@ -45,8 +45,8 @@ export function AboutMePanel() {
               <MDBTypography tag="h5" className="text-dark m-0">
                 I love to create, code and learn, what better way to do all
                 three than to be a full stack developer. When I’m not behind the
-                blue lights, I’m cycling with my wife or gaming with my son.
-                Currently I am creating web based XR experiences with the
+                blue lights, I enjoy traveling with my wife or gaming with my
+                son. Currently I am creating web based XR experiences with the
                 company I founded, Ixport Technologies. I am always looking for
                 opportunities to grow and/or to collaborate, so don't hesitate
                 to reach out.
