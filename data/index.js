@@ -112,6 +112,37 @@ export const projects = [
     ],
   */
 
+  // Med Sim Proof of Concept
+  {
+    title: "Harlem Pediatrics VR Training App",
+    desc: "A WebXR Demo webapp for medical simulation training demo...",
+    id: "medsim",
+    role: "Full Stack XR Developer",
+    type: "hybrid",
+    tags: ["html", "bootstrap", "javascript"],
+    repo: {
+      active: false,
+      link: "",
+    },
+    deployed: {
+      active: true,
+      link: "https://web-xr-med-sim.vercel.app/dashboard",
+    },
+    imgs: ["/images/projectImages/portfolio_HarlemPeds_1.png"],
+    bullets: ["...", "...", "...", "..."],
+    tech: [
+      "React",
+      "Next.js",
+      "Vercel",
+      "Figma",
+      "SEO",
+      "MDBootstrap",
+      "Babylon.js",
+      "Unity",
+      "Blender",
+    ],
+  },
+
   // IXPORT TECHNOLOGIES
   {
     title: "Ixport Technologies",
@@ -151,37 +182,6 @@ export const projects = [
       "SEO",
       "MDBootstrap",
       "Ready Player Me",
-    ],
-  },
-
-  // Med Sim Proof of Concept
-  {
-    title: "Harlem Pediatrics VR Training App",
-    desc: "A WebXR Demo webapp for medical simulation training demo...",
-    id: "medsim",
-    role: "Full Stack XR Developer",
-    type: "hybrid",
-    tags: ["html", "bootstrap", "javascript"],
-    repo: {
-      active: false,
-      link: "",
-    },
-    deployed: {
-      active: false,
-      link: "https://web-xr-med-sim.vercel.app/dashboard",
-    },
-    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
-    bullets: ["...", "...", "...", "..."],
-    tech: [
-      "React",
-      "Next.js",
-      "Vercel",
-      "Figma",
-      "SEO",
-      "MDBootstrap",
-      "Babylon.js",
-      "Unity",
-      "Blender",
     ],
   },
 
