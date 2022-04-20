@@ -114,7 +114,7 @@ export const projects = [
 
   // Med Sim Proof of Concept
   {
-    title: "Harlem Pediatrics VR Training App",
+    title: "Harlem Pediatrics VR Training App (BETA)",
     desc: "A WebXR Demo webapp for medical simulation training demo...",
     id: "medsim",
     role: "Full Stack XR Developer",
@@ -128,7 +128,15 @@ export const projects = [
       active: true,
       link: "https://web-xr-med-sim.vercel.app/dashboard",
     },
-    imgs: ["/images/projectImages/portfolio_HarlemPeds_1.png"],
+    imgs: [
+      "/images/projectImages/portfolio_HarlemPeds_5.webP",
+      "/images/projectImages/portfolio_HarlemPeds_1.webP",
+      // "/images/projectImages/portfolio_HarlemPeds_2.webP",
+      "/images/projectImages/portfolio_HarlemPeds_3.webP",
+      "/images/projectImages/portfolio_HarlemPeds_4.webP",
+
+      "/images/projectImages/portfolio_HarlemPeds_6.webP",
+    ],
     bullets: ["...", "...", "...", "..."],
     tech: [
       "React",
