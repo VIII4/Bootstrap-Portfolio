@@ -129,13 +129,11 @@ export const projects = [
       link: "https://web-xr-med-sim.vercel.app/dashboard",
     },
     imgs: [
-      "/images/projectImages/portfolio_HarlemPeds_5.webP",
-      "/images/projectImages/portfolio_HarlemPeds_1.webP",
-      // "/images/projectImages/portfolio_HarlemPeds_2.webP",
-      "/images/projectImages/portfolio_HarlemPeds_3.webP",
-      "/images/projectImages/portfolio_HarlemPeds_4.webP",
-
-      "/images/projectImages/portfolio_HarlemPeds_6.webP",
+      "/images/projectImages/portfolio_HarlemPeds_5.webp",
+      "/images/projectImages/portfolio_HarlemPeds_1.webp",
+      "/images/projectImages/portfolio_HarlemPeds_3.webp",
+      "/images/projectImages/portfolio_HarlemPeds_4.webp",
+      "/images/projectImages/portfolio_HarlemPeds_6.webp",
     ],
     bullets: ["...", "...", "...", "..."],
     tech: [
