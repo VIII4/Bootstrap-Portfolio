@@ -125,7 +125,7 @@ export const projects = [
       link: "",
     },
     deployed: {
-      active: true,
+      active: false,
       link: "https://web-xr-med-sim.vercel.app/dashboard",
     },
     imgs: [
