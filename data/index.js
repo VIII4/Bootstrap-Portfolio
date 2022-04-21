@@ -130,10 +130,10 @@ export const projects = [
     },
     imgs: [
       "/images/projectImages/Portfolio_HarlemPeds_5.gif",
-      "/images/projectImages/Portfolio_HarlemPeds_1.webp",
-      "/images/projectImages/Portfolio_HarlemPeds_3.webp",
-      "/images/projectImages/Portfolio_HarlemPeds_4.webp",
-      "/images/projectImages/Portfolio_HarlemPeds_6.webp",
+      "/images/projectImages/Portfolio_HarlemPeds_1.png",
+      "/images/projectImages/Portfolio_HarlemPeds_3.png",
+      "/images/projectImages/Portfolio_HarlemPeds_4.png",
+      "/images/projectImages/Portfolio_HarlemPeds_6.gif",
     ],
     bullets: ["...", "...", "...", "..."],
     tech: [
