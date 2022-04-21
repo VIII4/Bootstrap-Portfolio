@@ -57,7 +57,7 @@ export default function Navigation() {
 
         // Get all elements with data-to be triggered
         let list = document.querySelectorAll(
-          `[data-listTitle='${trigger[i].id}']`
+          `[data-listtitle='${trigger[i].id}']`
         );
 
         // ANIMATE LIST HERE

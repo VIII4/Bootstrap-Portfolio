@@ -57,7 +57,7 @@ export default function SkillsBlock({
       <MDBRow
         center
         className={`${styles.skillsPanel} my-2 triggerAnimation`}
-        data-listTitle={title.toLowerCase()}
+        data-listtitle={title.toLowerCase()}
       >
         <MDBCol
           size="12"
@@ -87,7 +87,7 @@ export default function SkillsBlock({
       <MDBRow
         center
         className={`${styles.toolsPanel} triggerAnimation`}
-        data-listTitle={title.toLowerCase()}
+        data-listtitle={title.toLowerCase()}
       >
         <MDBCol
           size="12"
