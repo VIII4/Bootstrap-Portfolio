@@ -3,5 +3,13 @@
   "spellright.documentTypes": ["markdown", "latex", "plaintext"],
   "search.exclude": {
     "**/node_modules": false
-  }
+  },
+  "cSpell.words": [
+    "Bookla",
+    "entrep",
+    "IXPORT",
+    "Photopea",
+    "Photoshop",
+    "Vercel"
+  ]
 }

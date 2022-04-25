@@ -138,7 +138,7 @@ export const projects = [
     bullets: [
       "Designed then converted intitial wireframe to prototype, then into fully responsive web elements ",
       "Created custom icon/font sets and various unique SVG images for vibrant infinite resolution that is consistent across displays with faster load speed.",
-      "Implemented responsive, mobile -> VR -> desktop approach which increased mobile traffic by 20%",
+      "Implemented responsive, mobile -> VR -> Desktop approach allowing increased mobile performance and optimization",
       "Architected and developed highly scalable React components with backend communication API functionality",
       "Cross-browser/device performance and functionality testing ensuring consistent experience.",
     ],
@@ -173,46 +173,43 @@ export const projects = [
   },
 
   // IXPORT TECHNOLOGIES
-  {
-    title: "Ixport Technologies",
-    desc: "A server side rendered (Next.js), interactive Company product/services site that utilizes the babylon.js framework for a unique immersive experience that can also be personalized with metaverse avatar(ready player me), and highly ooptimized for SEO.",
-    id: "ixport",
-    role: "Full Stack Developer",
-    type: "hybrid",
-    tags: ["Native", "webXR", "web"],
-    deployed: {
-      active: false,
-      link: "",
-    },
-    repo: {
-      active: false,
-      link: "",
-    },
-    imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
-    bullets: [
-      "...",
-      ,
-      "...",
-      "Dynamic Google Maps Components based on location tracking",
-      "Backend dependent React component creation with state and hooks logic",
-      "All front end routing and communication to backend",
-      "Image frontend uploading, server hosting/storage request to cloud",
-      "Review and manage project and task",
-    ],
-    tech: [
-      "Javascript",
-      "React",
-      "Next.js",
-      "Vercel",
-      "Babylon.js",
-      "Blender",
-      "Unity",
-      "Figma",
-      "SEO",
-      "MDBootstrap",
-      "Ready Player Me",
-    ],
-  },
+  // {
+  //   title: "Ixport Technologies",
+  //   desc: "A server side rendered (Next.js), interactive Company product/services site that utilizes the babylon.js framework for a unique immersive experience that can also be personalized with metaverse avatar(ready player me), and highly ooptimized for SEO.",
+  //   id: "ixport",
+  //   role: "Full Stack Developer",
+  //   type: "hybrid",
+  //   tags: ["Native", "webXR", "web"],
+  //   deployed: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   repo: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   imgs: ["/images/webP_images/PhotoPlaceHolder.webp"],
+  //   bullets: [
+  //     "Dynamic Google Maps Components based on location tracking",
+  //     "Backend dependent React component creation with state and hooks logic",
+  //     "All front end routing and communication to backend",
+  //     "Image frontend uploading, server hosting/storage request to cloud",
+  //     "Review and manage project and task",
+  //   ],
+  //   tech: [
+  //     "Javascript",
+  //     "React",
+  //     "Next.js",
+  //     "Vercel",
+  //     "Babylon.js",
+  //     "Blender",
+  //     "Unity",
+  //     "Figma",
+  //     "SEO",
+  //     "MDBootstrap",
+  //     "Ready Player Me",
+  //   ],
+  // },
 
   // BOOKLA
   {
@@ -396,32 +393,32 @@ export const projects = [
   //   tech: ["Unity", "C#", "Blender", "Photoshop"],
   // },
   // LOVEBUG
-  {
-    title: "Lovebug",
-    desc: "LoveBug is a web app designed to allows user to quickly find a match by simply completing a survey. The app then uses an algorithm to processes the best match based on user results comparison. Lovebug tracks all matches, allowing users to see all profiles and how many times they have been matched with someone. Lovebug provides an API to allow developers to retrieve all profiles in json format.",
-    id: "lovebug",
-    role: "Full Stack Developer",
-    type: "mobile",
-    tags: ["html", "bootstrap", "mysql", "express"],
-    repo: {
-      active: true,
-      link: "https://github.com/VIII4/LoveBug",
-    },
-    deployed: { active: true, link: "https://lovebug-app.herokuapp.com/" },
-    imgs: [
-      "/images/projectImages/Portfolio_Lovebug_1.webp",
-      "/images/projectImages/Portfolio_Lovebug_2.webp",
-      "/images/projectImages/Portfolio_Lovebug_3.webp",
-      "/images/projectImages/Portfolio_Lovebug_4.webp",
-    ],
-    bullets: [
-      "Designed webapp HTML layout and user interface",
-      "Utilized bootstrap framework along with custom CSS",
-      "Developed client-side logic to fetch server side db-less data",
-      "Configured express server routing to serve static files and update data",
-    ],
-    tech: ["Bootstrap", "MySQL", "express.js", "node.js"],
-  },
+  // {
+  //   title: "Lovebug",
+  //   desc: "LoveBug is a web app designed to allows user to quickly find a match by simply completing a survey. The app then uses an algorithm to processes the best match based on user results comparison. Lovebug tracks all matches, allowing users to see all profiles and how many times they have been matched with someone. Lovebug provides an API to allow developers to retrieve all profiles in json format.",
+  //   id: "lovebug",
+  //   role: "Full Stack Developer",
+  //   type: "mobile",
+  //   tags: ["html", "bootstrap", "mysql", "express"],
+  //   repo: {
+  //     active: true,
+  //     link: "https://github.com/VIII4/LoveBug",
+  //   },
+  //   deployed: { active: true, link: "https://lovebug-app.herokuapp.com/" },
+  //   imgs: [
+  //     "/images/projectImages/Portfolio_Lovebug_1.webp",
+  //     "/images/projectImages/Portfolio_Lovebug_2.webp",
+  //     "/images/projectImages/Portfolio_Lovebug_3.webp",
+  //     "/images/projectImages/Portfolio_Lovebug_4.webp",
+  //   ],
+  //   bullets: [
+  //     "Designed webapp HTML layout and user interface",
+  //     "Utilized bootstrap framework along with custom CSS",
+  //     "Developed client-side logic to fetch server side db-less data",
+  //     "Configured express server routing to serve static files and update data",
+  //   ],
+  //   tech: ["Bootstrap", "MySQL", "express.js", "node.js"],
+  // },
   // Google Books
   {
     title: "Google Books",
@@ -450,23 +447,23 @@ export const projects = [
     tech: ["html", "bootstrap", "javascript", "React", "node.js", "Heroku"],
   },
   // And The Whole Nine
-  {
-    title: "And The Whole 9",
-    desc: " 'Coming Soon' branding and landing page ",
-    id: "whole9",
-    role: "",
-    type: "hybrid",
-    tags: [],
-    repo: {
-      active: false,
-      link: "",
-    },
-    deployed: {
-      active: true,
-      link: "http://andthewhole9.com/",
-    },
-    imgs: ["/images/projectImages/Portfolio_Whole9_1.webp"],
-    bullets: [],
-    tech: ["PhotoShop", "Inkscape", "Html", "CSS", "Figma", "MDBootstrap"],
-  },
+  // {
+  //   title: "And The Whole 9",
+  //   desc: " 'Coming Soon' branding and landing page ",
+  //   id: "whole9",
+  //   role: "",
+  //   type: "hybrid",
+  //   tags: [],
+  //   repo: {
+  //     active: false,
+  //     link: "",
+  //   },
+  //   deployed: {
+  //     active: true,
+  //     link: "http://andthewhole9.com/",
+  //   },
+  //   imgs: ["/images/projectImages/Portfolio_Whole9_1.webp"],
+  //   bullets: [],
+  //   tech: ["PhotoShop", "Inkscape", "Html", "CSS", "Figma", "MDBootstrap"],
+  // },
 ];
