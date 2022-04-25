@@ -112,12 +112,12 @@ export const projects = [
     ],
   */
 
-  // Med Sim Proof of Concept
+  // Harlem Peds Proof of Concept
   {
     title: "Harlem Pediatrics VR Training App (BETA)",
-    desc: "A WebXR Demo webapp for medical simulation training demo...",
-    id: "medsim",
-    role: "Full Stack XR Developer",
+    desc: "A server side rendered (Next.js), React.js SPA demo for a medical simulation training dashboard also utilizing MDBootstrap, react-datepicker, and babylon.js frameworks with functionality to process, analyze, and visually render backend data dynamically; highly optimized and SEO effecient. Individually responsible for all stages of front end development, from ideation/design to developing improving features",
+    id: "harlemPeds",
+    role: "Front End Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
     repo: {
@@ -135,18 +135,42 @@ export const projects = [
       "/images/projectImages/Portfolio_HarlemPeds_4.png",
       "/images/projectImages/Portfolio_HarlemPeds_6.gif",
     ],
-    bullets: ["...", "...", "...", "..."],
-    tech: [
-      "React",
-      "Next.js",
-      "Vercel",
-      "Figma",
-      "SEO",
-      "MDBootstrap",
-      "Babylon.js",
-      "Unity",
-      "Blender",
+    bullets: [
+      "Converted intitial wireframe to a design prototype, then into fully responsive web elements ",
+      "Created custom icon/font sets for original look.",
+      "Implemented responsive, mobile -> VR -> desktop approach which increased mobile traffic by 20%",
+      "Architected and developed highly scalable React components with backend communication API functionality",
+      "Cross-browser/device performance and functionality testing ensuring consistent experience.",
+      "Built internal and external APIs",
     ],
+    tech: ["React", "Next.js", "Vercel", "Figma", "SEO", "MDBootstrap", "Git"],
+  },
+
+  // Medsim Proof of Concept
+  {
+    title: "WebXR Medical Simulation (Proof of Concept)",
+    desc: " ... ",
+    id: "medsim",
+    role: "WebXR Developer",
+    type: "hybrid",
+    tags: ["html", "bootstrap", "javascript"],
+    repo: {
+      active: false,
+      link: "",
+    },
+    deployed: {
+      active: false,
+      link: "https://web-xr-med-sim.vercel.app/dashboard",
+    },
+    imgs: [
+      "/images/webP_images/PhotoPlaceHolder.webp",
+      // "/images/projectImages/Portfolio_HarlemPeds_1.png",
+      // "/images/projectImages/Portfolio_HarlemPeds_3.png",
+      // "/images/projectImages/Portfolio_HarlemPeds_4.png",
+      // "/images/projectImages/Portfolio_HarlemPeds_6.gif",
+    ],
+    bullets: ["...", "...", "...", "..."],
+    tech: ["Javascript", "Babylon.js", "Unity", "Blender", "Photopea", "WebGL"],
   },
 
   // IXPORT TECHNOLOGIES

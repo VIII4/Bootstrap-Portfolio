@@ -12,14 +12,14 @@ export function AboutMePanel() {
         <MDBCol
           size="12"
           md="8"
-          lg="8"
+          lg="10"
           xl="6"
-          className={`${styles.aboutMeBackground}`}
+          className={`${styles.aboutMeBackground} `}
         >
           <MDBRow center className={`${styles.aboutMeHeader} `}>
             <MDBCol
               size="10"
-              xl="6"
+              xl="8"
               className="rounded border border-dark border-2 bg-light text-center p-2"
             >
               <MDBTypography tag="h5" className="m-0">
@@ -40,11 +40,11 @@ export function AboutMePanel() {
               {/* <img src="/images/webP_images/portrait.webp" alt="Portrait" /> */}
             </MDBCol>
           </MDBRow>
-          <MDBRow center className="text-center p-4 mb-4">
-            <MDBCol size="12" md="10" xl="6">
+          <MDBRow center className="text-center p-4 px-lg-1 mb-4 ">
+            <MDBCol size="12" md="8" lg="10" xl="10" className="">
               <MDBTypography tag="h5" className="text-dark m-0">
-                I love to create, code and learn, what better way to do all
-                three than to be a full stack developer. When I’m not behind the
+                I love to design, code and learn, what better way to do all
+                three than to be a full stack developer. When I'm not behind the
                 blue lights, I enjoy traveling with my wife or gaming with my
                 son. Currently I am creating web based XR experiences with the
                 company I founded, Ixport Technologies. I am always looking for
