@@ -75,7 +75,7 @@ export default function SkillsBlock({
             {/* Map Skills list */}
             {skillsList.map((skill) => {
               return (
-                <li key="{skill}" className="list-inline-item">
+                <li key={skill} className="list-inline-item">
                   {skill}
                 </li>
               );
@@ -105,7 +105,7 @@ export default function SkillsBlock({
             {/* Map Tools list */}
             {toolsList.map((tool) => {
               return (
-                <li key="{tool}" color="light">
+                <li key={tool} color="light">
                   {tool}
                 </li>
               );
@@ -120,7 +120,7 @@ export default function SkillsBlock({
               <MDBTypography listInLine className="">
                 {langList.map((lang) => {
                   return (
-                    <li key="{lang}" className="list-inline-item">
+                    <li key={lang} className="list-inline-item">
                       {lang}
                     </li>
                   );

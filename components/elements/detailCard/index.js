@@ -46,7 +46,7 @@ export function DetailCard({ selectedProject }) {
                 <MDBTypography variant="p" listInLine>
                   {selectedProject.tech.map((t, i) => {
                     return (
-                      <li key="{t}" className="list-inline-item ">
+                      <li key={i} className="list-inline-item ">
                         {`${t}${
                           i >= selectedProject.tech.length - 1 ? "." : ","
                         }`}
@@ -62,8 +62,8 @@ export function DetailCard({ selectedProject }) {
               <ul>
                 {selectedProject.bullets && (
                   <ui>
-                    {selectedProject.bullets.map((t) => {
-                      return <li key="{t}">{t}</li>;
+                    {selectedProject.bullets.map((t, i) => {
+                      return <li key={t}>{t}</li>;
                     })}
                   </ui>
                 )}

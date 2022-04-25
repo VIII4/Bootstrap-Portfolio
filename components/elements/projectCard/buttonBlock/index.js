@@ -44,26 +44,20 @@ export default function ButtonBlock({
         )}
 
         {repo.active ? (
-          <MDBBtn
-            tag="a"
-            color={light ? "light" : "dark"}
-            href={repo.active ? repo.link : "javascript:;"}
-          >
+          <MDBBtn tag="a" color={light ? "light" : "dark"} href={repo.link}>
             <MDBIcon fab icon="github" size="2x"></MDBIcon>
             <span className="visually-hidden">Repository</span>
           </MDBBtn>
         ) : (
           <MDBTooltip
-            toolTipTag="a"
+            tooltiptag="a"
             wrapperProps={{
               color: light ? "light" : "dark",
-              href: "javascript:;",
+              href: "",
             }}
-            title={`${!repo.active ? "Disabled: Repo is Private" : ""}`}
-            href={repo.active ? repo.link : "javascript:;"}
+            title={"Disabled: Repo is Private"}
           >
             <MDBIcon fab icon="github" size="2x"></MDBIcon>
-            <span className="visually-hidden">Repository</span>
           </MDBTooltip>
         )}
       </MDBBtnGroup>

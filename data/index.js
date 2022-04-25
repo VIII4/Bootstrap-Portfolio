@@ -115,7 +115,7 @@ export const projects = [
   // Harlem Peds Proof of Concept
   {
     title: "Harlem Pediatrics VR Training App (BETA)",
-    desc: "A server side rendered (Next.js), React.js SPA demo for a medical simulation training dashboard also utilizing MDBootstrap, react-datepicker, and babylon.js frameworks with functionality to process, analyze, and visually render backend data dynamically; highly optimized and SEO effecient. Individually responsible for all stages of front end development, from ideation/design to developing improving features",
+    desc: "A server side rendered (Next.js), React.js single page app demo for a medical simulation training dashboard. Utilizing MDBootstrap, react-datepicker, and babylon.js frameworks with functionality to process, analyze, and visually render backend data dynamically; highly optimized and SEO effecient. Individually responsible for all stages of front end development, from ideation/design to developing improving features",
     id: "harlemPeds",
     role: "Front End Developer",
     type: "hybrid",
@@ -136,12 +136,11 @@ export const projects = [
       "/images/projectImages/Portfolio_HarlemPeds_6.gif",
     ],
     bullets: [
-      "Converted intitial wireframe to a design prototype, then into fully responsive web elements ",
-      "Created custom icon/font sets for original look.",
+      "Designed then converted intitial wireframe to prototype, then into fully responsive web elements ",
+      "Created custom icon/font sets and various unique SVG images for vibrant infinite resolution that is consistent across displays with faster load speed.",
       "Implemented responsive, mobile -> VR -> desktop approach which increased mobile traffic by 20%",
       "Architected and developed highly scalable React components with backend communication API functionality",
       "Cross-browser/device performance and functionality testing ensuring consistent experience.",
-      "Built internal and external APIs",
     ],
     tech: ["React", "Next.js", "Vercel", "Figma", "SEO", "MDBootstrap", "Git"],
   },
