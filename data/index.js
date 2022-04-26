@@ -115,7 +115,7 @@ export const projects = [
   // Harlem Peds Proof of Concept
   {
     title: "Harlem Pediatrics VR Training App (BETA)",
-    desc: "A server side rendered (Next.js), React.js single page app demo for a medical simulation training dashboard. Utilizing MDBootstrap, react-datepicker, and babylon.js frameworks with functionality to process, analyze, and visually render backend data dynamically; highly optimized and SEO effecient. Individually responsible for all stages of front end development, from ideation/design to developing improving features",
+    desc: "A server side rendered (Next.js), React.js single page app demo for a medical simulation training dashboard. Utilizing MDBootstrap, react-datepicker, and babylon.js frameworks with functionality to process, analyze, and visually render backend data dynamically; highly optimized and SEO efficient. Individually responsible for all stages of front end development, from ideation/design to developing improving features",
     id: "harlemPeds",
     role: "Front End Developer",
     type: "hybrid",
@@ -129,14 +129,16 @@ export const projects = [
       link: "https://web-xr-med-sim.vercel.app/dashboard",
     },
     imgs: [
+      "/images/projectImages/Portfolio_HarlemPeds_7.gif",
       "/images/projectImages/Portfolio_HarlemPeds_5.gif",
+      "/images/projectImages/Portfolio_HarlemPeds_8.gif",
       "/images/projectImages/Portfolio_HarlemPeds_1.png",
       "/images/projectImages/Portfolio_HarlemPeds_3.png",
       "/images/projectImages/Portfolio_HarlemPeds_4.png",
       "/images/projectImages/Portfolio_HarlemPeds_6.gif",
     ],
     bullets: [
-      "Designed then converted intitial wireframe to prototype, then into fully responsive web elements ",
+      "Designed then converted initial wire frame to prototype, then into fully responsive web elements ",
       "Created custom icon/font sets and various unique SVG images for vibrant infinite resolution that is consistent across displays with faster load speed.",
       "Implemented responsive, mobile -> VR -> Desktop approach allowing increased mobile performance and optimization",
       "Architected and developed highly scalable React components with backend communication API functionality",
@@ -175,7 +177,7 @@ export const projects = [
   // IXPORT TECHNOLOGIES
   // {
   //   title: "Ixport Technologies",
-  //   desc: "A server side rendered (Next.js), interactive Company product/services site that utilizes the babylon.js framework for a unique immersive experience that can also be personalized with metaverse avatar(ready player me), and highly ooptimized for SEO.",
+  //   desc: "A server side rendered (Next.js), interactive Company product/services site that utilizes the babylon.js framework for a unique immersive experience that can also be personalized with metaverse avatar(ready player me), and highly optimized for SEO.",
   //   id: "ixport",
   //   role: "Full Stack Developer",
   //   type: "hybrid",
@@ -338,7 +340,7 @@ export const projects = [
     bullets: [
       "Designed layout, typography, and logo element for cohesive sleek look",
       "Lead front end team in developing webapp html and css",
-      "implented jQuery logic to handle and render dynamic data",
+      "implemented jQuery logic to handle and render dynamic data",
       "assisted with client-side logic to fetch API request",
     ],
     tech: ["Bootstrap", "javascript", "HTML5", "Firebase", "Moment.js"],
@@ -440,7 +442,7 @@ export const projects = [
       "React Single-Page Application",
       "Implement React Router for conditional rendering of components",
       "Created React components utilizing React lifecycle methods.",
-      "React State logic with query and display books based on Googlebooks API searches and CRUD database request",
+      "React State logic with query and display books based on Google books API searches and CRUD database request",
       "Created and configured Moongoose/MongoDB Schema and controller on backend server",
       "Configure and deployed fullstack MERN application",
     ],
