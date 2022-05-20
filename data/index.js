@@ -129,10 +129,10 @@ export const projects = [
       link: "https://web-xr-med-sim.vercel.app/dashboard",
     },
     imgs: [
+      "/images/projectImages/Portfolio_HarlemPeds_1.png",
       "/images/projectImages/Portfolio_HarlemPeds_7.gif",
       "/images/projectImages/Portfolio_HarlemPeds_5.gif",
       "/images/projectImages/Portfolio_HarlemPeds_8.gif",
-      "/images/projectImages/Portfolio_HarlemPeds_1.png",
       "/images/projectImages/Portfolio_HarlemPeds_3.png",
       "/images/projectImages/Portfolio_HarlemPeds_4.png",
       "/images/projectImages/Portfolio_HarlemPeds_6.gif",

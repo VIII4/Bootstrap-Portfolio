@@ -31,6 +31,7 @@ export function AboutMePanel() {
           <MDBRow center className={styles.imgWrapper}>
             <MDBCol center id="about-image" size="8" md="6" lg="4" xl="3">
               <Image
+                loading="eager"
                 width={570}
                 height={755}
                 src="/images/webP_images/portrait.webp"
