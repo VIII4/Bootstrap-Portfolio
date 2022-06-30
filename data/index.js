@@ -112,10 +112,10 @@ export const projects = [
     ],
   */
 
-  // Harlem Peds Proof of Concept
+  // Harlem Peds Dashboard
   {
-    title: "Harlem Pediatrics VR Training App (BETA)",
-    desc: "A server side rendered (Next.js), React.js single page app demo for a medical simulation training dashboard. Utilizing MDBootstrap, react-datepicker, and babylon.js frameworks with functionality to process, analyze, and visually render backend data dynamically; highly optimized and SEO efficient. Individually responsible for all stages of front end development, from ideation/design to developing improving features",
+    title: "Harlem Pediatrics Training App (BETA)",
+    desc: "A server side rendered (Next.js), React.js single page app demo for a medical simulation training dashboard. Utilizing MDBootstrap, react-datepicker, and embla frameworks with functionality to process, analyze, and visually render backend data dynamically; highly optimized and SEO efficient. Individually responsible for all stages of front end development, from ideation/design to developing improving features",
     id: "harlemPeds",
     role: "Front End Developer",
     type: "hybrid",
@@ -132,9 +132,9 @@ export const projects = [
       "/images/projectImages/Portfolio_HarlemPeds_1.png",
       "/images/projectImages/Portfolio_HarlemPeds_7.gif",
       "/images/projectImages/Portfolio_HarlemPeds_5.gif",
-      "/images/projectImages/Portfolio_HarlemPeds_8.gif",
-      "/images/projectImages/Portfolio_HarlemPeds_3.png",
-      "/images/projectImages/Portfolio_HarlemPeds_4.png",
+      // "/images/projectImages/Portfolio_HarlemPeds_8.gif",
+      // "/images/projectImages/Portfolio_HarlemPeds_3.png",
+      // "/images/projectImages/Portfolio_HarlemPeds_4.png",
       "/images/projectImages/Portfolio_HarlemPeds_6.gif",
     ],
     bullets: [
@@ -147,12 +147,12 @@ export const projects = [
     tech: ["React", "Next.js", "Vercel", "Figma", "SEO", "MDBootstrap", "Git"],
   },
 
-  // Medsim Proof of Concept
+  // Medsim XR Proof of Concept
   {
-    title: "WebXR Medical Simulation (Proof of Concept)",
-    desc: " ... ",
+    title: "WebXR Simulation (Proof of Concept)",
+    desc: "A WebGL proof of concept webapp powered by Babylon.js framework that provides web based interactive content for medical simulation training. The app is designed to be integrated and deployed within webapps for complete CMS customization and employer metrics measuring. Designed for Virtual Reality but platform agnostic.",
     id: "medsim",
-    role: "WebXR Developer",
+    role: "WebXR Full Stack Developer",
     type: "hybrid",
     tags: ["html", "bootstrap", "javascript"],
     repo: {
@@ -160,18 +160,27 @@ export const projects = [
       link: "",
     },
     deployed: {
-      active: false,
-      link: "https://web-xr-med-sim.vercel.app/dashboard",
+      active: true,
+      link: "https://web-xr-med-sim.vercel.app/sim/demo",
     },
     imgs: [
+      "/images/projectImages/Portfolio_Webxr_1.png",
       "/images/webP_images/PhotoPlaceHolder.webp",
-      // "/images/projectImages/Portfolio_HarlemPeds_1.png",
+      // "/images/projectImages/Portfolio_Webxr_1.png",
       // "/images/projectImages/Portfolio_HarlemPeds_3.png",
       // "/images/projectImages/Portfolio_HarlemPeds_4.png",
       // "/images/projectImages/Portfolio_HarlemPeds_6.gif",
     ],
+    // Original 3D content acquired but individually responsible for model and texture optimization for the web.
     bullets: ["...", "...", "...", "..."],
-    tech: ["Javascript", "Babylon.js", "Unity", "Blender", "Photopea", "WebGL"],
+    tech: [
+      "React",
+      "Babylon.js",
+      "Unity",
+      "Blender",
+      "Character Creator 3",
+      "WebGL",
+    ],
   },
 
   // IXPORT TECHNOLOGIES
