@@ -150,7 +150,7 @@ export const projects = [
   // Medsim XR Proof of Concept
   {
     title: "WebXR Simulation (Proof of Concept)",
-    desc: "A WebGL proof of concept webapp powered by Babylon.js framework that provides web based interactive content for medical simulation training. The app is designed to be integrated and deployed within webapps for complete CMS customization and employer metrics measuring. Designed for Virtual Reality but platform agnostic.",
+    desc: "A WebGL proof of concept app powered by Babylon.js framework that provides web based interactive content for medical simulation training. The app is designed to be integrated and deployed within Webapps for complete user based customization and employer metrics measuring.",
     id: "medsim",
     role: "WebXR Full Stack Developer",
     type: "hybrid",
@@ -165,14 +165,20 @@ export const projects = [
     },
     imgs: [
       "/images/projectImages/Portfolio_Webxr_1.png",
-      "/images/webP_images/PhotoPlaceHolder.webp",
+      //"/images/webP_images/PhotoPlaceHolder.webp",
       // "/images/projectImages/Portfolio_Webxr_1.png",
       // "/images/projectImages/Portfolio_HarlemPeds_3.png",
       // "/images/projectImages/Portfolio_HarlemPeds_4.png",
       // "/images/projectImages/Portfolio_HarlemPeds_6.gif",
     ],
     // Original 3D content acquired but individually responsible for model and texture optimization for the web.
-    bullets: ["...", "...", "...", "..."],
+    bullets: [
+      "Implemented platform agnostic input system with controls for desktop, mobile and intended WebXR (WASD, touch joysticks and VR teleportation)",
+      "Utilized babylon.js framework to create custom environment loader classes, texture loaders, and ",
+      "Optimized acquired 3D environment assets to 15% of original mesh polycount; Set designed level and props in blender, created collision meshes, packed UVs and created texture atlas to reduce draw calls to 2 mesh 3 materials, and baked light maps ",
+      "Custom Non playable characters created in Character Creator 3 and optimized in blender. Poly counts reduced down to 20% per NPC, with 2 materials leading to significant reduction in draw calls. NPCs imported to Unity and applied mixamo animations",
+      //"...",
+    ],
     tech: [
       "React",
       "Babylon.js",
@@ -180,6 +186,7 @@ export const projects = [
       "Blender",
       "Character Creator 3",
       "WebGL",
+      "Mixamo",
     ],
   },
 
