@@ -174,7 +174,7 @@ export const projects = [
     // Original 3D content acquired but individually responsible for model and texture optimization for the web.
     bullets: [
       "Implemented platform agnostic input system with controls for desktop, mobile and intended WebXR (WASD, touch joysticks and VR teleportation)",
-      "Utilized babylon.js framework to create custom environment loader classes, texture loaders, and ",
+      "Utilized babylon.js framework to create custom environment loader classes, texture loaders, skymaps and navigation meshes, along with implementing device conditional camera and input loader.",
       "Optimized acquired 3D environment assets to 15% of original mesh polycount; Set designed level and props in blender, created collision meshes, packed UVs and created texture atlas to reduce draw calls to 2 mesh 3 materials, and baked light maps ",
       "Custom Non playable characters created in Character Creator 3 and optimized in blender. Poly counts reduced down to 20% per NPC, with 2 materials leading to significant reduction in draw calls. NPCs imported to Unity and applied mixamo animations",
       //"...",
