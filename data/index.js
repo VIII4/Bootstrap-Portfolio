@@ -277,7 +277,7 @@ export const projects = [
     },
     deployed: {
       active: true,
-      link: "https://care-n.herokuapp.com/",
+      link: "https://care-n-v2-production.up.railway.app/",
     },
     imgs: [
       "/images/projectImages/Portfolio_Caren_7.webp",
