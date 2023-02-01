@@ -451,7 +451,7 @@ export const projects = [
     },
     deployed: {
       active: true,
-      link: "https://googlebooksmernapp.herokuapp.com/",
+      link: "https://googlebooks-production.up.railway.app/",
     },
     imgs: ["/images/projectImages/Portfolio_GoogleBooks_1.webp"],
     bullets: [
