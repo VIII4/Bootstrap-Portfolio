@@ -277,7 +277,7 @@ export const projects = [
     },
     deployed: {
       active: true,
-      link: "https://care-n-v2-production.up.railway.app/",
+      link: "https://production.d2angj6r1uamft.amplifyapp.com/",
     },
     imgs: [
       "/images/projectImages/Portfolio_Caren_7.webp",
